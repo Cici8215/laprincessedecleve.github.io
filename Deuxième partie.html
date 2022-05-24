@@ -1,0 +1,1880 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Princesse de Clève Madame de Lafayette</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta name="author" content="Cynthia Wielgosz">
+  <style>
+    @font-face {
+      font-family: 'Aston Script'
+        src: url ('Police\Aston Script.ttf')
+    }
+
+    @font-face {
+      font-family: 'CapitalisTypOasis'
+        src: url ('Polices\CapitalisTypOasis.ttf')
+    }
+
+    @font-face {
+      font-family: 'Nesans Semi Bold'
+        src: url ('Polices\Nesans Semi Bold.ttf')
+    }
+
+    body {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: Aston Script;
+      font-size: 45px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 25px;
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 15px;
+    }
+
+    .rectangle {
+      position: relative;
+      height: 50px;
+      width: 300px;
+      background-color: #AB1149;
+      margin: auto;
+    }
+
+    nav {
+      color: white;
+      font-family: 'CapitalisTypOasis';
+      width: 725px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0px 0px 32px;
+      padding: 10px 24px;
+    }
+
+    nav ul li {
+      padding: 0px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav ul::after {
+      content: normal;
+      display: none;
+      clear: both;
+    }
+
+    nav a {
+      font-size: 11.2px;
+      color: white;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+      border-bottom: 1px solid black;
+    }
+
+    .sous li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .sous a {
+      padding: 0px;
+      border-bottom: none;
+    }
+
+    .sous a:hover {
+      border-bottom: none;
+      background-color: black;
+    }
+
+    .deroulant>a::after {
+      content: '▼';
+      font-size: 10px;
+    }
+
+    .sous {
+      display: none;
+      box-shadow: 0px 1px 2px black;
+      background-color: #D31B5E;
+      position: absolute;
+      width: 180px;
+      z-index: 1000;
+
+    }
+
+    nav>ul li:hover .sous {
+      display: block;
+    }
+
+    p {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <section class="haut" style="background-color:#AB1149">
+      <br>
+      <nav>
+        <ul>
+          <li class='deroulant'><a
+              href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+              #ACCEUIL>ACCEUIL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+                  #A propos>A propos</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Mentionslegales.html"
+                  #Mentions legales>Mentions legales</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#TEXTE INTEGRAL'>TEXTE INTEGRAL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Site.html"
+                  #PREMIERE PARTIE>PREMIERE PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Deuxi%C3%A8me%20partie.html"
+                  #DEUXIEME PARTIE>DEUXIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Troisi%C3%A8me%20partie.html"
+                  #TROSIEME PARTIE>TROISIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Quatri%C3%A8me%20partie.html"
+                  #QUATRIEME PARTIE>QUATRIEME PARTIE</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#PRESENTATION'>PRESENTATION</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Roman.html"
+                  #Le roman>Le roman</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Biographie.html"
+                  #Biographie>Biographie</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#CHRONOLOGIE'>CHRONOLOGIE</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Repereshistoriques.html"
+                  #Reperes historiques>Reperes historiques</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Vieautrice.html"
+                  #Vie de l&rsquo;autrice>Vie de l&rsquo;autrice</a></li>
+            </ul>
+          </li>
+      </nav>
+      <div>
+        <br>
+        <h1>La Princesse de Clèves</h1>
+        <p>
+        <h2>Madame de Lafayette</h2>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </header>
+  </section>
+  <section class="bas" style="background-color:#FFF6CD">
+    <h3 class="rectangle">DEUXIEME PARTIE</h3>
+    <div>
+      <br>
+      <br>
+      <p> Vous savez l’amitié qu’il y a entre Sancerre et moi&#160;;
+        néanmoins il devint amoureux de madame de Tournon,
+        il y a environ deux ans, et me le cacha avec beaucoup
+        de soin, aussi-bien qu’à tout le reste du monde&#160;:
+        j’étais bien éloigné de le soupçonner. Madame de
+        Tournon paraissait encore inconsolable de la mort de
+        son mari, et vivait dans une retraite austère. La sœur
+        de Sancerre était quasi la seule personne qu’elle vît,
+        et c’était chez elle qu’il en était devenu amoureux.
+      </p>
+      <p>Un soir qu’il devait y avoir une comédie au Louvre,
+        et que l’on n’attendait plus que le roi et madame de
+        Valentinois pour commencer, l’on vint dire qu’elle
+        s’était trouvée mal, et que le roi ne viendrait pas. On
+        jugea aisément que le mal de cette duchesse était
+        quelque démêlé avec le roi&#160;: nous savions les jalousies
+        qu’il avait eues du maréchal de Brissac pendant qu’il
+        avait été à la cour, mais il était retourné en Piémont
+        depuis quelques jours, et nous ne pouvions imaginer
+        le sujet de cette brouillerie.
+      </p>
+      <p>Comme j’en parlais avec Sancerre, M. d’Anville&#32;arriva dans la salle, et me dit tout bas que le roi
+        était dans une affliction et dans une colère qui faisaient
+        pitié&#160;; qu’en un raccommodement qui s’était fait entre
+        lui et madame de Valentinois, il y avait quelques jours,
+        sur des démêlés qu’ils avaient eus pour le maréchal
+        de Brissac, le roi lui avait donné une bague, et l’avait
+        priée de la porter&#160;; que, pendant qu’elle s’habillait pour
+        venir à la comédie, il avait remarqué qu’elle n’avait
+        point cette bague, et lui en avait demandé la raison&#160;;
+        qu’elle avait paru étonnée de ne la pas avoir&#160;; qu’elle
+        l’avait demandée à ses femmes, lesquelles, par malheur,
+        ou faute d’être bien instruites, avaient répondu qu’il y
+        avait quatre ou cinq jours qu’elles ne l’avaient vue.
+      </p>
+      <p>Ce temps est précisément celui du départ du maréchal
+        de Brissac, continua M. d’Anville&#160;: le roi n’a
+        point douté qu’elle ne lui ait donné la bague, en lui
+        disant adieu. Cette pensée a réveillé si vivement toute
+        cette jalousie, qui n’était pas encore bien éteinte, qu’il
+        s’est emporté, contre son ordinaire, et lui a fait mille
+        reproches. Il vient de rentrer chez lui très-affligé&#160;;
+        mais je ne sais s’il l’est davantage de l’opinion que
+        madame
+        de Valentinois a sacrifié sa bague, que de la
+        crainte de lui avoir déplu par sa colère.
+      </p>
+      <p>Sitôt que M. d’Anville eut achevé de me conter
+        cette nouvelle, je me rapprochai de Sancerre pour la
+        lui apprendre&#160;; je la lui dis comme un secret que l’on
+        venait de me confier, et dont je lui défendais de
+        parler.
+      </p>
+      <p>Le lendemain matin, j’allai d’assez bonne heure chez
+        ma belle-sœur&#160;: je trouvai madame de Tournon au chevet
+        de son lit&#160;; elle n’aimait pas madame de Valentinois,&#32;et elle savait bien que ma belle-sœur n’avait pas
+        sujet
+        de s’en louer. Sancerre avait été chez elle au sortir
+        de la comédie. Il lui avait appris la brouillerie du roi
+        avec cette duchesse&#160;; et madame de Tournon était
+        venue la conter à ma belle-sœur, sans savoir ou sans
+        faire réflexion que c’était moi qui l’avait apprise à
+        son amant.
+      </p>
+      <p>Sitôt que je m’approchai de ma belle-sœur, elle dit
+        à madame de Tournon que l’on pouvait me confier
+        ce qu’elle venait de lui dire&#160;; et, sans attendre la permission
+        de madame de Tournon, elle me conta mot
+        pour mot tout ce que j’avais dit à Sancerre le soir
+        précédent. Vous pouvez juger comme j’en fus étonné.
+        Je regardai madame de Tournon&#160;; elle me parut embarrassée.
+        Son embarras me donna du soupçon&#160;: je
+        n’avais dit la chose qu’à Sancerre&#160;; il m’avait quitté
+        au sortir de la comédie, sans m’en dire la raison&#160;; je
+        me souvins de lui avoir ouï extrêmement louer madame
+        de Tournon&#160;: toutes ces choses m’ouvrirent les
+        yeux, et je n’eus pas de peine à démêler qu’il avait
+        une galanterie avec elle, et qu’il l’avait vue depuis
+        qu’il m’avait quitté. Je fus si piqué de voir qu’il me
+        cachait cette aventure, que je dis plusieurs choses qui
+        firent connaître à madame de Tournon l’imprudence
+        qu’elle avait faite&#160;; je la remis à son carrosse, et je
+        l’assurai, en la quittant, que j’enviais le bonheur de
+        celui qui lui avait appris la brouillerie du roi et de
+        madame de Valentinois.
+      </p>
+      <p>Je m’en allai à l’heure même trouver Sancerre&#160;; je
+        lui fis des reproches, et je lui dis que je savais sa
+        passion pour madame de Tournon, sans lui dire &#32;comment je l’avais découverte&#160;: il fut contraint de me
+        l’avouer.
+        Je lui contai ensuite ce qui me l’avait apprise, et il
+        m’apprit aussi le détail de leur aventure&#160;: il me dit
+        que, quoiqu’il fût cadet de sa maison, et très-éloigné
+        de pouvoir prétendre un aussi bon parti, néanmoins
+        elle était résolue de l’épouser. L’on ne peut être
+        plus surpris que je le fus. Je dis à Sancerre de presser
+        la conclusion de son mariage, et qu’il n’y avait rien
+        qu’il ne dût craindre d’une femme qui avait l’artifice
+        de soutenir, aux yeux du public, un personnage si
+        éloigné de la vérité. Il me répondit qu’elle avait été
+        véritablement affligée&#160;; mais que l’inclination qu’elle
+        avait eue pour lui avait surmonté cette affliction, et
+        qu’elle n’avait pu laisser paraître tout d’un coup un si
+        grand changement. Il me dit encore plusieurs autres
+        raisons pour l’excuser, qui me firent voir à quel point
+        il en était amoureux&#160;: il m’assura qu’il la ferait consentir
+        que je susse la passion qu’il avait pour elle,
+        puisque aussi-bien c’était elle-même qui me l’avait apprise.
+        Il l’y obligea en effet, quoique avec beaucoup de
+        peine, et je fus ensuite très-avant dans leur confidence.
+      </p>
+      <p>Je n’ai jamais vu une femme avoir une conduite si
+        honnête et si agréable à l’égard de son amant&#160;; néanmoins
+        j’étais toujours choqué de son affectation à paraître
+        encore affligée. Sancerre était si amoureux et si
+        content de la manière dont elle en usait pour lui, qu’il
+        n’osait quasi la presser de conclure leur mariage, de
+        peur qu’elle ne crût qu’il le souhaitait plutôt par intérêt
+        que par une véritable passion. Il lui en parla
+        toutefois, et elle lui parut résolue à l’épouser&#160;; elle
+        commença même à quitter cette retraite où elle vivait,&#32;et à se remettre dans le monde&#160;: elle venait
+        chez ma
+        belle-sœur à des heures où une partie de la cour s’y
+        trouvait. Sancerre n’y venait que rarement, mais ceux
+        qui y étaient tous les soirs et qui l’y voyaient souvent
+        la trouvaient très-aimable.
+      </p>
+      <p>Peu de temps après qu’elle eut commencé à quitter
+        sa solitude, Sancerre crut voir quelque refroidissement
+        dans la passion qu’elle avait pour lui. Il m’en parla
+        plusieurs fois, sans que je fisse aucun fondement sur
+        ses plaintes&#160;; mais à la fin, comme il me dit qu’au lieu
+        d’achever leur mariage, elle semblait l’éloigner, je commençai
+        à croire qu’il n’avait pas de tort d’avoir de l’inquiétude&#160;:
+        je lui répondis que, quand la passion de
+        madame de Tournon diminuerait après avoir duré deux
+        ans, il ne faudrait pas s’en étonner&#160;; que quand même,
+        sans être diminuée, elle ne serait pas assez forte pour
+        l’obliger à l’épouser, il ne devrait pas s’en plaindre&#160;;
+        que ce mariage, à l’égard du public, lui ferait un extrême
+        tort, non-seulement parce qu’il n’était pas un
+        assez bon parti pour elle, mais par le préjudice qu’il
+        apporterait à sa réputation&#160;: qu’ainsi tout ce qu’il pouvait
+        souhaiter était qu’elle ne le trompât point, et
+        qu’elle ne lui donnât pas de fausses espérances. Je lui
+        dis encore que, si elle n’avait pas la force de l’épouser,
+        ou qu’elle lui avouât qu’elle en aimait quelque autre,
+        il ne fallait point qu’il s’emportât, ni qu’il se plaignît&#160;;
+        mais qu’il devrait conserver pour elle de l’estime et de
+        la reconnaissance.</p>
+      <p>
+        <center>
+          <img src="images/Partie2_image1.png" alt="Sancerre et le mariages" width="400" height="300">
+        </center>
+      </p>
+      <p>Je vous donne, lui dis-je, le conseil que je prendrais
+        pour moi-même&#160;; car la sincérité me touche d’une telle
+        sorte, que je crois que, si ma maîtresse et même ma&#32;femme m’avouait que quelqu’un lui plût, j’en serais
+        affligé sans en être aigri&#160;; je quitterais le
+        personnage
+        d’amant ou de mari, pour la conseiller et pour la
+        plaindre.
+      </p>
+      <p>Ces paroles firent rougir madame de Clèves, et elle
+        y trouva un certain rapport avec l’état où elle était,
+        qui la surprit, et qui lui donna un trouble dont elle
+        fut long-temps à se remettre.
+      </p>
+      <p>Sancerre parla à madame de Tournon, continua
+        M. de Clèves&#160;; il lui dit tout ce que je lui avais conseillé&#160;;
+        mais elle le rassura avec tant de soin, et parut
+        si offensée de ses soupçons, qu’elle les lui ôta entièrement.
+        Elle remit néanmoins leur mariage après un
+        voyage qu’il allait faire et qui devait être assez long&#160;:
+        mais elle se conduisit si bien jusqu’à son départ, et en parut si affligée, que je crus aussi-bien que lui
+        qu’elle
+        l’aimait véritablement. Il partit il y a environ trois
+        mois. Pendant son absence j’ai peu vu madame de
+        Tournon&#160;: vous m’avez entièrement occupé, et je savais
+        seulement qu’il devait bientôt revenir.
+      </p>
+      <p>Avant-hier, en arrivant à Paris, j’appris qu’elle était
+        morte. J’envoyai savoir chez lui si on n’avait point eu
+        de ses nouvelles&#160;: on me manda qu’il était arrivé dès
+        la veille, qui était précisément le jour de la mort de
+        madame de Tournon. J’allai le voir à l’heure même,
+        me doutant bien de l’état où je le trouverais&#160;: mais
+        son affliction passait de beaucoup ce que je m’en étais
+        imaginé.
+      </p>
+      <p>Je n’ai jamais vu une douleur si profonde et si
+        tendre. Dès le moment qu’il me vit, il m’embrassa,
+        fondant en larmes&#160;: je ne la verrai plus, me dit-il, je&#32;ne la verrai plus, elle est morte&#160;! je
+        n’en étais pas
+        digne&#160;; mais je la suivrai bientôt.</p>
+      <p>
+        <center>
+          <img src="images/Partie2_image2.png" alt="Larmes de M. de Clèves" width="400" height="400">
+        </center>
+      </p>
+      <p>Après cela il se tut&#160;; et puis, de temps en temps, redisant
+        toujours&#160;: elle est morte, et je ne la verrai plus&#160;!
+        il revenait aux cris et aux larmes, et demeurait comme
+        un homme qui n’avait plus de raison. Il me dit qu’il
+        n’avait pas reçu souvent de ses lettres pendant son
+        absence&#160;; mais qu’il ne s’en était pas étonné, parce
+        qu’il la connaissait, et qu’il savait la peine qu’elle avait
+        à hasarder de ses lettres. Il ne doutait point qu’il ne l’eût
+        épousée à son retour&#160;; il la regardait comme la plus
+        aimable et la plus fidèle personne qui eût jamais été&#160;;
+        il s’en croyait tendrement aimé&#160;; il la perdait dans le
+        moment qu’il pensait s’attacher à elle pour jamais.
+        Toutes ces pensées le plongeaient dans une affliction
+        violente, dont il était entièrement accablé&#160;; et j’avoue
+        que je ne pouvais m’empêcher d’en être touché.
+      </p>
+      <p>Je fus néanmoins contraint de le quitter pour aller
+        chez le roi&#160;: je lui promis que je reviendrais bientôt. Je revins en effet, et je ne fus jamais si surpris
+        que
+        de le trouver tout différent de ce que je l’avais quitté.
+        Il était debout dans sa chambre, avec un visage furieux,
+        marchant et s’arrêtant comme s’il eût été hors
+        de lui-même. Venez, venez, me dit-il, venez voir
+        l’homme du monde le plus désespéré&#160;; je suis plus malheureux
+        mille fois que je n’étais tantôt, et ce que je
+        viens d’apprendre de madame de Tournon est pire que
+        sa mort.
+      </p>
+      <p>Je crus que la douleur le troublait entièrement&#160;; et
+        je ne pouvais m’imaginer qu’il y eût quelque chose de
+        pire que la mort d’une maîtresse que l’on aime, et&#32;dont on est aimé. Je lui dis que, tant que son affliction
+        avait eu des bornes, je l’avais approuvée, et que
+        j’y étais entré&#160;; mais que je ne le plaindrais plus s’il
+        s’abandonnait au désespoir, et s’il perdait la raison. Je
+        serais trop heureux de l’avoir perdue, et la vie aussi,
+        s’écria-t-il&#160;: madame de Tournon m’était infidèle, et
+        j’apprends son infidélité et sa trahison le lendemain
+        que j’ai appris sa mort, dans un temps où mon ame
+        est remplie et pénétrée de la plus vive douleur et de
+        la plus tendre amour que l’on ait jamais sentie&#160;; dans
+        un temps où son idée est dans mon cœur comme la
+        plus parfaite chose qui ait jamais été, et la plus
+        parfaite à mon égard&#160;; je trouve que je suis trompé,
+        et qu’elle ne mérite pas que je la pleure&#160;: cependant
+        j’ai la même affliction de sa mort, que si elle m’était
+        fidèle, et je sens son infidélité comme si elle n’était
+        point morte. Si j’avais appris son changement devant
+        sa mort, la jalousie, la colère, la rage, m’auraient
+        rempli et m’auraient endurci en quelque sorte contre
+        la douleur de sa perte&#160;; mais je suis dans un état où
+        je ne puis ni m’en consoler, ni la haïr.
+      </p>
+      <p>Vous pouvez juger si je fus surpris de ce que me
+        disait Sancerre&#160;: je lui demandai comment il avait su
+        ce qu’il venait de me dire. Il me conta qu’un moment
+        après que j’étais sorti de sa chambre, Estouteville,
+        qui est son ami intime, mais qui ne savait pourtant
+        rien de son amour pour madame de Tournon, l’était
+        venu voir&#160;; que d’abord qu’il avait été assis, il avait
+        commencé à pleurer, et qu’il lui avait dit qu’il lui
+        demandait pardon de lui avoir caché ce qu’il lui allait
+        apprendre&#160;; qu’il le priait d’avoir pitié de lui&#160;; qu’il&#32;venait lui ouvrir son cœur, et qu’il
+        voyait l’homme du
+        monde le plus affligé de la mort de madame de Tournon.
+      </p>
+      <p>Ce nom, me dit Sancerre, m’a tellement surpris,
+        que, quoique mon premier mouvement ait été de lui
+        dire que j’en étais plus affligé que lui, je n’ai pas eu
+        néanmoins la force de parler. Il a continué, et m’a
+        dit qu’il était amoureux d’elle depuis six mois&#160;; qu’il
+        avait toujours voulu me le dire, mais qu’elle le lui
+        avait défendu expressément, et avec tant d’autorité,
+        qu’il n’avait osé lui désobéir&#160;; qu’il lui avait plu quasi
+        dans le même temps qu’il l’avait aimée&#160;; qu’ils avaient
+        caché leur passion à tout le monde&#160;; qu’il n’avait jamais
+        été chez elle publiquement&#160;; qu’il avait eu le plaisir de
+        la consoler de la mort de son mari, et qu’enfin il
+        l’allait épouser dans le temps qu’elle était morte&#160;; mais
+        que ce mariage, qui était un effet de passion, aurait
+        paru un effet de devoir et d’obéissance&#160;; qu’elle avait
+        gagné son père pour se faire commander de l’épouser,
+        afin qu’il n’y eût pas un trop grand changement dans
+        sa conduite, qui avait été si éloignée de se marier.
+      </p>
+      <p>Tant qu’Estouteville m’a parlé, me dit Sancerre,
+        j’ai ajouté foi à ses paroles, parce que j’y ai trouvé de
+        la vraisemblance, et que le temps où il m’a dit qu’il
+        avait commencé à aimer madame de Tournon est
+        précisément celui où elle m’a paru changée&#160;; mais un
+        moment après je l’ai cru un menteur, ou du moins
+        un visionnaire&#160;: j’ai été prêt à le lui dire, j’ai passé
+        ensuite à vouloir m’éclaircir&#160;; je l’ai questionné, je lui
+        ai fait paraître des doutes&#160;; enfin j’ai tant fait pour
+        m’assurer de mon malheur, qu’il m’a demandé si je
+        connaissais l’écriture de madame de Tournon&#160;: il a mis&#32;sur mon lit quatre de ses lettres, et son
+        portrait.
+        Mon frère est entré dans ce moment&#160;: Estouteville avait
+        le visage si plein de larmes, qu’il a été contraint de
+        sortir pour ne se pas laisser voir&#160;; il m’a dit qu’il
+        reviendrait
+        ce soir requérir ce qu’il me laissait&#160;; et moi je
+        chassai mon frère, sur le prétexte de me trouver mal,
+        par l’impatience de voir ces lettres que l’on m’avait
+        laissées, et espérant d’y trouver quelque chose qui ne
+        me persuaderait pas tout ce qu’Estouteville venait de
+        me dire. Mais hélas&#160;! que n’y ai-je point trouvé&#160;! Quelle
+        tendresse&#160;! quels serments&#160;! quelles assurances de l’épouser&#160;!
+        quelles lettres&#160;! Jamais elle ne m’en a écrit de
+        semblables. Ainsi, ajouta-t-il, j’éprouve à-la-fois la
+        douleur de la mort et celle de l’infidélité&#160;: ce sont deux
+        maux que l’on a souvent comparés, mais qui n’ont
+        jamais été sentis en même temps par la même personne.
+        J’avoue, à ma honte, que je sens encore plus
+        sa perte que son changement&#160;; je ne puis la trouver
+        assez coupable pour consentir à sa mort. Si elle
+        vivait, j’aurais le plaisir de lui faire des reproches,
+        et de me venger d’elle, en lui faisant connaître son
+        injustice&#160;: mais je ne la verrai plus, reprenait-il, je
+        ne la verrai plus&#160;: ce mal est le plus grand de tous
+        les maux&#160;: je souhaiterais de lui rendre la vie aux
+        dépens de la mienne. Quel souhait&#160;! si elle revenait,
+        elle vivrait pour Estouteville. Que j’étais heureux hier,
+        s’écriait-il, que j’étais heureux&#160;! j’étais l’homme du
+        monde le plus affligé&#160;; mais mon affliction était
+        raisonnable,
+        et je trouvais quelque douceur à penser que
+        je ne devais jamais me consoler&#160;: aujourd’hui tous mes
+        sentiments sont injustes&#160;; je paie à une passion feinte&#32;qu’elle a eue pour moi, le même tribut de
+        douleur
+        que je croyais devoir à une passion véritable. Je ne
+        puis ni haïr, ni aimer sa mémoire&#160;: je ne puis me
+        consoler ni m’affliger. Du moins, me dit-il, en se retournant
+        tout d’un coup vers moi, faites, je vous en conjure,
+        que je ne voie jamais Estouteville&#160;: son nom seul
+        me fait horreur. Je sais bien que je n’ai nul sujet de
+        m’en plaindre&#160;; c’est ma faute de lui avoir caché que
+        j’aimais madame de Tournon&#160;: s’il l’eût su il ne s’y serait
+        peut-être pas attaché, elle ne m’aurait pas été
+        infidèle&#160;:
+        il est venu me chercher pour me confier sa
+        douleur&#160;; il me fait pitié. Hé&#160;! c’est avec raison, s’écriait-il&#160;:
+        il aimait madame de Tournon&#160;; il en était aimé, et il
+        ne la verra jamais&#160;: je sens bien néanmoins que je ne
+        saurais m’empêcher de le haïr. Et encore une fois,
+        je vous conjure de faire en sorte que je ne le voie point.
+      </p>
+      <p>Sancerre se remit ensuite à pleurer, à regretter
+        madame de Tournon, à lui parler, et à lui dire les
+        choses du monde les plus tendres&#160;: il repassa ensuite
+        à la haine, aux plaintes, aux reproches et aux imprécations
+        contre elle. Comme je le vis dans un état si
+        violent, je connus bien qu’il me fallait quelque secours
+        pour m’aider à calmer son esprit&#160;: j’envoyai querir son
+        frère, que je venais de quitter chez le roi&#160;: j’allai lui
+        parler dans l’antichambre, avant qu’il entrât, et je lui
+        contai l’état où était Sancerre. Nous donnâmes des
+        ordres pour empêcher qu’il ne vît Estouteville, et nous
+        employâmes une partie de la nuit à tâcher de le rendre
+        capable de raison. Ce matin, je l’ai encore trouvé plus
+        affligé&#160;: son frère est demeuré auprès de lui, et je suis
+        revenu auprès de vous.&#32;
+      </p>
+      <p>L’on ne peut être plus surprise que je le suis, dit
+        alors madame de Clèves, et je croyais madame de Tournon
+        incapable d’amour et de tromperie. L’adresse et la
+        dissimulation, reprit M. de Clèves, ne peuvent aller
+        plus loin qu’elle les a portées. Remarquez que, quand
+        Sancerre crut qu’elle était changée pour lui, elle l’était
+        véritablement, et qu’elle commençait à aimer Estouteville.
+        Elle disait à ce dernier qu’il la consolait de la
+        mort de son mari, et que c’était lui qui était cause
+        qu’elle quittait cette grande retraite&#160;; et il paraissait
+        à Sancerre que c’était parce que nous avions résolu
+        qu’elle ne témoignerait plus d’être si affligée. Elle faisait
+        valoir à Estouteville de cacher leur intelligence,
+        et de paraître obligée à l’épouser par le commandement
+        de son père, comme un effet du soin qu’elle avait de
+        sa réputation&#160;; et c’était pour abandonner Sancerre,
+        sans qu’il eût sujet de s’en plaindre. Il faut que je
+        m’en retourne, continua M. de Clèves, pour voir ce
+        malheureux, et je crois qu’il faut que vous reveniez
+        aussi à Paris. Il est temps que vous voyiez le monde,
+        et que vous receviez ce nombre infini de visites dont
+        aussi-bien vous ne sauriez vous dispenser.
+      </p>
+      <p>Madame de Clèves consentit à son retour, et elle
+        revint le lendemain. Elle se trouva plus tranquille
+        sur M. de Nemours qu’elle n’avait été&#160;: tout ce que
+        lui avait dit madame de Chartres en mourant, et la
+        douleur de sa mort, avaient fait une suspension à ses
+        sentiments, qui lui faisait croire qu’ils étaient entièrement
+        effacés.
+      </p>
+      <p>Dès le même soir qu’elle fut arrivée, madame la
+        dauphine la vint voir, et, après lui avoir témoigné la&#32;part qu’elle avait prise à son affliction, elle lui
+        dit
+        que, pour la détourner de ces tristes pensées, elle voulait
+        l’instruire de tout ce qui s’était passé à la cour en
+        son absence&#160;: elle lui conta ensuite plusieurs choses
+        particulières. Mais ce que j’ai le plus d’envie de vous
+        apprendre, ajouta-t-elle, c’est qu’il est certain que
+        M. de Nemours est passionnément amoureux, et que
+        ses amis les plus intimes, non-seulement ne sont point
+        dans sa confidence, mais qu’ils ne peuvent deviner qui
+        est la personne qu’il aime. Cependant cet amour est
+        assez fort pour lui faire négliger ou abandonner, pour
+        mieux dire, les espérances d’une couronne.</p>
+      <p>
+        <center>
+          <img src="images/Partie2_image3.png" alt="Désespoir de Sancerre" width="500" height="300">
+        </center>
+      </p>
+      <p>Madame la dauphine conta ensuite tout ce qui s’était
+        passé sur l’Angleterre. J’ai appris ce que je viens de
+        vous dire, continua-t-elle, de M. d’Anville&#160;; et il m’a
+        dit ce matin que le roi envoya querir hier au soir
+        M. de Nemours, sur des lettres de Lignerolles, qui
+        demande à revenir, et qui écrit au roi qu’il ne peut
+        plus soutenir auprès de la reine d’Angleterre les retardements
+        de M. de Nemours&#160;; qu’elle commence à s’en
+        offenser, et qu’encore qu’elle n’eût point donné de parole positive, elle en avait assez dit pour faire hasarder
+        un voyage. Le roi lut cette lettre à M. de Nemours,
+        qui, au lieu de parler sérieusement, comme il
+        avait fait dans les commencements, ne fit que rire,
+        que badiner, et se moquer des espérances de Lignerolles.
+        Il dit que toute l’Europe condamnerait son imprudence,
+        s’il hasardait d’aller en Angleterre comme un prétendu
+        mari de la reine, sans être assuré du succès. Il me
+        semble aussi, ajouta-t-il, que je prendrais mal mon
+        temps, de faire ce voyage présentement que le roi&#32;d’Espagne fait de si grandes instances pour épouser
+        cette reine. Ce ne serait peut-être pas un rival bien
+        redoutable dans une galanterie&#160;; mais je pense que
+        dans un mariage votre majesté ne me conseillerait pas
+        de lui disputer quelque chose. Je vous le conseillerais
+        en cette occasion, reprit le roi&#160;: mais vous n’aurez rien
+        à lui disputer&#160;; je sais qu’il a d’autres pensées&#160;; et, quand
+        il n’en aurait pas, la reine Marie s’est trop mal trouvée
+        du joug de l’Espagne, pour croire que sa sœur le veuille
+        reprendre, et qu’elle se laisse éblouir à l’éclat de tant
+        de couronnes jointes ensemble. Si elle ne s’en laisse pas
+        éblouir, repartit M. de Nemours, il y a apparence
+        qu’elle voudra se rendre heureuse par l’amour. Elle a
+        aimé le milord Courtenay, il y a déja quelques années&#160;:
+        il était aussi aimé de la reine Marie, qui l’aurait
+        épousé
+        du consentement de toute l’Angleterre, sans qu’elle
+        connut que la jeunesse et la beauté de sa sœur Élisabeth
+        le touchaient davantage que l’espérance de régner.
+        Votre majesté sait que les violentes jalousies qu’elle en
+        eut la portèrent à les mettre l’un et l’autre en prison,
+        à exiler ensuite le milord Courtenay, et la déterminèrent
+        enfin à épouser le roi d’Espagne. Je crois qu’Élisabeth,
+        qui est présentement sur le trône, rappellera
+        bientôt ce milord, et qu’elle choisira un homme qu’elle
+        a aimé, qui est fort aimable, qui a tant souffert pour
+        elle, plutôt qu’un autre qu’elle n’a jamais vu. Je serais
+        de votre avis, repartit le roi, si Courtenay vivait encore&#160;;
+        mais j’ai su, depuis quelques jours, qu’il est mort à
+        Padoue, où il était relégué. Je vois bien, ajouta-t-il
+        en quittant M. de Nemours, qu’il faudrait faire votre
+        mariage comme on ferait celui de M. le dauphin, et&#32;envoyer épouser la reine d’Angleterre par des
+        ambassadeurs.
+      </p>
+      <p>M. d’Anville et M. le vidame, qui étaient chez le roi
+        avec M. de Nemours, sont persuadés que c’est cette
+        même passion dont il est occupé qui le détourne d’un
+        si grand dessein. Le vidame, qui le voit de plus près
+        que personne, a dit à madame de Martigues que ce
+        prince est tellement changé qu’il ne le reconnaît plus&#160;;
+        et ce qui l’étonne davantage, c’est qu’il ne lui voit
+        aucun commerce ni aucunes heures particulières où il
+        se dérobe, en sorte qu’il croit qu’il n’a point d’intelligence
+        avec la personne qu’il aime&#160;; et c’est ce qui
+        fait méconnaître M. de Nemours, de lui voir aimer
+        une femme qui ne répond point à son amour.
+      </p>
+      <p>Quel poison pour madame de Clèves que le discours
+        de madame la dauphine&#160;! Le moyen de ne se
+        pas reconnaître pour cette personne dont on ne savait
+        point le nom&#160;! et le moyen de n’être pas pénétrée de
+        reconnaissance et de tendresse, en apprenant, par une
+        voie qui ne lui pouvait être suspecte, que ce prince,
+        qui touchait déja son cœur, cachait sa passion à tout
+        le monde, et négligeait pour l’amour d’elle les espérances
+        d’une couronne&#160;! Aussi ne peut-on représenter
+        ce qu’elle sentit, et le trouble qui s’éleva dans son
+        ame. Si madame la dauphine l’eût regardée avec attention,
+        elle eût aisément remarqué que les choses qu’elle
+        venait de dire ne lui étaient pas indifférentes&#160;; mais,
+        comme elle n’avait aucun soupçon de la vérité, elle
+        continua de parler, sans y faire de réflexion. M. d’Anville,
+        ajouta-t-elle, qui, comme je vous viens de dire,
+        m’a appris tout ce détail, m’en croit mieux instruite&#32;que lui&#160;; et il a une si grande opinion de mes
+        charmes,
+        qu’il est persuadé que je suis la seule personne qui puisse
+        faire de si grands changements en M. de Nemours.
+      </p>
+      <p>Ces dernières paroles de madame la dauphine donnèrent une autre sorte de trouble à madame de Clèves,
+        que celui qu’elle avait eu quelques moments auparavant.
+        Je serais aisément de l’avis de M. d’Anville, répondit-elle&#160;;
+        et il y a beaucoup d’apparence, madame, qu’il ne faut
+        pas moins qu’une princesse telle que vous pour faire
+        mépriser la reine d’Angleterre. Je vous l’avouerais, si
+        je le savais, repartit madame la dauphine, et je le saurais
+        s’il était véritable. Ces sortes de passions n’échappent
+        point à la vue de celles qui les causent&#160;: elles s’en aperçoivent
+        les premières. M. de Nemours ne m’a jamais
+        témoigné que de légères complaisances&#160;; mais il y a
+        néanmoins une si grande différence de la manière dont
+        il a vécu avec moi, à celle dont il y vit présentement,
+        que je puis vous répondre que je ne suis pas la cause
+        de l’indifférence qu’il a pour la couronne d’Angleterre.
+      </p>
+      <p>Je m’oublie avec vous, ajouta madame la dauphine,
+        et je ne me souviens pas qu’il faut que j’aille voir
+        Madame. Vous savez que la paix est quasi conclue&#160;;
+        mais vous ne savez pas que le roi d’Espagne n’a voulu
+        passer aucun article qu’à condition d’épouser cette
+        princesse, au lieu du prince dom Carlos, son fils. Le
+        roi a eu beaucoup de peine à s’y résoudre&#160;: enfin il y
+        a consenti, et il est allé tantôt annoncer cette nouvelle
+        à Madame. Je crois qu’elle sera inconsolable&#160;: ce n’est
+        pas une chose qui puisse plaire d’épouser un homme
+        de l’âge et de l’humeur du roi d’Espagne, sur-tout à
+        elle, qui a toute la joie que donne la première jeunesse&#32;jointe à la beauté, et qui s’attendait d’épouser un
+        jeune
+        prince pour qui elle a de l’inclination sans l’avoir vu.
+        Je ne sais si le roi en elle trouvera toute l’obéissance
+        qu’il desire&#160;: il m’a chargée de la voir, parce qu’il sait
+        qu’elle m’aime, et qu’il croit que j’aurai quelque pouvoir
+        sur son esprit. Je ferai ensuite une autre visite
+        bien différente&#160;; j’irai me réjouir avec Madame, sœur
+        du roi. Tout est arrêté pour son mariage avec M. de
+        Savoie, et il sera ici dans peu de temps. Jamais personne
+        de l’âge de cette princesse n’a eu une joie si entière
+        de se marier. La cour va être plus belle et plus
+        grosse qu’on ne l’a jamais vue&#160;: et, malgré votre affliction,
+        il faut que vous veniez nous aider à faire voir
+        aux étrangers que nous n’avons pas de médiocres
+        beautés.
+      </p>
+      <p>Après ces paroles, madame la dauphine quitta madame
+        de Clèves, et, le lendemain le mariage de Madame
+        fut su de tout le monde. Les jours suivants, le roi et les
+        reines allèrent voir madame de Clèves. M. de Nemours,
+        qui avait attendu son retour avec une extrême impatience,
+        et qui souhaitait ardemment de lui pouvoir
+        parler sans témoins, attendit pour aller chez elle
+        l’heure que tout le monde en sortirait, et qu’apparemment
+        il ne reviendrait plus personne. Il réussit
+        dans son dessein, et il arriva comme les dernières
+        visites en sortaient.
+      </p>
+      <p>Cette princesse était sur son lit&#160;; il faisait chaud, et
+        la vue de M. de Nemours acheva de lui donner une
+        rougeur qui ne diminuait pas sa beauté. Il s’assit vis-à-vis
+        d’elle, avec cette crainte et cette timidité que
+        donnent les véritables passions. Il demeura quelque&#32;temps sans pouvoir parler&#160;: madame de Clèves
+        n’était
+        pas moins interdite, de sorte qu’ils gardèrent assez long-temps
+        le silence. Enfin, M. de Nemours prit la parole,
+        et lui fit des compliments sur son affliction. Madame
+        de Clèves, étant bien aise de continuer la conversation
+        sur ce sujet, parla assez long-temps de la perte qu’elle
+        avait faite, et enfin elle dit que, quand le temps aurait
+        diminué la violence de sa douleur, il lui en demeurerait
+        toujours une si forte impression que son humeur
+        en serait changée. Les grandes afflictions et les passions
+        violentes, repartit M. de Nemours, font de grands
+        changements dans l’esprit&#160;; et, pour moi, je ne me reconnais
+        pas depuis que je suis revenu de Flandres.
+        Beaucoup de gens ont remarqué ce changement, et
+        même madame la dauphine m’en parlait encore hier.
+        Il est vrai, repartit madame de Clèves, qu’elle l’a remarqué,
+        et je crois lui en avoir ouï dire quelque chose.
+        Je ne suis pas fâché, madame, répliqua M. de Nemours, qu’elle s’en soit aperçue&#160;; mais je voudrais qu’elle
+        ne fût
+        pas seule à s’en apercevoir. Il y a des personnes à qui on
+        n’ose donner d’autres marques de la passion qu’on a pour
+        elles, que par les choses qui ne les regardent point&#160;; et,
+        n’osant leur faire paraître qu’on les aime, on voudrait
+        du moins qu’elles vissent que l’on ne veut être aimé de
+        personne. L’on voudrait qu’elles sussent qu’il n’y a point
+        de beauté, dans quelque rang qu’elle pût être, que l’on
+        ne regardât avec indifférence, et qu’il n’y a point de
+        couronne que l’on voulût acheter au prix de ne les voir
+        jamais. Les femmes jugent d’ordinaire de la passion
+        qu’on a pour elles, continua-t-il, par le soin qu’on
+        prend de leur plaire et de les chercher&#160;; mais ce n’est&#32;pas une chose difficile, pour peu qu’elles
+        soient aimables&#160;;
+        ce qui est difficile, c’est de ne s’abandonner
+        pas au plaisir de les suivre, c’est de les éviter, par la
+        peur de laisser paraître au public, et quasi à elles-mêmes,
+        les sentiments que l’on a pour elles. Et ce qui
+        marque encore mieux un véritable attachement, c’est
+        de devenir entièrement opposé à ce que l’on était, et
+        de n’avoir plus d’ambition, ni de plaisir, après avoir
+        été toute sa vie occupé de l’un et de l’autre.
+      </p>
+      <p>Madame de Clèves entendait aisément la part qu’elle
+        avait à ces paroles. Il lui semblait qu’elle devait y répondre
+        et ne les pas souffrir. Il lui semblait aussi
+        qu’elle ne devait pas les entendre, ni témoigner qu’elle
+        les prît pour elle&#160;: elle croyait devoir parler, et croyait
+        ne devoir rien dire. Le discours de M. de Nemours
+        lui plaisait et l’offensait quasi également&#160;: elle y voyait
+        la confirmation de tout ce que lui avait fait penser madame
+        la dauphine&#160;; elle y trouvait quelque chose de
+        galant et de respectueux, mais aussi quelque chose de
+        hardi et de trop intelligible. L’inclination qu’elle avait
+        pour ce prince lui donnait un trouble dont elle n’était
+        pas maîtresse. Les paroles les plus obscures d’un homme
+        qui plaît donnent plus d’agitation que des déclarations
+        ouvertes d’un homme qui ne plaît pas. Elle
+        demeurait donc sans répondre, et M. de Nemours se
+        fût aperçu de son silence, dont il n’aurait peut-être
+        pas tiré de mauvais présage, si l’arrivée de M. de
+        Clèves n’eût fini la conversation et sa visite.
+      </p>
+      <p>Ce prince venait conter à sa femme des nouvelles
+        de Sancerre&#160;; mais elle n’avait pas une grande curiosité
+        pour la suite de cette aventure. Elle était si occupée&#32;de ce qui se venait de passer, qu’à peine
+        pouvait-elle
+        cacher la distraction de son esprit. Quand elle fut en
+        liberté de rêver, elle connut bien qu’elle s’était trompée,
+        lorsqu’elle avait cru n’avoir plus que de l’indifférence
+        pour M. de Nemours. Ce qu’il lui avait dit avait fait toute
+        l’impression qu’il pouvait souhaiter, et l’avait entièrement
+        persuadée de sa passion. Les actions de ce prince
+        s’accordaient trop bien avec ses paroles, pour laisser
+        quelque doute à cette princesse. Elle ne se flatta plus
+        de l’espérance de ne le pas aimer&#160;; elle songea seulement
+        à ne lui en donner jamais aucune marque. C’était
+        une entreprise difficile, dont elle connaissait déja les
+        peines&#160;: elle savait que le seul moyen d’y réussir était
+        d’éviter la présence de ce prince&#160;; et, comme son deuil
+        lui donnait lieu d’être plus retirée que de coutume, elle
+        se servit de ce prétexte pour n’aller plus dans les lieux
+        où il la pouvait voir. Elle était dans une tristesse profonde&#160;:
+        la mort de sa mère en paraissait la cause, et
+        l’on n’en cherchait point d’autre.
+      </p>
+      <p>M. de Nemours était désespéré de ne la voir presque
+        plus&#160;; et, sachant qu’il ne la trouverait dans aucune assemblée
+        et dans aucun des divertissements où était
+        toute la cour, il ne pouvait se résoudre d’y paraître&#160;;
+        il feignit une passion grande pour la chasse, et il en
+        faisait des parties les mêmes jours qu’il y avait des
+        assemblées chez les reines. Une légère maladie lui servit
+        long-temps de prétexte pour demeurer chez lui, et pour
+        éviter d’aller dans tous les lieux où il savait bien que
+        madame de Clèves ne serait pas.
+      </p>
+      <p>M. de Clèves fut malade à-peu-près dans le même
+        temps. Madame de Clèves ne sortit point de sa chambre&#32;pendant son mal&#160;; mais, quand il se porta mieux,
+        qu’il
+        vit du monde, et entre autres M. de Nemours, qui, sur
+        le prétexte d’être encore faible, y passait la plus grande
+        partie du jour, elle trouva qu’elle n’y pouvait plus
+        demeurer&#160;:
+        elle n’eut pas néanmoins la force d’en sortir
+        les premières fois qu’il y vint&#160;; il y avait trop long-temps
+        qu’elle ne l’avait vu, pour se résoudre à ne le voir pas.
+        Ce prince trouva le moyen de lui faire entendre, par
+        des discours qui ne semblaient que généraux, mais
+        qu’elle entendait néanmoins, parce qu’ils avaient du
+        rapport à ce qu’il lui avait dit chez elle, qu’il allait à
+        la chasse pour rêver, et qu’il n’allait point aux assemblées
+        parce qu’elle n’y était pas.
+      </p>
+      <p>Elle exécuta enfin la résolution qu’elle avait prise de
+        sortir de chez son mari lorsqu’il y serait&#160;; ce fut toutefois
+        en se faisant une extrême violence. Ce prince vit
+        bien qu’elle le fuyait, et en fut sensiblement touché.
+      </p>
+      <p>M. de Clèves ne prit pas garde d’abord à la conduite
+        de sa femme&#160;; mais enfin il s’aperçut qu’elle ne
+        voulait pas être dans sa chambre lorsqu’il y avait du
+        monde. Il lui en parla, et elle lui répondit qu’elle ne
+        croyait pas que la bienséance voulût qu’elle fût tous
+        les soirs avec ce qu’il y avait de plus jeune à la cour&#160;;
+        qu’elle le suppliait de trouver bon qu’elle fît une vie
+        plus retirée qu’elle n’avait accoutumé&#160;; que la vertu et
+        la présence de sa mère autorisaient beaucoup de choses
+        qu’une femme de son âge ne pouvait soutenir.
+      </p>
+      <p>M. de Clèves, qui avait naturellement beaucoup de
+        douceur et de complaisance pour sa femme, n’en eut
+        pas en cette occasion, et il lui dit qu’il ne voulait pas
+        absolument qu’elle changeât de conduite. Elle fut prête&#32;de lui dire que le bruit était dans le monde que M.
+        de
+        Nemours était amoureux d’elle&#160;; mais elle n’eut pas la
+        force de le nommer. Elle sentit aussi de la honte de se
+        vouloir servir d’une fausse raison, et de déguiser la vérité
+        à un homme qui avait si bonne opinion d’elle.
+      </p>
+      <p>Quelques jours après, le roi était chez la reine à
+        l’heure du cercle&#160;; l’on parla des horoscopes et des prédictions.
+        Les opinions étaient partagées sur la croyance
+        que l’on y devait donner. La reine y ajoutait beaucoup
+        de foi&#160;: elle soutint qu’après tant de choses qui avaient
+        été prédites, et que l’on avait vu arriver, on ne pouvait
+        douter qu’il n’y eût quelque certitude dans cette
+        science. D’autres soutenaient que, parmi ce nombre
+        infini de prédictions, le peu qui se trouvaient véritables
+        faisait bien voir que ce n’était qu’un effet du
+        hasard.
+      </p>
+      <p>J’ai eu autrefois beaucoup de curiosité pour l’avenir,
+        dit le roi&#160;; mais on m’a dit tant de choses fausses
+        et si peu vraisemblables, que je suis demeuré convaincu
+        que l’on ne peut rien savoir de véritable. Il y a
+        quelques années qu’il vint ici un homme d’une grande
+        réputation dans l’astrologie. Tout le monde l’alla voir&#160;:
+        j’y allai comme les autres, mais sans lui dire qui j’étais,
+        et je menai M. de Guise et Descars&#160;; je les fis passer
+        les premiers. L’astrologue néanmoins s’adressa d’abord
+        à moi, comme s’il m’eût jugé le maître des autres&#160;:
+        peut-être qu’il me connaissait&#160;; cependant il me dit une
+        chose qui ne me convenait pas s’il m’eût connu. Il me
+        prédit que je serais tué en duel. Il dit ensuite à M. de
+        Guise qu’il serait tué par derrière, et à Descars qu’il
+        aurait la tête cassée d’un coup de pied de cheval. M. de&#32;Guise s’offensa quasi de cette prédiction, comme si
+        on
+        l’eût accusé de devoir fuir. Descars ne fut guère satisfait
+        de trouver qu’il devait finir par un accident si malheureux. Enfin, nous sortîmes tous très-mal contents
+        de l’astrologue. Je ne sais ce qui arrivera à M. de Guise
+        et à Descars, mais il n’y a guère d’apparence que je
+        sois tué en duel. Nous venons de faire la paix, le roi
+        d’Espagne et moi&#160;; et, quand nous ne l’aurions pas faite,
+        je doute que nous nous battions, et que je le fisse
+        appeler, comme le roi mon père fit appeler Charles-Quint.
+      </p>
+      <p>Après le malheur que le roi conta qu’on lui avait
+        prédit, ceux qui avaient soutenu l’astrologie en abandonnèrent
+        le parti, et tombèrent d’accord qu’il n’y fallait
+        donner aucune croyance. Pour moi, dit tout haut
+        M. de Nemours, je suis l’homme du monde qui doit
+        le moins y en avoir&#160;; et, se tournant vers madame de
+        Clèves, auprès de qui il était&#160;: On m’a prédit, lui dit-il
+        tout bas, que je serais heureux par les bontés de la
+        personne du monde pour qui j’aurais la plus violente
+        et la plus respectueuse passion. Vous pouvez juger,
+        madame, si je dois croire aux prédictions.</p>
+      <p>
+        <center>
+          <img src="images/Partie2_image4.png" alt="Prédictions" width="500" height="300">
+        </center>
+      </p>
+      <p>Madame la dauphine, qui crut, par ce que M. de
+        Nemours avait dit tout haut, que ce qu’il disait tout
+        bas était quelque fausse prédiction qu’on lui avait faite,
+        demanda à ce prince ce qu’il disait à madame de Clèves.
+        S’il eût eu moins de présence d’esprit, il eût été surpris
+        de cette demande&#160;; mais prenant la parole sans
+        hésiter&#160;: Je lui disais, madame, répondit-il, que l’on
+        m’a prédit que je serais élevé à une si haute fortune
+        que je n’oserais même y prétendre. Si l’on ne vous a&#32;fait que cette prédiction, repartit madame la dauphine
+        en souriant, et pensant à l’affaire d’Angleterre, je ne
+        vous conseille pas de décrier l’astrologie, et vous pourriez
+        trouver des raisons pour la soutenir. Madame de
+        Clèves comprit bien ce que voulait dire madame la
+        dauphine&#160;; mais elle entendait bien aussi que la fortune
+        dont M. de Nemours voulait parler n’était pas
+        d’être roi d’Angleterre.
+      </p>
+      <p>Comme il y avait déjà assez long-temps de la mort
+        de sa mère, il fallait qu’elle commençât à paraître
+        dans le monde, et à faire sa cour comme elle avait
+        accoutumé&#160;: elle voyait M. de Nemours chez madame
+        la dauphine&#160;; elle le voyait chez M. de Clèves, où il
+        venait souvent avec d’autres personnes de qualité de
+        son âge, afin de ne se pas faire remarquer&#160;; mais elle
+        ne le voyait plus qu’avec un trouble dont il s’apercevait
+        aisément.
+      </p>
+      <p>Quelque application qu’elle eût à éviter ses regards,
+        et à lui parler moins qu’à un autre, il lui échappait de
+        certaines choses qui partaient d’un premier mouvement,
+        qui faisaient juger à ce prince, qu’il ne lui était pas
+        indifférent. Un homme moins pénétrant que lui ne
+        s’en fût peut-être pas aperçu&#160;; mais il avait déja été
+        aimé tant de fois qu’il était difficile qu’il ne connût
+        pas quand on l’aimait. Il voyait bien que le chevalier
+        de Guise était son rival, et ce prince connaissait que
+        M. de Nemours était le sien. Il était le seul homme de
+        la cour qui eût démêlé cette vérité&#160;; son intérêt l’avait
+        rendu plus clairvoyant que les autres&#160;; la connaissance
+        qu’ils avaient de leurs sentiments leur donnait une
+        aigreur qui paraissait en toutes choses, sans éclater&#32;néanmoins par aucun démêlé, mais ils étaient opposés
+        en tout. Ils étaient toujours de différent parti dans les
+        courses de bagues, dans les combats à la barrière, et
+        dans tous les divertissements où le roi s’occupait&#160;; et
+        leur émulation était si grande, qu’elle ne se pouvait
+        cacher.
+      </p>
+      <p>L’affaire d’Angleterre revenait souvent dans l’esprit
+        de madame de Clèves&#160;: il lui semblait que M. de Nemours
+        ne résisterait point aux conseils du roi et aux
+        instances de Lignerolles. Elle voyait avec peine que
+        ce dernier n’était point encore de retour, et elle l’attendait
+        avec impatience. Si elle eût suivi ses mouvements,
+        elle se serait informée avec soin de l’état de
+        cette affaire&#160;; mais le même sentiment qui lui donnait
+        de la curiosité, l’obligeait à la cacher&#160;; et elle s’enquérait
+        seulement de la beauté, de l’esprit, et de l’humeur
+        de la reine Élisabeth. On apporta un de ses portraits
+        chez le roi, qu’elle trouva plus beau qu’elle n’avait envie
+        de le trouver&#160;; et elle ne put s’empêcher de dire qu’il
+        était flatté. Je ne le crois pas, reprit madame la dauphine,
+        qui était présente&#160;; cette princesse a la réputation
+        d’être belle, et d’avoir un esprit fort au-dessus du commun, et je sais bien qu’on me l’a proposée toute
+        ma vie pour exemple. Elle doit être aimable, si elle
+        ressemble à Anne de Boulen sa mère. Jamais femme
+        n’a eu tant de charmes et tant d’agrément dans sa personne
+        et dans son humeur. J’ai ouï dire que son visage
+        avait quelque chose de vif et de singulier, et qu’elle
+        n’avait aucune ressemblance avec les autres beautés
+        anglaises. Il me semble aussi, reprit madame de Clèves,
+        que l’on dit qu’elle était née en France. Ceux qui l’ont&#32;cru se sont trompés, répondit madame la dauphine,
+        et je vais vous conter son histoire en peu de mots&#160;:
+      </p>
+      <p>Elle était d’une bonne maison d’Angleterre. Henri&#160;VIII
+        avait été amoureux de sa sœur et de sa mère, et l’on a
+        même soupçonné qu’elle était sa fille. Elle vint ici avec
+        la sœur de Henri&#160;VII, qui épousa le roi Louis&#160;XII.
+        Cette princesse, qui était jeune et galante, eut beaucoup
+        de peine à quitter la cour de France après la
+        mort de son mari&#160;; mais Anne de Boulen, qui avait les
+        mêmes inclinations que sa maîtresse, ne se put résoudre
+        à en partir. Le feu roi en était amoureux, et
+        elle demeura fille d’honneur de la reine Claude. Cette
+        reine mourut, et madame Marguerite, sœur du roi,
+        duchesse d’Alençon, et depuis reine de Navarre, dont
+        vous avez vu les contes, la prit auprès d’elle, et elle
+        prit auprès de cette princesse les teintures de la religion
+        nouvelle. Elle retourna ensuite en Angleterre et
+        y charma tout le monde&#160;; elle avait les manières de
+        France qui plaisent à toutes les nations&#160;; elle chantait
+        bien, elle dansait admirablement&#160;: on la mit fille de la
+        reine Catherine d’Arragon, et le roi Henri&#160;VIII en
+        devint éperdument amoureux.
+      </p>
+      <p>Le cardinal de Volsey, son favori et son premier
+        ministre, avait prétendu au pontificat&#160;; et, mal satisfait
+        de l’empereur, qui ne l’avait pas soutenu dans cette
+        prétention, il résolut de s’en venger et d’unir le roi
+        son maître à la France. Il mit dans l’esprit de Henri&#160;VIII
+        que son mariage avec la tante de l’Empereur était nul,
+        et lui proposa d’épouser la duchesse d’Alençon, dont
+        le mari venait de mourir. Anne de Boulen, qui avait
+        de l’ambition, regarda ce divorce comme un chemin&#32;qui la pouvait conduire au trône. Elle commença à
+        donner au roi d’Angleterre des impressions de la religion
+        de Luther, et engagea le feu roi à favoriser à
+        Rome le divorce de Henri, sur l’espérance du mariage
+        de madame d’Alençon. Le cardinal de Volsey se fit
+        députer en France, sur d’autres prétextes, pour traiter
+        cette affaire&#160;; mais son maître ne put se résoudre à
+        souffrir qu’on en fît seulement la proposition, et il
+        lui envoya un ordre à Calais de ne point parler de ce
+        mariage.
+      </p>
+      <p>Au retour de France, le cardinal de Volsey fut reçu
+        avec des honneurs pareils à ceux que l’on rendait au
+        roi même&#160;: jamais favori n’a porté l’orgueil et la vanité
+        à un si haut point. Il ménagea une entrevue entre les
+        deux rois, qui se fit à Boulogne. François I<sup><small><small>er</small></small></sup> donna
+        la main à Henri VIII, qui ne la voulait point recevoir&#160;:
+        ils se traitèrent tour-à-tour avec une magnificence
+        extraordinaire, et se donnèrent des habits pareils à
+        ceux qu’ils avaient fait faire pour eux-mêmes. Je me
+        souviens d’avoir ouï dire que ceux que le feu roi envoya
+        au roi d’Angleterre étaient de satin cramoisi, chamarré
+        en triangle, avec des perles et des diamants&#160;; et
+        la robe de velours blanc brodé d’or. Après avoir été
+        quelques jours à Boulogne, ils allèrent encore à Calais.
+        Anne de Boulen était logée chez Henri VIII, avec le
+        train d’une reine&#160;; et François I<sup><small><small>er</small></small></sup> lui fit les mêmes présents
+        et lui rendit les mêmes honneurs que si elle l’eût
+        été. Enfin, après une passion de neuf années, Henri
+        l’épousa sans attendre la dissolution de son premier
+        mariage, qu’il demandait à Rome depuis long-temps.
+        Le pape prononça les fulminations contre lui avec &#32;précipitation&#160;; et Henri en fut tellement irrité,
+        qu’il se
+        déclara chef de la religion, et entraîna toute l’Angleterre
+        dans le malheureux changement où vous la voyez.
+      </p>
+      <p>Anne de Boulen ne jouit pas long-temps de sa grandeur&#160;;
+        car, lorsqu’elle la croyait plus assurée par la mort
+        de Catherine d’Arragon, un jour qu’elle assistait avec
+        toute la cour à des courses de bagues que faisait le
+        vicomte de Rochefort, son frère, le roi en fut frappé
+        d’une telle jalousie, qu’il quitta brusquement le spectacle,
+        s’en vint à Londres, et laissa ordre d’arrêter la
+        reine, le vicomte de Rochefort et plusieurs autres,
+        qu’il croyait amants ou confidents de cette princesse.
+        Quoique cette jalousie parût née dans ce moment, il y
+        avait déjà quelque temps qu’elle lui avait été inspirée
+        par la vicomtesse de Rochefort, qui, ne pouvant souffrir
+        la liaison étroite de son mari avec la reine, la fit
+        regarder au roi comme une amitié criminelle&#160;; en sorte
+        que ce prince, qui d’ailleurs était amoureux de Jeanne
+        Seimer, ne songea qu’à se défaire d’Anne de Boulen.
+        En moins de trois semaines, il fit faire le procès à cette
+        reine et à son frère, leur fit couper la tête, et épousa
+        Jeanne Seimer. Il eut ensuite plusieurs femmes, qu’il
+        répudia, ou qu’il fit mourir, et entre autres Catherine
+        Havart, dont la comtesse de Rochefort était confidente,
+        et qui eut la tête coupée avec elle. Elle fut ainsi punie
+        des crimes qu’elle avait supposés à Anne de Boulen, et Henri VIII mourut étant devenu d’une grosseur
+        prodigieuse.
+      </p>
+      <p>Toutes les dames qui étaient présentes au récit de
+        madame la dauphine la remercièrent de les avoir si
+        bien instruites de la cour d’Angleterre, et entre autres&#32;madame de Clèves, qui ne put s’empêcher de lui
+        faire encore plusieurs questions sur la reine Élisabeth.
+      </p>
+      <p>La reine dauphine faisait faire des portraits en petit
+        de toutes les belles personnes de la cour, pour les envoyer
+        à la reine sa mère. Le jour qu’on achevait celui
+        de madame de Clèves, madame la dauphine vint passer
+        l’après-dînée chez elle. M. de Nemours ne manqua pas
+        de s’y trouver&#160;: il ne laissait échapper aucune occasion
+        de voir madame de Clèves, sans laisser paraître néanmoins
+        qu’il les cherchât. Elle était si belle, ce jour-là,
+        qu’il en serait devenu amoureux, quand il ne l’aurait
+        pas été&#160;: il n’osait pourtant avoir les yeux attachés sur
+        elle pendant qu’on la peignait, et il craignait de laisser
+        trop voir le plaisir qu’il avait à la regarder.
+      </p>
+      <p>Madame la dauphine demanda à M. de Clèves un
+        petit portrait qu’il avait de sa femme, pour le voir
+        auprès de celui que l’on achevait. Tout le monde dit
+        son sentiment de l’un et de l’autre, et madame de
+        Clèves ordonna au peintre de raccommoder quelque
+        chose à la coiffure de celui que l’on venait d’apporter.
+        Le peintre, pour lui obéir, ôta le portrait de la boîte
+        où il était&#160;; et, après y avoir travaillé, il le remit sur
+        la table.
+      </p>
+      <p>Il y avait long-temps que M. de Nemours souhaitait
+        d’avoir le portrait de madame de Clèves. Lorsqu’il vit
+        celui qui était à M. de Clèves, il ne put résister à
+        l’envie de le dérober à un mari qu’il croyait tendrement
+        aimé&#160;; et il pensa que, parmi tant de personnes
+        qui étaient dans ce même lieu, il ne serait pas soupçonné
+        plutôt qu’un autre.
+      </p>
+      <p>Madame la dauphine était assise sur le lit, et parlait&#32;bas à madame de Clèves, qui était debout devant
+        elle.
+        Madame de Clèves aperçut, par un des rideaux qui
+        n’était qu’à demi fermé, M. de Nemours, le dos contre
+        la table qui était au pied du lit&#160;; et elle vit que, sans
+        tourner la tête, il prenait adroitement quelque chose
+        sur cette table. Elle n’eut pas de peine à deviner que
+        c’était son portrait, et elle en fut si troublée que madame
+        la dauphine remarqua qu’elle ne l’écoutait pas
+        et lui demanda tout haut ce qu’elle regardait. M. de
+        Nemours se tourna à ces paroles&#160;; il rencontra les yeux
+        de madame de Clèves qui étaient encore attachés sur
+        lui, et il pensa qu’il n’était pas impossible qu’elle eût
+        vu ce qu’il venait de faire.
+      </p>
+      <p>Madame de Clèves n’était pas peu embarrassée&#160;: la
+        raison voulait qu’elle demandât son portrait&#160;; mais, en
+        le demandant publiquement, c’était apprendre à tout
+        le monde les sentiments que ce prince avait pour elle&#160;;
+        et, en le lui demandant en particulier, c’était quasi l’engager
+        à lui parler de sa passion&#160;; enfin, elle jugea qu’il
+        valait mieux le lui laisser, et elle fut bien aise de lui
+        accorder une faveur qu’elle lui pouvait faire sans qu’il
+        sût même qu’elle la lui faisait. M. de Nemours, qui remarquait son embarras, et qui en devinait quasi la
+        cause, s’approcha d’elle et lui dit tout bas&#160;: Si vous
+        avez vu ce que j’ai osé faire, ayez la bonté, madame,
+        de me laisser croire que vous l’ignorez, je n’ose vous
+        en demander davantage&#160;; et il se retira après ces paroles,
+        et n’attendit point sa réponse.
+      </p>
+      <p>Madame la dauphine sortit pour s’aller promener,
+        suivie de toutes les dames, et M. de Nemours alla se
+        renfermer chez lui, ne pouvant soutenir en public la joie d’avoir un portrait de madame de Clèves. Il sentait
+        tout ce que la passion peut faire sentir de plus agréable&#160;; il aimait la plus aimable personne de la
+        cour&#160;;
+        il s’en faisait aimer malgré elle, et il voyait dans toutes
+        ses actions cette sorte de trouble et d’embarras que
+        cause l’amour dans l’innocence de la première jeunesse.
+      </p>
+      <p>Le soir, on chercha ce portrait avec beaucoup de
+        soin&#160;: comme on trouvait la boîte où il devait être,
+        l’on ne soupçonna point qu’il eût été dérobé, et l’on
+        crut qu’il était tombé par hasard. M. de Clèves était
+        affligé de cette perte&#160;; et, après qu’on eut encore cherché
+        inutilement, il dit à sa femme, mais d’une manière qui
+        faisait voir qu’il ne le pensait pas, qu’elle avait sans
+        doute quelque amant caché à qui elle avait donné ce
+        portrait, ou qui l’avait dérobé, et qu’un autre qu’un
+        amant ne se serait pas contenté de la peinture sans
+        la boîte.
+      </p>
+      <p>Ces paroles, quoique dites en riant, firent une vive
+        impression dans l’esprit de madame de Clèves&#160;: elles
+        lui donnèrent des remords&#160;: elle fit réflexion à la violence
+        de l’inclination qui l’entraînait vers M. de Nemours&#160;;
+        elle trouva qu’elle n’était plus maîtresse de ses
+        paroles et de son visage&#160;; elle pensa que Lignerolles
+        était revenu, qu’elle ne craignait plus l’affaire d’Angleterre,
+        qu’elle n’avait plus de soupçons sur madame
+        la dauphine, qu’enfin il n’y avait plus rien qui la pût
+        défendre, et qu’il n’y avait de sûreté pour elle qu’en
+        s’éloignant. Mais comme elle n’était pas maîtresse de
+        s’éloigner, elle se trouvait dans une grande extrémité
+        et prête à tomber dans ce qui lui paraissait le plus
+        grand des malheurs, qui était de laisser voir à M. de&#32;Nemours l’inclination qu’elle avait pour lui. Elle se
+        souvenait de tout ce que madame de Chartres lui avait
+        dit en mourant, et des conseils qu’elle lui avait donnés
+        de prendre toutes sortes de partis, quelque difficiles
+        qu’ils pussent être, plutôt que de s’embarquer dans
+        une galanterie. Ce que M. de Clèves lui avait dit sur
+        la sincérité, en parlant de madame de Tournon, lui
+        revint dans l’esprit&#160;; il lui sembla qu’elle lui devait
+        avouer l’inclination qu’elle avait pour M. de Nemours.
+        Cette pensée l’occupa long-temps&#160;: ensuite elle fut
+        étonnée de l’avoir eue&#160;; elle y trouva de la folie, et
+        retomba dans l’embarras de ne savoir quel parti
+        prendre.
+      </p>
+      <p>La paix était signée. Madame Élisabeth, après beaucoup
+        de répugnance, s’était résolue à obéir au roi son
+        père. Le duc d’Albe avait été nommé pour venir
+        l’épouser au nom du Roi Catholique, et il devait bientôt
+        arriver. L’on attendait le duc de Savoie, qui venait
+        épouser Madame, sœur du roi, et dont les noces se
+        devaient faire en même temps. Le roi ne songeait qu’à
+        rendre ces noces célèbres par des divertissements où
+        il pût faire paraître l’adresse et la magnificence de sa
+        cour. On proposa tout ce qui se pouvait faire de plus
+        grand pour des ballets et des comédies&#160;; mais le roi
+        trouva ces divertissements trop particuliers, et il en
+        voulut d’un plus grand éclat. Il résolut de faire un
+        tournoi, où les étrangers seraient reçus, et dont le
+        peuple pourrait être spectateur. Tous les princes et les
+        jeunes seigneurs entrèrent avec joie dans le dessein
+        du roi, et sur-tout le duc de Ferrare, M. de Guise et
+        M. de Nemours, qui surpassaient tous les autres dans&#32;ces sortes d’exercices. Le roi les choisit pour être
+        avec
+        lui les quatre tenants du tournoi.
+      </p>
+      <p>L’on fit publier par tout le royaume, qu’en la ville
+        de Paris, le pas était ouvert au quinzième juin, par sa
+        Majesté Très-Chrétienne, et par les princes Alphonse
+        d’Est, duc de Ferrare, François de Lorraine, duc de
+        Guise, et Jacques de Savoie, duc de Nemours, pour
+        être tenu contre tous venants&#160;: à commencer le premier
+        combat à cheval en lice, en double pièce, quatre
+        coups de lance, et un pour les dames&#160;; le deuxième
+        combat à coups d’épée, un à un, ou deux à deux, à
+        la volonté des maîtres du camp&#160;; le troisième combat
+        à pied, trois coups de pique et six coups d’épée&#160;: que
+        les tenants fourniraient de lances, d’épées et de piques,
+        au choix des assaillants&#160;; et que, si en courant on donnait
+        au cheval, on serait mis hors des rangs&#160;: qu’il y
+        aurait quatre maîtres du camp pour donner les ordres,
+        et que ceux des assaillants qui auraient le plus rompu
+        et le mieux fait auraient un prix dont la valeur serait
+        à la discrétion des juges&#160;: que tous les assaillants, tant
+        français qu’étrangers, seraient tenus de venir toucher
+        à l’un des écus qui seraient pendus au perron, au bout
+        de la lice, ou à plusieurs, selon leur choix&#160;; que là ils
+        trouveraient un officier d’armes qui les recevrait pour
+        les enrôler selon leur rang et selon les écus qu’ils auraient
+        touchés&#160;: que les assaillants seraient tenus de
+        faire apporter par un gentilhomme leur écu avec
+        leurs armes, pour le pendre au perron trois jours
+        avant le commencement du tournoi&#160;; qu’autrement ils
+        n’y seraient point reçus sans le congé des tenants.
+      </p>
+      <p>On fit faire une grande lice proche de la Bastille,&#32;qui venait du château des Tournelles, qui traversait
+        la rue Saint-Antoine, et qui allait rendre aux écuries
+        royales. Il y avait des deux côtés des échafauds et des
+        amphithéâtres, avec des loges couvertes, qui formaient
+        des espèces de galeries, qui faisaient un très-bel effet
+        à la vue, et qui pouvaient contenir un nombre infini
+        de personnes. Tous les princes et seigneurs ne furent
+        plus occupés que du soin d’ordonner ce qui leur était
+        nécessaire pour paraître avec éclat, et pour mêler dans
+        leurs chiffres ou dans leurs devises quelque chose de
+        galant qui eût rapport aux personnes qu’ils aimaient.
+      </p>
+      <p>Peu de jours avant l’arrivée du duc d’Albe, le roi
+        fit une partie de paume avec M. de Nemours, le chevalier
+        de Guise, et le vidame de Chartres. Les reines
+        les allèrent voir jouer, suivies de toutes les dames, et
+        entre autres de madame de Clèves. Après que la partie
+        fut finie, comme l’on sortait du jeu de paume, Chastelart
+        s’approcha de la reine dauphine, et lui dit que
+        le hasard lui venait de mettre entre les mains une
+        lettre de galanterie qui était tombée de la poche de
+        M. de Nemours. Cette reine, qui avait toujours de la curiosité
+        pour ce qui regardait ce prince, dit à Chastelart
+        de la lui donner&#160;: elle la prit, et suivit la reine sa belle-mère,
+        qui s’en allait avec le roi voir travailler à la lice.
+        Après que l’on y eut été quelque temps, le roi fit
+        amener des chevaux qu’il avait fait venir depuis peu.
+        Quoiqu’ils ne fussent pas encore dressés, il les voulut
+        monter, et en fit donner à tous ceux qui l’avaient
+        suivi. Le roi et M. de Nemours se trouvèrent sur les
+        plus fougueux&#160;: ces chevaux se voulurent jeter l’un à
+        l’autre. M. de Nemours, par la crainte de blesser le&#32;roi, recula brusquement, et porta son cheval contre un
+        pilier du manége, avec tant de violence, que la secousse
+        le fit chanceler. On courut à lui, et on le crut considérablement
+        blessé. Madame de Clèves le crut encore plus
+        blessé que les autres. L’intérêt qu’elle y prenait lui
+        donna une appréhension et un trouble qu’elle ne
+        songea pas à cacher&#160;; elle s’approcha de lui avec les
+        reines, et avec un visage si changé, qu’un homme
+        moins intéressé que le chevalier de Guise s’en fût
+        aperçu&#160;: aussi le remarqua-t-il aisément, et il eut
+        bien plus d’attention à l’état où était madame de
+        Clèves, qu’à celui où était M. de Nemours. Le coup
+        que ce prince s’était donné lui causa un si grand
+        éblouissement qu’il demeura quelque temps la tête
+        penchée sur ceux qui le soutenaient. Quand il la releva,
+        il vit d’abord madame de Clèves&#160;; il connut, sur
+        son visage, la pitié qu’elle avait de lui, et il la regarda
+        d’une sorte qui pût lui faire juger combien il en
+        était touché. Il fit ensuite des remercîments aux reines
+        de la bonté qu’elles lui témoignaient, et des excuses
+        de l’état où il avait été devant elles. Le roi lui ordonna
+        de s’aller reposer.
+      </p>
+      <p>Madame de Clèves, après s’être remise de la frayeur
+        qu’elle avait eue, fit bientôt réflexion aux marques
+        qu’elle en avait données. Le chevalier de Guise ne la
+        laissa pas long-temps dans l’espérance que personne
+        ne s’en serait aperçu. Il lui donna la main pour la
+        conduire hors de la lice&#160;: Je suis plus à plaindre que
+        M. de Nemours, madame, lui dit-il&#160;; pardonnez-moi,
+        si je sors de ce profond respect que j’ai toujours eu
+        pour vous, et si je vous fais paraître la vive douleur&#32;que je sens de ce que je viens de voir&#160;; c’est
+        la première
+        fois que j’ai été assez hardi pour vous parler,
+        et ce sera aussi la dernière. La mort, ou du moins
+        un éloignement éternel, m’ôteront d’un lieu où je ne
+        puis plus vivre, puisque je viens de perdre la triste
+        consolation de croire que tous ceux qui osent vous
+        regarder sont aussi malheureux que moi.</p>
+      <p>
+        <center>
+          <img src="images/Partie2_image5.png" alt="Hardiesse du chevalier de Guise" width="500" height="300">
+        </center>
+      </p>
+      <p>Madame de Clèves ne répondit que quelques paroles
+        mal arrangées, comme si elle n’eût pas entendu
+        ce que signifiaient celles du chevalier de Guise. Dans
+        un autre temps, elle aurait été offensée qu’il lui eût
+        parlé des sentiments qu’il avait pour elle&#160;; mais, dans
+        ce moment, elle ne sentit que l’affliction de voir qu’il
+        s’était aperçu de ceux qu’elle avait pour M. de Nemours.
+        Le chevalier de Guise en fut si convaincu et
+        si pénétré de douleur, que, dès ce jour, il prit la résolution
+        de ne penser jamais à être aimé de madame
+        de Clèves. Mais, pour quitter cette entreprise qui lui
+        avait paru si difficile et si glorieuse, il en fallait quelque
+        autre dont la grandeur pût l’occuper&#160;: il se mit
+        dans l’esprit de prendre Rhodes, dont il avait déja
+        eu quelque pensée&#160;; et, quand la mort l’ôta du monde
+        dans la fleur de sa jeunesse, et dans le temps qu’il
+        avait acquis la réputation d’un des plus grands princes
+        de son siècle, le seul regret qu’il témoigna de quitter
+        la vie fut de n’avoir pu exécuter une si belle résolution,
+        dont il croyait le succès infaillible par tous les
+        soins qu’il en avait pris.
+      </p>
+      <p>Madame de Clèves, en sortant de la lice, alla chez
+        la reine, l’esprit bien occupé de ce qui s’était passé.
+        M. de Nemours y vint peu de temps après, habillé&#32;magnifiquement, et comme un homme qui ne se sentait
+        pas de l’accident qui lui était arrivé&#160;: il paraissait
+        même plus gai que de coutume&#160;; et la joie de ce qu’il
+        croyait avoir vu lui donnait un air qui augmentait
+        encore son agrément. Tout le monde fut surpris lorsqu’il
+        entra, et il n’y eut personne qui ne lui demandât
+        de ses nouvelles, excepté madame de Clèves, qui demeura
+        auprès de la cheminée sans faire semblant de
+        le voir. Le roi sortit d’un cabinet où il était, et, le
+        voyant parmi les autres, il l’appela pour lui parler de
+        son aventure. M. de Nemours passa auprès de madame
+        de Clèves, et lui dit tout bas&#160;: J’ai reçu aujourd’hui
+        des marques de votre pitié, madame&#160;; mais ce n’est pas
+        de celles dont je suis le plus digne. Madame de Clèves
+        s’était bien doutée que ce prince s’était aperçu de la
+        sensibilité qu’elle avait eue pour lui&#160;; et ses paroles lui
+        firent voir qu’elle ne s’était pas trompée. Ce lui était
+        une grande douleur de voir qu’elle n’était plus maîtresse
+        de cacher ses sentiments, et de les avoir laissé
+        paraître au chevalier de Guise. Elle en avait aussi
+        beaucoup que M. de Nemours les connût&#160;; mais cette
+        dernière douleur n’était pas si entière, et elle était
+        mêlée de quelque sorte de douceur.
+      </p>
+      <p>La reine dauphine, qui avait une extrême impatience
+        de savoir ce qu’il y avait dans la lettre que Chastelart
+        lui avait donnée, s’approcha de madame de Clèves&#160;:
+        Allez lire cette lettre, lui dit-elle&#160;; elle s’adresse à M. de
+        Nemours, et, selon les apparences, elle est de cette
+        maîtresse pour qui il a quitté toutes les autres. Si vous
+        ne la pouvez lire présentement, gardez-là&#160;; venez ce
+        soir à mon coucher pour me la rendre, et pour me&#32;dire si vous en connaissez l’écriture. Madame la dauphine
+        quitta madame de Clèves après ces paroles, et la
+        laissa si étonnée, et dans un si grand saisissement,
+        qu’elle fut quelque temps sans pouvoir sortir de sa
+        place. L’impatience et le trouble où elle était ne lui
+        permirent pas de demeurer chez la reine&#160;; elle s’en
+        alla chez elle, quoiqu’il ne fût pas l’heure où elle
+        avait accoutumé de se retirer. Elle tenait cette lettre
+        avec une main tremblante&#160;: ses pensées étaient si confuses
+        qu’elle n’en avait aucune distincte&#160;; et elle se
+        trouvait dans une sorte de douleur insupportable,
+        qu’elle ne connaissait point, et qu’elle n’avait jamais
+        sentie. Sitôt qu’elle fut dans son cabinet, elle ouvrit
+        cette lettre, et la trouva telle&#160;:
+      </p>
+      <p><br />
+      </p>
+      <p>«&#160;Je vous ai trop aimé pour vous laisser croire que
+        le changement qui vous paraît en moi soit un effet
+        de ma légèreté&#160;: je veux vous apprendre que votre
+        infidélité en est la cause. Vous êtes bien surpris que
+        je vous parle de votre infidélité&#160;; vous me l’aviez
+        cachée avec tant d’adresse, et j’ai pris tant de soin
+        de vous cacher que je la savais, que vous avez raison
+        d’être étonné qu’elle me soit connue. Je suis surprise
+        moi-même que j’aie pu ne vous en rien faire paraître.
+        Jamais douleur n’a été pareille à la mienne&#160;: je croyais
+        que vous aviez pour moi une passion violente&#160;; je ne
+        vous cachais plus celle que j’avais pour vous&#160;; et, dans
+        le temps que je vous la laissais voir toute entière,
+        j’appris que vous me trompiez, que vous en aimiez
+        une autre, et que, selon toutes les apparences, vous
+        me sacrifiiez à cette nouvelle maîtresse. Je le sus le jour&#32;de la course de bague&#160;; c’est ce qui fit
+        que je n’y allai
+        point. Je feignis d’être malade pour cacher le désordre
+        de mon esprit&#160;; mais je le devins en effet, et
+        mon corps ne put supporter une si violente agitation.
+        Quand je commençai à me porter mieux, je feignis
+        encore d’être fort mal, afin d’avoir un prétexte de
+        ne vous point voir et de ne vous point écrire. Je
+        voulus avoir du temps pour résoudre de quelle sorte
+        j’en devais user avec vous&#160;: je pris et je quittai vingt
+        fois les mêmes résolutions&#160;; mais enfin je vous trouvai
+        indigne de voir ma douleur, et je résolus de ne vous
+        la point faire paraître. Je voulus blesser votre orgueil,
+        en vous faisant voir que ma passion s’affaiblissait
+        d’elle-même. Je crus diminuer par-là le prix du sacrifice
+        que vous en faisiez&#160;; je ne voulus pas que
+        vous eussiez le plaisir de montrer combien je vous
+        aimais pour en paraître plus aimable. Je résolus de
+        vous écrire des lettres tièdes et languissantes, pour
+        jeter dans l’esprit de celle à qui vous les donniez
+        que l’on cessait de vous aimer. Je ne voulus pas
+        qu’elle eût le plaisir d’apprendre que je savais qu’elle
+        triomphait de moi, ni augmenter son triomphe par
+        mon désespoir et par mes reproches. Je pensai que
+        je ne vous punirais pas assez en rompant avec vous,
+        et que je ne vous donnerais qu’une légère douleur
+        si je cessais de vous aimer lorsque vous ne m’aimiez
+        plus. Je trouvai qu’il fallait que vous m’aimassiez
+        pour sentir le mal de n’être point aimé, que j’éprouvais
+        si cruellement. Je crus que, si quelque chose pouvait
+        rallumer les sentiments que vous aviez eus pour
+        moi, c’était de vous faire voir que les miens étaient&#32;changés&#160;; mais de vous le faire voir en feignant
+        de
+        vous le cacher, et comme si je n’eusse pas eu la force
+        de vous l’avouer. Je m’arrêtai à cette résolution&#160;: mais
+        qu’elle me fut difficile à prendre&#160;! et qu’en vous revoyant
+        elle me parut impossible à exécuter&#160;! Je fus prête cent
+        fois à éclater par mes reproches et par mes pleurs.
+        L’état où j’étais encore, par ma santé, me servit à
+        vous déguiser mon trouble et mon affliction. Je fus
+        soutenue ensuite par le plaisir de dissimuler avec
+        vous, comme vous dissimuliez avec moi&#160;; néanmoins
+        je me faisais une si grande violence pour vous dire
+        et pour vous écrire que je vous aimais, que vous
+        vîtes plutôt que je n’avais eu dessein de vous laisser
+        voir que mes sentiments étaient changés. Vous en
+        fûtes blessé&#160;; vous vous en plaignîtes&#160;: je tâchais de
+        vous rassurer&#160;; mais c’était d’une manière si forcée,
+        que vous en étiez encore mieux persuadé que je ne
+        vous aimais plus. Enfin, je fis tout ce que j’avais
+        eu intention de faire. La bizarrerie de votre cœur
+        vous fit revenir vers moi, à mesure que vous voyiez
+        que je m’éloignais de vous. J’ai joui de tout le plaisir
+        que peut donner la vengeance&#160;: il m’a paru que vous
+        m’aimiez mieux que vous n’aviez jamais fait, et je
+        vous ai fait voir que je ne vous aimais plus. J’ai
+        eu lieu de croire que vous aviez entièrement abandonné
+        celle pour qui vous m’aviez quittée. J’ai eu
+        aussi des raisons pour être persuadée que vous ne
+        lui aviez jamais parlé de moi. Mais votre retour et
+        votre discrétion n’ont pu réparer votre légèreté&#160;: votre
+        cœur a été partagé entre moi et une autre&#160;; vous
+        m’avez trompée, cela suffit pour m’ôter le plaisir&#32;d’être aimée de vous, comme je croyais mériter de
+        l’être, et pour me laisser dans cette résolution que
+        j’ai prise de ne vous voir jamais, et dont vous êtes si
+        surpris.&#160;»
+      </p>
+      <p><br />
+      </p>
+      <p>Madame de Clèves lut cette lettre, et la relut plusieurs
+        fois, sans savoir néanmoins ce qu’elle avait lu&#160;:
+        elle voyait seulement que M. de Nemours ne l’aimait
+        pas comme elle l’avait pensé, et qu’il en aimait d’autres
+        qu’il trompait comme elle. Quelle vue et quelle connaissance
+        pour une personne de son humeur, qui
+        avait une passion violente, qui venait d’en donner des
+        marques à un homme qu’elle en jugeait indigne, et à
+        un autre qu’elle maltraitait pour l’amour de lui&#160;! Jamais
+        affliction n’a été si piquante et si vive&#160;: il lui
+        semblait que ce qui faisait l’aigreur de cette affliction
+        était ce qui s’était passé dans cette journée, et que,
+        si M. de Nemours n’eût point eu lieu de croire qu’elle
+        l’aimait, elle ne se fût pas souciée qu’il en eût aimé
+        une autre&#160;: mais elle se trompait elle-même&#160;; et ce
+        mal qu’elle trouvait si insupportable était la jalousie
+        avec toutes les horreurs dont elle peut être accompagnée.
+        Elle voyait, par cette lettre, que M. de Nemours
+        avait une galanterie depuis long-temps. Elle
+        trouvait que celle qui avait écrit la lettre avait de
+        l’esprit et du mérite&#160;; elle lui paraissait digne d’être
+        aimée&#160;; elle lui trouvait plus de courage qu’elle ne
+        s’en trouvait à elle-même, et elle enviait la force qu’elle
+        avait eue de cacher ses sentiments à M. de Nemours.
+        Elle voyait, par la fin de la lettre, que cette personne
+        se croyait aimée&#160;; elle pensait que la discrétion que&#32;ce prince lui avait fait paraître, et dont elle
+        avait
+        été si touchée, n’était peut-être que l’effet de la passion
+        qu’il avait pour cette autre personne, à qui il
+        craignait de déplaire&#160;; enfin elle pensait tout ce qui
+        pouvait augmenter son affliction et son désespoir.
+        Quels retours ne fit-elle point sur elle-même&#160;! quelles
+        réflexions sur les conseils que sa mère lui avait donnés&#160;!
+        Combien se repentit-elle de ne s’être pas opiniâtrée à
+        se séparer du commerce du monde, malgré M. de
+        Clèves, ou de n’avoir pas suivi la pensée qu’elle avait
+        eue de lui avouer l’inclination qu’elle avait pour M. de
+        Nemours&#160;! Elle trouvait qu’elle aurait mieux fait de la
+        découvrir à un mari dont elle connaissait la bonté,
+        et qui aurait eu intérêt à la cacher, que de la laisser
+        voir à un homme qui en était indigne, qui la trompait,
+        qui la sacrifiait peut-être, et qui ne pensait à être
+        aimé d’elle que par un sentiment d’orgueil et de vanité&#160;:
+        enfin elle trouva que tous les maux qui lui pouvaient
+        arriver, et toutes les extrémités où elle se pouvait
+        porter, étaient moindres que d’avoir laissé voir à
+        M. de Nemours qu’elle l’aimait, et de connaître qu’il
+        en aimait une autre. Tout ce qui la consolait, était de
+        penser au moins, qu’après cette connaissance, elle
+        n’avait plus rien à craindre d’elle-même, et qu’elle
+        serait entièrement guérie de l’inclination qu’elle avait
+        pour ce prince.
+      </p>
+      <p>Elle ne pensa guères à l’ordre que madame la dauphine
+        lui avait donné de se trouver à son coucher&#160;:
+        elle se mit au lit, et feignit de se trouver mal&#160;; en sorte
+        que, quand M. de Clèves revint de chez le roi, on lui
+        dit qu’elle était endormie&#160;; mais elle était bien éloignée&#32;de la tranquillité qui conduit au sommeil.
+        Elle passa
+        la nuit sans faire autre chose que s’affliger et relire la
+        lettre qu’elle avait entre les mains.
+      </p>
+      <p>Madame de Clèves n’était pas la seule personne
+        dont cette lettre troublait le repos. Le vidame de
+        Chartres, qui l’avait perdue, et non pas M. de Nemours,
+        en était dans une extrême inquiétude. Il avait
+        passé tout le soir chez M. de Guise, qui avait donné
+        un grand souper au duc de Ferrare, son beau-frère,
+        et à toute la jeunesse de la cour. Le hasard fit qu’en
+        soupant on parla de jolies lettres. Le vidame de
+        Chartres dit qu’il en avait une sur lui, plus jolie que
+        toutes celles qui avaient jamais été écrites. On le pressa
+        de la montrer&#160;: il s’en défendit. M. de Nemours lui
+        soutint qu’il n’en avait point, et qu’il ne parlait que
+        par vanité. Le vidame lui répondit qu’il poussait sa
+        discrétion à bout&#160;; que néanmoins il ne montrerait
+        pas la lettre&#160;; mais qu’il en lirait quelques endroits,
+        qui feraient juger que peu d’hommes en recevaient de
+        pareilles. En même temps, il voulut prendre cette
+        lettre, et ne la trouva point&#160;: il la chercha inutilement&#160;;
+        on lui en fit la guerre&#160;; mais il parut si inquiet,
+        que l’on cessa de lui en parler. Il se retira plus tôt
+        que les autres, et s’en alla chez lui avec impatience, pour
+        voir s’il n’y avait point laissé la lettre qui lui manquait.
+        Comme il la cherchait encore, un premier valet de
+        chambre de la reine le vint trouver, pour lui dire que
+        la vicomtesse d’Usez avait cru nécessaire de l’avertir
+        en diligence que l’on avait dit chez la reine qu’il
+        était
+        tombé une lettre de galanterie de sa poche, pendant
+        qu’il était au jeu de paume&#160;; que l’on avait reconté&#32;une grande partie de ce qui était dans la
+        lettre&#160;; que
+        la reine avait témoigné beaucoup de curiosité de la
+        voir&#160;; qu’elle l’avait envoyé demander à un de ses gentilshommes
+        servants&#160;; mais qu’il avait répondu qu’il l’avait
+        laissée entre les mains de Chastelart.
+      </p>
+      <p>Le premier valet de chambre dit encore beaucoup
+        d’autres choses au vidame de Chartres, qui achevèrent
+        de lui donner un grand trouble. Il sortit à l’heure
+        même pour aller chez un gentilhomme qui était ami
+        intime de Chastelart&#160;; il le fit lever, quoique l’heure
+        fût extraordinaire pour aller demander cette lettre, sans
+        dire qui était celui qui la demandait et qui l’avait
+        perdue. Chastelart, qui avait l’esprit prévenu qu’elle
+        était à M. de Nemours, et que ce prince était amoureux
+        de madame la dauphine, ne douta point que ce
+        ne fût lui qui la faisait redemander. Il répondit, avec
+        une maligne joie, qu’il avait remis la lettre entre les
+        mains de la reine dauphine. Le gentilhomme vint faire
+        cette réponse au vidame de Chartres&#160;: elle augmenta
+        l’inquiétude qu’il avait déja, et y en joignit encore de
+        nouvelles. Après avoir été long-temps irrésolu sur
+        ce qu’il devait faire, il trouva qu’il n’y avait que M. de
+        Nemours qui pût lui aider à sortir de l’embarras où
+        il était.
+      <p>
+      <p>
+        <center>
+          <img src="images/Partie2_image6.png" alt="Chastelart et le gentilhomme" width="400" height="400">
+        </center>
+      </p>
+      </p>
+      <p>Il s’en alla chez lui, et entra dans sa chambre que
+        le jour ne commençait qu’à paraître. Ce prince dormait
+        d’un sommeil tranquille&#160;: ce qu’il avait vu le jour précédent
+        de madame de Clèves ne lui avait donné que
+        des idées agréables. Il fut bien surpris de se voir éveillé
+        par le vidame de Chartres, et il lui demanda si c’était
+        pour se venger de ce qu’il lui avait dit pendant le&#32;souper qu’il venait troubler son repos. Le vidame lui
+        fit bien juger par son visage qu’il n’y avait rien que
+        de sérieux au sujet qui l’amenait. Je viens vous confier
+        la plus importante affaire de ma vie, lui dit-il. Je sais
+        bien que vous ne m’en devez pas être obligé, puisque
+        c’est dans un temps où j’ai besoin de votre secours&#160;;
+        mais je sais bien aussi que j’aurais perdu de votre
+        estime, si je vous avais appris tout ce que je vais vous
+        dire, sans que la nécessité m’y eût contraint. J’ai laissé
+        tomber cette lettre dont je parlais hier au soir&#160;; il m’est
+        d’une conséquence extrême que personne ne sache
+        qu’elle s’adresse à moi. Elle a été vue de beaucoup de
+        gens qui étaient dans le jeu de paume, où elle tomba
+        hier&#160;; vous y étiez aussi, et je vous demande en grace
+        de vouloir bien dire que c’est vous qui l’avez perdue.
+        Il faut que vous croyiez que je n’ai point de maîtresse,
+        reprit M. de Nemours en souriant, pour me faire une
+        pareille proposition, et pour vous imaginer qu’il n’y
+        ait personne avec qui je me puisse brouiller en laissant
+        croire que je reçois de pareilles lettres. Je vous prie,
+        dit le vidame, écoutez-moi sérieusement&#160;: si vous avez
+        une maîtresse, comme je n’en doute point, quoique je
+        ne sache pas qui elle est, il vous sera aisé de vous
+        justifier, et je vous en donnerai les moyens infaillibles&#160;:
+        quand vous ne vous justifieriez pas auprès d’elle, il ne
+        vous en peut coûter que d’être brouillé pour quelques
+        moments&#160;; mais moi, par cette aventure, je déshonore
+        une personne qui m’a passionnément aimé, et qui est
+        une des plus estimables femmes du monde&#160;; et, d’un
+        autre côté, je m’attire une haine implacable, qui me
+        coûtera ma fortune, et peut-être quelque chose de&#32;plus. Je ne puis entendre tout ce que vous me dites,
+        répondit M. de Nemours&#160;; mais vous me faites entrevoir
+        que les bruits qui ont couru de l’intérêt qu’une
+        grande princesse prenait à vous ne sont pas entièrement
+        faux. Ils ne le sont pas aussi, repartit le vidame
+        de Chartres&#160;; et plût à Dieu qu’ils le fussent&#160;! je ne
+        me trouverais pas dans l’embarras où je me trouve&#160;:
+        mais il faut vous raconter tout ce qui s’est passé, pour
+        vous faire voir tout ce que j’ai à craindre.
+      </p>
+      <p>Depuis que je suis à la cour, la reine m’a toujours
+        traité avec beaucoup de distinction et d’agrément, et
+        j’avais eu lieu de croire qu’elle avait de la bonté pour
+        moi&#160;; néanmoins, il n’y avait rien de particulier, et je
+        n’avais jamais songé à avoir d’autres sentiments pour
+        elle que ceux du respect. J’étais même fort amoureux
+        de madame de Thémines&#160;: il est aisé de juger, en la
+        voyant, qu’on peut avoir beaucoup d’amour pour elle
+        quand on en est aimé&#160;; et je l’étais. Il y a près de deux
+        ans que, comme la cour était à Fontainebleau, je me
+        trouvai deux ou trois fois en conversation avec la
+        reine, à des heures où il y avait très-peu de monde.
+        Il me parut que mon esprit lui plaisait, et qu’elle
+        entrait dans tout ce que je disais. Un jour entre autres,
+        on se mit à parler de la confiance&#160;: je dis qu’il n’y
+        avait personne en qui j’en eusse une entière&#160;; que je
+        trouvais que l’on se repentait toujours d’en avoir, et
+        que je savais beaucoup de choses dont je n’avais jamais
+        parlé. La reine me dit qu’elle m’en estimait davantage&#160;;
+        qu’elle n’avait trouvé personne en France qui eût du
+        secret, et que c’était ce qui l’avait le plus embarrassée,
+        parce que cela lui avait ôté le plaisir de donner sa&#32;confiance&#160;; que c’était une chose nécessaire dans
+        la vie,
+        que d’avoir quelqu’un à qui on pût parler, et sur-tout
+        pour les personnes de son rang. Les jours suivants,
+        elle reprit encore plusieurs fois la même conversation&#160;;
+        elle m’apprit même des choses assez particulières qui
+        se passaient. Enfin, il me sembla qu’elle souhaitait de
+        s’assurer de mon secret, et qu’elle avait envie de me
+        confier les siens. Cette pensée m’attacha à elle&#160;; je fus
+        touché de cette distinction, et je lui fis ma cour avec
+        beaucoup plus d’assiduité que je n’avais accoutumé.
+        Un soir que le roi et toutes les dames s’étaient allés
+        promener à cheval dans la forêt, où elle n’avait pas
+        voulu aller, parce qu’elle s’était trouvée un peu mal,
+        je demeurai auprès d’elle&#160;: elle descendit au bord de
+        l’étang, et quitta la main de ses écuyers, pour marcher
+        avec plus de liberté. Après qu’elle eut fait quelques
+        tours, elle s’approcha de moi, et m’ordonna de
+        la suivre. Je veux vous parler, me dit-elle&#160;; et vous
+        verrez, par ce que je veux vous dire, que je suis de
+        vos amies. Elle s’arrêta à ces paroles, et me regardant
+        fixement&#160;: Vous êtes amoureux, continua-t-elle&#160;; et
+        parce que vous ne vous fiez peut-être à personne, vous
+        croyez que votre amour n’est pas su&#160;; mais il est connu, et
+        même des personnes intéressées. On vous observe, on
+        sait les lieux où vous voyez votre maîtresse, on a
+        dessein de vous y surprendre. Je ne sais qui elle est&#160;;
+        je ne vous le demande point, et je veux seulement
+        vous garantir des malheurs où vous pouvez tomber.
+        Voyez, je vous prie, quel piége me tendait la reine,
+        et combien il était difficile de n’y pas tomber. Elle
+        voulait savoir si j’étais amoureux&#160;; et, en ne me &#32;demandant point de qui je l’étais, et en ne me
+        laissant
+        voir que la seule intention de me faire plaisir, elle
+        m’ôtait la pensée qu’elle me parlât par curiosité ou
+        par dessein.
+      </p>
+      <p>Cependant, contre toutes sortes d’apparences, je
+        démêlai la vérité. J’étais amoureux de madame de
+        Thémines&#160;; mais, quoiqu’elle m’aimât, je n’étais pas
+        assez heureux pour avoir des lieux particuliers à la
+        voir, et pour craindre d’y être surpris&#160;; et ainsi je vis
+        bien que ce ne pouvait être elle dont la reine voulait
+        parler. Je savais bien aussi que j’avais un commerce
+        de galanterie avec une autre femme moins belle et
+        moins sévère que madame de Thémines, et qu’il n’était
+        pas impossible que l’on eût découvert le lieu où je
+        la voyais&#160;; mais, comme je m’en souciais peu, il m’était
+        aisé de me mettre à couvert de toutes sortes de périls
+        en cessant de la voir. Ainsi, je pris le parti de ne
+        rien avouer à la reine, et de l’assurer, au contraire,
+        qu’il y avait très-long-temps que j’avais abandonné le
+        desir de me faire aimer des femmes dont je pouvais
+        espérer de l’être, parce que je les trouvais quasi toutes
+        indignes d’attacher un honnête homme, et qu’il n’y
+        avait que quelque chose fort au-dessus d’elles qui pût
+        m’engager. Vous ne me répondez pas sincèrement,
+        répliqua la reine&#160;; je sais le contraire de ce que vous
+        me dites. La manière dont je vous parle vous doit
+        obliger à ne me rien cacher. Je veux que vous soyez
+        de mes amis, continua-t-elle&#160;; mais je ne veux pas, en
+        vous donnant cette place, ignorer quels sont vos attachements.
+        Voyez si vous la voulez acheter au prix
+        de me les apprendre&#160;: je vous donne deux jours pour&#32;y penser&#160;; mais, après ce temps-là, songez
+        bien à ce
+        que vous me direz, et souvenez-vous que, si dans la
+        suite je trouve que vous m’ayez trompée, je ne vous
+        le pardonnerai de ma vie.
+      </p>
+      <p>La reine me quitta après m’avoir dit ces paroles,
+        sans attendre ma réponse. Vous pouvez croire que je
+        demeurai l’esprit bien rempli de ce qu’elle me venait
+        de dire. Les deux jours qu’elle m’avait donnés pour
+        y penser ne me parurent pas trop longs pour me déterminer.
+        Je voyais qu’elle voulait savoir si j’étais
+        amoureux, et qu’elle ne souhaitait pas que je le fusse.
+        Je voyais les suites et les conséquences du parti que
+        j’allais prendre. Ma vanité n’était pas peu flattée d’une
+        liaison particulière avec la reine, et une reine dont
+        la personne est encore extrêmement aimable. D’un
+        autre côté, j’aimais madame de Thémines&#160;; et, quoique
+        je lui fisse une espèce d’infidélité pour cette autre
+        femme dont je vous ai parlé, je ne me pouvais résoudre
+        à rompre avec elle. Je voyais aussi le péril où
+        je m’exposais en trompant la reine, et combien il
+        était difficile de la tromper&#160;: néanmoins, je ne pus
+        me résoudre à refuser ce que la fortune m’offrait, et
+        je pris le hasard de tout ce que ma mauvaise conduite
+        pouvait m’attirer. Je rompis avec cette femme dont
+        on pouvait découvrir le commerce, et j’espérai de
+        cacher celui que j’avais avec madame de Thémines.
+      </p>
+      <p>Au bout des deux jours que la reine m’avait
+        donnés, comme j’entrais dans la chambre où toutes
+        les dames étaient au cercle, elle me dit tout haut,
+        avec un air grave qui me surprit&#160;: Avez-vous pensé à
+        cette affaire dont je vous ai chargé, et en savez-vous&#32;la vérité&#160;? Oui, madame, lui répondis-je, et
+        elle est
+        comme je l’ai dite à votre majesté. Venez ce soir, à
+        l’heure que je dois écrire, répliqua-t-elle, et j’achèverai
+        de vous donner mes ordres. Je fis une profonde
+        révérence, sans rien répondre, et ne manquai pas de
+        me trouver à l’heure qu’elle m’avait marquée. Je la
+        trouvai dans la galerie où était son secrétaire et quelqu’une
+        de ses femmes. Sitôt qu’elle me vit, elle vint à
+        moi, et me mena à l’autre bout de la galerie. Hé bien&#160;!
+        me dit-elle, est-ce après y avoir bien pensé que vous
+        n’avez rien à me dire&#160;; et la manière dont j’en use avec
+        vous ne mérite-t-elle pas que vous me parliez sincèrement&#160;?
+        C’est parce que je vous parle sincèrement,
+        madame, lui répondis-je, que je n’ai rien à vous dire&#160;;
+        et je jure à votre majesté, avec tout le respect que je
+        lui dois, que je n’ai d’attachement pour aucune femme
+        de la cour. Je le veux croire, repartit la reine, parce
+        que je le souhaite&#160;; et je le souhaite parce que je desire
+        que vous soyez entièrement attaché à moi, et qu’il
+        serait impossible que je fusse contente de votre amitié
+        si vous étiez amoureux. On ne peut se fier à ceux qui
+        le sont&#160;; on ne peut s’assurer de leur secret. Ils sont
+        trop distraits et trop partagés&#160;; et leur maîtresse leur
+        fait une première occupation qui ne s’accorde point
+        avec la manière dont je veux que vous soyez attaché à
+        moi. Souvenez-vous donc que c’est sur la parole que
+        vous me donnez, que vous n’avez aucun engagement,
+        que je vous choisis pour vous donner toute ma confiance.
+        Souvenez-vous que je veux la vôtre tout entière&#160;;
+        que je veux que vous n’ayez ni ami, ni amie,
+        que ceux qui me seront agréables, et que vous &#32;abandonniez tout autre soin que celui de me plaire. Je ne
+        vous ferai pas perdre celui de votre fortune&#160;; je la conduirai
+        avec plus d’application que vous-même&#160;; et, quoi
+        que je fasse pour vous, je m’en tiendrai trop bien
+        récompensée, si je vous trouve pour moi tel que je
+        l’espère. Je vous choisis pour vous confier tous mes
+        chagrins, et pour m’aider à les adoucir. Vous pouvez
+        juger qu’ils ne sont pas médiocres. Je souffre en apparence,
+        sans beaucoup de peine l’attachement du roi
+        pour la duchesse de Valentinois&#160;; mais il m’est insupportable.
+        Elle gouverne le roi&#160;; elle le trompe&#160;; elle me
+        méprise&#160;; tous mes gens sont à elle. La reine ma belle-fille,
+        fière de sa beauté et du crédit de ses oncles, ne
+        me rend aucun devoir. Le connétable de Montmorency
+        est maître du roi et du royaume&#160;; il me hait, et m’a
+        donné des marques de sa haine que je ne puis oublier.
+        Le maréchal de Saint-André est un jeune favori audacieux
+        qui n’en use pas mieux avec moi que les
+        autres. Le détail de mes malheurs vous ferait pitié. Je
+        n’ai osé jusqu’ici me fier à personne&#160;; je me fie à vous&#160;;
+        faites que je ne m’en repente point, et soyez ma seule
+        consolation. Les yeux de la reine rougirent en achevant
+        ces paroles&#160;: je pensai me jeter à ses pieds, tant je
+        fus véritablement touché de la bonté qu’elle me témoignait.
+        Depuis ce jour-là, elle eut en moi une entière
+        confiance, elle ne fit plus rien sans m’en parler&#160;; et j’ai
+        conservé une liaison qui dure encore.</p>
+        <p>
+          <center>
+          <img src="images/bordure.png" alt="Bordure" width="500" height="300"> 
+          </center>
+          </p> 
+    </div>
+    <br>
+  </section>
+</body>
+
+</html>

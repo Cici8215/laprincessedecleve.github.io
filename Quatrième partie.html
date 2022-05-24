@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Princesse de Clève Madame de Lafayette</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta name="author" content="Cynthia Wielgosz">
+  <style>
+    @font-face {
+      font-family: 'Aston Script'
+        src: url ('Police\Aston Script.ttf')
+    }
+
+    @font-face {
+      font-family: 'CapitalisTypOasis'
+        src: url ('Polices\CapitalisTypOasis.ttf')
+    }
+
+    @font-face {
+      font-family: 'Nesans Semi Bold'
+        src: url ('Polices\Nesans Semi Bold.ttf')
+    }
+
+    body {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: Aston Script;
+      font-size: 45px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 25px;
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 15px;
+    }
+
+    .rectangle {
+      position: relative;
+      height: 50px;
+      width: 300px;
+      background-color: #AB1149;
+      margin: auto;
+    }
+
+    nav {
+      color: white;
+      font-family: 'CapitalisTypOasis';
+      width: 725px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0px 0px 32px;
+      padding: 10px 24px;
+    }
+
+    nav ul li {
+      padding: 0px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav ul::after {
+      content: normal;
+      display: none;
+      clear: both;
+    }
+
+    nav a {
+      font-size: 11.2px;
+      color: white;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+      border-bottom: 1px solid black;
+    }
+
+    .sous li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .sous a {
+      padding: 0px;
+      border-bottom: none;
+    }
+
+    .sous a:hover {
+      border-bottom: none;
+      background-color: black;
+    }
+
+    .deroulant>a::after {
+      content: '▼';
+      font-size: 10px;
+    }
+
+    .sous {
+      display: none;
+      box-shadow: 0px 1px 2px black;
+      background-color: #D31B5E;
+      position: absolute;
+      width: 180px;
+      z-index: 1000;
+
+    }
+
+    nav>ul li:hover .sous {
+      display: block;
+    }
+
+    p {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <section class="haut" style="background-color:#AB1149">
+      <br>
+      <nav>
+        <ul>
+          <li class='deroulant'><a
+              href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+              #ACCEUIL>ACCEUIL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+                  #A propos>A propos</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Mentionslegales.html"
+                  #Mentions legales>Mentions legales</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#TEXTE INTEGRAL'>TEXTE INTEGRAL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Site.html"
+                  #PREMIERE PARTIE>PREMIERE PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Deuxi%C3%A8me%20partie.html"
+                  #DEUXIEME PARTIE>DEUXIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Troisi%C3%A8me%20partie.html"
+                  #TROSIEME PARTIE>TROISIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Quatri%C3%A8me%20partie.html"
+                  #QUATRIEME PARTIE>QUATRIEME PARTIE</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#PRESENTATION'>PRESENTATION</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Roman.html"
+                  #Le roman>Le roman</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Biographie.html"
+                  #Biographie>Biographie</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#CHRONOLOGIE'>CHRONOLOGIE</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Repereshistoriques.html"
+                  #Reperes historiques>Reperes historiques</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Vieautrice.html"
+                  #Vie de l&rsquo;autrice>Vie de l&rsquo;autrice</a></li>
+            </ul>
+          </li>
+      </nav>
+      <div>
+        <br>
+        <h1>La Princesse de Clèves</h1>
+        <p>
+        <h2>Madame de Lafayette</h2>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </header>
+  </section>
+  <section class="bas" style="background-color:#FFF6CD">
+    <h3 class="rectangle">QUATRIEME PARTIE</h3>
+    <div>
+      <br>
+      <br>
+      <p> Le cardinal de Lorraine s’était rendu maître absolu
+        de l’esprit de la reine mère&#160;: le vidame de Chartres
+        n’avait plus aucune part dans ses bonnes graces, et
+        l’amour qu’il avait pour madame de Martigues et pour
+        la liberté l’avait même empêché de sentir cette perte
+        autant qu’elle méritait d’être sentie. Ce cardinal, pendant
+        les dix jours de la maladie du roi, avait eu le
+        loisir de former ses desseins, et de faire prendre à la
+        reine des résolutions conformes à ce qu’il avait projeté&#160;;
+        de sorte que, sitôt que le roi fut mort, la reine
+        ordonna au connétable de demeurer aux Tournelles,
+        auprès du corps du feu roi, pour faire les cérémonies
+        ordinaires. Cette commission l’éloignait de tout, et lui
+        ôtait la liberté d’agir. Il envoya un courrier au roi de
+        Navarre, pour le faire venir en diligence, afin de
+        s’opposer ensemble à la grande élévation où il voyait
+        que MM. de Guise allaient parvenir. On donna le
+        commandement des armées au duc de Guise, et les
+        finances au cardinal de Lorraine&#160;: la duchesse de Valentinois
+        fut chassée de la cour&#160;: on fit revenir le&#32;cardinal de Tournon, ennemi déclaré du connétable,
+        et le chancelier Olivier, ennemi déclaré de la duchesse
+        de Valentinois&#160;: enfin la cour changea entièrement de
+        face. Le duc de Guise prit le même rang que les
+        princes du sang à porter le manteau du roi aux cérémonies
+        des funérailles&#160;: lui et ses frères furent entièrement
+        les maîtres, non-seulement par le crédit du
+        cardinal sur l’esprit de la reine, mais parce que cette
+        princesse crut qu’elle pourrait les éloigner s’ils lui
+        donnaient de l’ombrage, et qu’elle ne pourrait éloigner
+        le connétable, qui était appuyé des princes du sang.
+      </p>
+      <p>Lorsque les cérémonies du deuil furent achevées,
+        le connétable vint au Louvre, et fut reçu du roi avec
+        beaucoup de froideur. Il voulut lui parler en particulier,
+        mais le roi appela MM. de Guise, et lui dit
+        devant eux qu’il lui conseillait de se reposer&#160;; que les
+        finances et le commandement des armées étaient donnés&#160;;
+        et que, lorsqu’il aurait besoin de ses conseils, il
+        l’appellerait auprès de sa personne. Il fut reçu de la
+        reine mère encore plus froidement que du roi, et elle
+        lui fit même des reproches de ce qu’il avait dit au feu
+        roi que ses enfants ne lui ressemblaient point. Le roi
+        de Navarre arriva, et ne fut pas mieux reçu. Le prince
+        de Condé, moins endurant que son frère, se plaignit
+        hautement&#160;; ses plaintes furent inutiles&#160;: on l’éloigna
+        de la cour sous le prétexte de l’envoyer en Flandre
+        signer la ratification de la paix. On fit voir au roi
+        de Navarre une fausse lettre du roi d’Espagne, qui
+        l’accusait de faire des entreprises sur ses places&#160;; on
+        lui fit craindre pour ses terres&#160;; enfin on lui inspira
+        le dessein de s’en aller en Béarn. La reine lui en fournit&#32;un moyen, en lui donnant la conduite de madame
+        Élisabeth, et l’obligea même à partir devant cette
+        princesse&#160;; et ainsi il ne demeura personne à la cour
+        qui pût balancer le pouvoir de la maison de Guise.
+      </p>
+      <p>Quoique ce fût une chose fâcheuse pour M. de
+        Clèves de ne pas conduire madame Élisabeth, néanmoins
+        il ne put s’en plaindre, par la grandeur de
+        celui qu’on lui préférait&#160;; mais il regrettait moins cet
+        emploi par l’honneur qu’il en eût reçu, que parce que
+        c’était une chose qui éloignait sa femme de la cour,
+        sans qu’il parût qu’il eût dessein de l’en éloigner.
+      </p>
+      <p>Peu de jours après la mort du roi, on résolut d’aller
+        à Rheims pour le sacre. Sitôt qu’on parla de ce voyage,
+        madame de Clèves, qui avait toujours demeuré chez
+        elle, feignant d’être malade, pria son mari de trouver
+        bon qu’elle ne suivît point la cour, et qu’elle s’en allât
+        à Coulommiers prendre l’air et songer à sa santé. Il
+        lui répondit qu’il ne voulait point pénétrer si c’était
+        la raison de sa santé qui l’obligeait à ne pas faire le
+        voyage, mais qu’il consentait qu’elle ne le fît point.
+        Il n’eut pas de peine à consentir à une chose qu’il
+        avait déjà résolue. Quelque bonne opinion qu’il eût
+        de la vertu de sa femme, il voyait bien que la prudence
+        ne voulait pas qu’il l’exposât plus long-temps à
+        la vue d’un homme qu’elle aimait.
+      </p>
+      <p>M. de Nemours sut bientôt que madame de Clèves
+        ne devait pas suivre la cour&#160;: il ne put se résoudre à
+        partir sans la voir&#160;; et, la veille du départ, il alla chez
+        elle aussi tard que la bienséance le pouvait permettre,
+        afin de la trouver seule. La fortune favorisa son intention.
+        Comme il entra dans la cour, il trouva madame&#32;de Nevers et madame de Martigues qui en sortaient,
+        et qui lui dirent qu’elles l’avaient laissée seule. Il monta
+        avec une agitation et un trouble qui ne se peut comparer
+        qu’à celui qu’eut madame de Clèves, quand on
+        lui dit que M. de Nemours venait pour la voir. La
+        crainte qu’elle eut qu’il ne lui parlât de sa passion,
+        l’appréhension de lui répondre trop favorablement,
+        l’inquiétude que cette visite pouvait donner à son mari,
+        la peine de lui en rendre compte ou de lui cacher
+        toutes ces choses, se présentèrent en un moment à son
+        esprit, et lui firent un si grand embarras qu’elle prit
+        la résolution d’éviter la chose du monde qu’elle souhaitait
+        peut-être le plus. Elle envoya une de ses femmes
+        à M. de Nemours, qui était dans son anti-chambre,
+        pour lui dire qu’elle venait de se trouver mal, et qu’elle
+        était bien fâchée de ne pouvoir recevoir l’honneur qu’il
+        lui voulait faire. Quelle douleur pour ce prince de ne
+        pas voir madame de Clèves, et de ne la pas voir parce
+        qu’elle ne voulait pas qu’il la vît&#160;! Il s’en allait le lendemain&#160;;
+        il n’avait plus rien à espérer du hasard&#160;; il ne
+        lui avait rien dit depuis cette conversation de chez
+        madame la dauphine, et il avait lieu de croire que la
+        faute d’avoir parlé au vidame avait détruit toutes ses
+        espérances&#160;; enfin, il s’en allait avec tout ce qui peut
+        aigrir une vive douleur.
+      </p>
+      <p>Sitôt que madame de Clèves fut un peu remise du
+        trouble que lui avait donné la pensée de la visite de
+        ce prince, toutes les raisons qui la lui avaient fait
+        refuser disparurent&#160;; elle trouva même qu’elle avait fait
+        une faute&#160;; et, si elle eût osé, ou qu’il eût encore été
+        assez à temps, elle l’aurait fait rappeler.&#32;</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image1.png" alt="Jalousie de M. de Clèves" width="450" height="320">
+        </center>
+      </p>
+      <p>Mesdames de Nevers et de Martigues, en sortant de
+        chez elle, allèrent chez la reine dauphine&#160;; M. de Clèves
+        y était. Cette princesse leur demanda d’où elles venaient&#160;;
+        elles lui dirent qu’elles venaient de chez M. de
+        Clèves, où elles avaient passé une partie de l’après-dînée
+        avec beaucoup de monde, et qu’elles n’y avaient
+        laissé que M. de Nemours. Ces paroles, qu’elles croyaient
+        si indifférentes, ne l’étaient pas pour M. de Clèves,
+        quoiqu’il dût bien s’imaginer que M. de Nemours pouvait
+        trouver souvent des occasions de parler à sa femme.
+        Néanmoins, la pensée qu’il était chez elle, qu’il y était
+        seul, et qu’il lui pouvait parler de son amour, lui parut
+        dans ce moment une chose si nouvelle et si insupportable,
+        que la jalousie s’alluma dans son cœur avec plus
+        de violence qu’elle n’avait encore fait. Il lui fut impossible
+        de demeurer chez la reine&#160;; il s’en revint, ne sachant
+        pas même pourquoi il revenait, et s’il avait
+        dessein d’aller interrompre M. de Nemours. Sitôt qu’il
+        approcha de chez lui, il regarda s’il ne verrait rien
+        qui lui pût faire juger si ce prince y était encore&#160;: il
+        sentit du soulagement en voyant qu’il n’y était plus,
+        et il trouva de la douceur à penser qu’il ne pouvait
+        y avoir demeuré long-temps. Il s’imagina que ce n’était
+        peut-être pas M. de Nemours dont il devait être jaloux&#160;;
+        et, quoiqu’il n’en doutât point, il cherchait à en douter&#160;:
+        mais tant de choses l’en auraient persuadé, qu’il ne
+        demeurait pas long-temps dans cette incertitude qu’il
+        desirait. Il alla d’abord dans la chambre de sa femme&#160;;
+        et, après lui avoir parlé quelque temps de choses indifférentes,
+        il ne put s’empêcher de lui demander ce
+        qu’elle avait fait, et qui elle avait vu&#160;: elle lui en rendit&#32;compte. Comme il vit qu’elle ne lui
+        nommait point
+        M. de Nemours, il lui demanda en tremblant si c’était
+        tout ce qu’elle avait vu, afin de lui donner lieu de
+        nommer ce prince, et de n’avoir pas la douleur qu’elle
+        lui en fît une finesse. Comme elle ne l’avait point vu,
+        elle ne le lui nomma point, et M. de Clèves reprenant
+        la parole avec un ton qui marquait son affliction&#160;:
+        Et M. de Nemours, lui dit-il, ne l’avez-vous point vu,
+        ou l’avez-vous oublié&#160;? Je ne l’ai point vu, en effet, répondit-elle&#160;;
+        je me trouvais mal, et j’ai envoyé une de
+        mes femmes lui faire des excuses. Vous ne vous trouviez
+        donc mal que pour lui, reprit M. de Clèves,
+        puisque vous avez vu tout le monde&#160;? Pourquoi des
+        distinctions pour M. de Nemours&#160;? Pourquoi ne vous
+        est-il pas comme un autre&#160;? Pourquoi faut-il que vous
+        craigniez sa vue&#160;? Pourquoi lui laissez-vous voir que
+        vous la craignez&#160;? Pourquoi lui faites-vous connaître
+        que vous vous servez du pouvoir que sa passion vous
+        donne sur lui&#160;? Oseriez-vous refuser de le voir, si vous
+        ne saviez bien qu’il distingue vos rigueurs de l’incivilité&#160;?
+        Mais pourquoi faut-il que vous ayez des rigueurs
+        pour lui&#160;? D’une personne comme vous, madame, tout
+        est des faveurs hors l’indifférence. Je ne croyais pas,
+        reprit madame de Clèves, quelque soupçon que vous
+        ayez sur M. de Nemours, que vous pussiez me faire
+        des reproches de ne l’avoir pas vu. Je vous en fais
+        pourtant, madame, répliqua-t-il, et ils sont bien
+        fondés&#160;: Pourquoi ne le pas voir, s’il ne vous a rien
+        dit&#160;? Mais, madame, il vous a parlé&#160;; si son silence
+        seul vous avait témoigné sa passion, elle n’aurait pas
+        fait en vous une si grande impression&#160;; vous n’avez&#32;pu me dire la vérité tout entière, vous m’en avez
+        caché la plus grande partie&#160;; vous vous êtes repentie
+        même du peu que vous m’avez avoué, et vous n’avez
+        pas eu la force de continuer. Je suis plus malheureux
+        que je ne l’ai cru, et je suis le plus malheureux de
+        tous les hommes. Vous êtes ma femme, je vous aime
+        comme ma maîtresse, et je vous en vois aimer un
+        autre&#160;! cet autre est le plus aimable de la cour, et il
+        vous voit tous les jours, il sait que vous l’aimez. Et
+        j’ai pu croire, s’écria-t-il, que vous surmonteriez la
+        passion que vous avez pour lui&#160;! Il faut que j’aie perdu
+        la raison, pour avoir cru qu’il fût possible. Je ne sais,
+        reprit tristement madame de Clèves, si vous avez eu
+        tort de juger favorablement d’un procédé aussi extraordinaire
+        que le mien&#160;; mais je ne sais si je ne me
+        suis trompée d’avoir cru que vous me feriez justice&#160;?
+        N’en doutez pas, madame, répliqua M. de Clèves&#160;;
+        vous vous êtes trompée&#160;; vous avez attendu de moi
+        des choses aussi impossibles que celles que j’attendais
+        de vous. Comment pouviez-vous espérer que je conservasse
+        de la raison&#160;? Vous aviez donc oublié que je
+        vous aimais éperdûment, et que j’étais votre mari&#160;?
+        L’un des deux peut porter aux extrémités&#160;; que ne
+        peuvent point les deux ensemble&#160;! Hé&#160;! que ne sont-ils
+        point aussi, continua-t-il&#160;! Je n’ai que des sentiments
+        violents et incertains dont je ne suis pas le maître&#160;:
+        je ne me trouve plus digne de vous&#160;; vous ne me paraissez
+        plus digne de moi&#160;; je vous adore, je vous hais&#160;;
+        je vous offense, je vous demande pardon&#160;; je vous
+        admire, j’ai honte de vous admirer&#160;; enfin, il n’y a
+        plus en moi ni de calme ni de raison. Je ne sais&#32;comment j’ai pu vivre depuis que vous me parlâtes à
+        Coulommiers, et depuis le jour que vous apprîtes de
+        madame la dauphine que l’on savait votre aventure.
+        Je ne saurais démêler par où elle a été sue, ni ce qui
+        se passa entre M. de Nemours et vous sur ce sujet&#160;:
+        vous ne me l’expliquerez jamais, et je ne vous demande
+        point de me l’expliquer&#160;: je vous demande seulement
+        de vous souvenir que vous m’avez rendu le
+        plus malheureux homme du monde.
+      </p>
+      <p>M. de Clèves sortit de chez sa femme après ces
+        paroles, et partit le lendemain sans la voir&#160;; mais il
+        lui écrivit une lettre pleine d’affliction, d’honnêteté et
+        de douceur. Elle y fit une réponse si touchante et si
+        remplie d’assurances de sa conduite passée, et de celle
+        qu’elle aurait à l’avenir, que, comme ses assurances
+        étaient fondées sur la vérité, et que c’était en effet ses
+        sentiments, cette lettre fit de l’impression sur M. de
+        Clèves, et lui donna quelque calme&#160;; joint que M. de
+        Nemours allant trouver le roi, aussi-bien que lui, il
+        avait le repos de savoir qu’il ne serait pas au même
+        lieu que madame de Clèves. Toutes les fois que cette
+        princesse parlait à son mari, la passion qu’il lui témoignait, l’honnêteté de son procédé, l’amitié qu’elle
+        avait
+        pour lui, et ce qu’elle lui devait, faisaient des impressions
+        dans son cœur qui affaiblissaient l’idée de M. de
+        Nemours&#160;; mais ce n’était que pour quelque temps&#160;; et
+        cette idée revenait bientôt plus vive et plus présente
+        qu’auparavant.
+      </p>
+      <p>Les premiers jours du départ de ce prince, elle ne
+        sentit quasi pas son absence&#160;; ensuite elle lui parut
+        cruelle&#160;: depuis qu’elle l’aimait, il ne s’était point passé&#32;de jour qu’elle n’eût craint ou espéré de
+        le rencontrer&#160;;
+        et elle trouva une grande peine à penser qu’il n’était
+        plus au pouvoir du hasard de faire qu’elle le rencontrât.
+      </p>
+      <p>Elle s’en alla à Coulommiers, et, en y allant, elle
+        eut soin d’y faire porter de grands tableaux qu’elle
+        avait fait copier sur des originaux qu’avait fait faire
+        madame de Valentinois pour sa belle maison d’Annet.
+        Toutes les actions remarquables qui s’étaient passées du
+        règne du roi étaient dans ces tableaux. Il y avait entre
+        autres le siége de Metz, et tous ceux qui s’y étaient distingués
+        étaient peints fort ressemblants&#160;: M. de Nemours
+        était de ce nombre, et c’était peut-être ce qui avait donné
+        envie à madame de Clèves d’avoir ces tableaux.
+      </p>
+      <p>Madame de Martigues, qui n’avait pu partir avec
+        la cour, lui promit d’aller passer quelques jours à
+        Coulommiers. La faveur de la reine, qu’elles partageaient
+        ne leur avait point donné d’envie ni d’éloignement
+        l’une de l’autre&#160;: elles étaient amies, sans
+        néanmoins se confier leurs sentiments. Madame de
+        Clèves savait que madame de Martigues aimait le
+        vidame&#160;; mais madame de Martigues ne savait pas que
+        madame de Clèves aimât M. de Nemours, ni qu’elle en
+        fût aimée. La qualité de nièce du vidame rendait madame
+        de Clèves plus chère à madame de Martigues, et
+        madame de Clèves l’aimait aussi comme une personne
+        qui avait une passion aussi-bien qu’elle, et qui l’avait
+        pour l’ami intime de son amant.
+      </p>
+      <p>Madame de Martigues vint à Coulommiers, comme
+        elle l’avait promis à madame de Clèves&#160;: elle la trouva
+        dans une vie fort solitaire. Cette princesse avait même
+        cherché le moyen d’être dans une solitude entière, et&#32;de passer les soirs dans les jardins, sans être
+        accompagnée
+        de ses domestiques. Elle venait dans ce pavillon
+        où M. de Nemours l’avait écoutée&#160;; elle entrait dans
+        le cabinet qui était ouvert sur le jardin. Ses femmes
+        et ses domestiques demeuraient dans l’autre cabinet,
+        ou sous le pavillon, et ne venaient point à elle qu’elle
+        ne les appelât. Madame de Martigues n’avait jamais
+        vu Coulommiers&#160;: elle fut surprise de toutes les beautés
+        qu’elle y trouva, et sur-tout de l’agrément de ce pavillon&#160;;
+        madame de Clèves et elle y passaient tous les
+        soirs. La liberté de se trouver seules, la nuit, dans le
+        plus beau lieu du monde, ne laissait pas finir la conversation
+        entre deux jeunes personnes qui avaient des
+        passions violentes dans le cœur&#160;; et, quoiqu’elles ne
+        s’en fissent point de confidence, elles trouvaient un
+        grand plaisir à se parler. Madame de Martigues aurait
+        eu de la peine à quitter Coulommiers, si, en le quittant,
+        elle n’eût dû aller dans un lieu où était le vidame&#160;:
+        elle partit pour aller à Chambort, où la cour était
+        alors.
+      </p>
+      <p>Le sacre avait été fait à Rheims par le cardinal
+        de Lorraine, et l’on devait passer le reste de l’été dans
+        le château de Chambort, qui était nouvellement bâti.
+        La reine témoigna une grande joie de revoir madame
+        de Martigues&#160;; et, après lui en avoir donné plusieurs
+        marques, elle lui demanda des nouvelles de madame
+        de Clèves et de ce qu’elle faisait à la campagne. M. de
+        Nemours et M. de Clèves étaient alors chez cette reine.
+        Madame de Martigues, qui avait trouvé Coulommiers
+        admirable, en conta toutes les beautés, et elle s’étendit
+        extrêmement sur la description de ce pavillon de la&#32;forêt, et sur le plaisir qu’avait madame de Clèves de
+        s’y promener seule une partie de la nuit. M. de Nemours,
+        qui connaissait assez le lieu pour entendre ce
+        qu’en disait madame de Martigues, pensa qu’il n’était
+        pas impossible qu’il y pût voir madame de Clèves sans
+        être vu que d’elle. Il fit quelques questions à madame
+        de Martigues, pour s’en éclaircir encore&#160;; et M. de
+        Clèves, qui l’avait toujours regardé pendant que madame
+        de Martigues avait parlé, crut voir dans ce
+        moment ce qui lui passait dans l’esprit. Les questions
+        que fit ce prince le confirmèrent encore dans cette
+        pensée&#160;: en sorte qu’il ne douta point qu’il n’eût dessein
+        d’aller voir sa femme. Il ne se trompait pas dans
+        ses soupçons&#160;: ce dessein entra si fortement dans l’esprit
+        de M. de Nemours, qu’après avoir passé la nuit
+        à songer aux moyens de l’exécuter, dès le lendemain
+        matin, il demanda congé au roi, pour aller à Paris,
+        sur quelque prétexte qu’il inventa.</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image2.png" alt="Demande de M. de Nemours pour Paris" width="500" height="300">
+        </center>
+      </p>
+      <p>M. de Clèves ne douta point du sujet de ce voyage&#160;;
+        mais il résolut de s’éclaircir de la conduite de sa femme,
+        et de ne pas demeurer dans une cruelle incertitude.
+        Il eut envie de partir en même-temps que M. de Nemours,
+        et de venir lui-même, caché, découvrir quel
+        succès aurait ce voyage&#160;; mais, craignant que son départ
+        ne parût extraordinaire, et que M. de Nemours,
+        en étant averti, ne prît d’autres mesures, il résolut de
+        se fier à un gentilhomme qui était à lui, dont il connaissait
+        la fidélité et l’esprit. Il lui conta dans quel
+        embarras il se trouvait&#160;: il lui dit quelle avait été jusqu’alors
+        la vertu de madame de Clèves, et lui ordonna
+        de partir sur les pas de M. de Nemours, de l’observer&#32;exactement, de voir s’il n’irait point à Coulommiers,
+        et s’il n’entrerait point la nuit dans le jardin.
+      </p>
+      <p>Le gentilhomme, qui était très-capable d’une telle
+        commission, s’en acquitta avec toute l’exactitude imaginable.
+        Il suivit M. de Nemours jusqu’à un village, à
+        une demi-lieue de Coulommiers, où ce prince s’arrêta,
+        et le gentilhomme devina aisément que c’était pour y
+        attendre la nuit. Il ne crut pas à propos de l’y attendre
+        aussi&#160;; il passa le village, et alla dans la forêt
+        à l’endroit par où il jugeait que M. de Nemours pouvait
+        passer. Il ne se trompa point dans tout ce qu’il
+        avait pensé&#160;: sitôt que la nuit fut venue, il entendit
+        marcher, et, quoiqu’il fît obscur, il reconnut aisément
+        M. de Nemours&#160;: il le vit faire le tour du jardin,
+        comme pour écouter s’il n’y entendrait personne, et
+        pour choisir le lieu par où il pourrait passer le plus
+        aisément. Les palissades étaient fort hautes, et il y en
+        avait encore derrière, pour empêcher qu’on ne pût
+        entrer&#160;; en sorte qu’il était assez difficile de se faire
+        passage. M. de Nemours en vint à bout néanmoins&#160;;
+        sitôt qu’il fut dans ce jardin, il n’eut pas de peine à
+        démêler où était madame de Clèves&#160;; il vit beaucoup
+        de lumières dans le cabinet&#160;; toutes les fenêtres en
+        étaient ouvertes&#160;; et, en se glissant le long des palissades,
+        il s’en approcha avec un trouble et une émotion
+        qu’il est aisé de se représenter. Il se rangea derrière
+        une des fenêtres qui servait de porte, pour voir ce
+        que faisait madame de Clèves. Il vit qu’elle était seule&#160;;
+        mais il la vit d’une si admirable beauté, qu’à peine
+        fut-il maître du transport que lui donna cette vue. Il
+        faisait chaud, et elle n’avait rien sur sa tête et sur sa&#32;gorge, que ses cheveux confusément rattachés. Elle
+        était sur un lit de repos, avec une table devant elle,
+        où il y avait plusieurs corbeilles pleines de rubans&#160;;
+        elle en choisit quelques-uns, et M. de Nemours remarqua
+        que c’étaient des mêmes couleurs qu’il avait
+        portées au tournoi. Il vit qu’elle en faisait des nœuds
+        à une canne des Indes fort extraordinaire, qu’il avait
+        portée quelque temps, et qu’il avait donnée à sa sœur,
+        à qui madame de Clèves l’avait prise sans faire semblant de
+        la reconnaître pour avoir été à M. de Nemours. Après
+        qu’elle eut achevé son ouvrage avec une grâce et une
+        douceur que répandaient sur son visage les sentiments
+        qu’elle avait dans le cœur, elle prit un flambeau et s’en
+        alla proche d’une grande table, vis-à-vis du tableau
+        du siége de Metz, où était le portrait de M. de Nemours&#160;;
+        elle s’assit, et se mit à regarder ce portrait
+        avec une attention et une rêverie que la passion seule
+        peut donner.
+      </p>
+      <p>On ne peut exprimer ce que sentit M. de Nemours
+        dans ce moment. Voir, au milieu de la nuit, dans le
+        plus beau lieu du monde, une personne qu’il adorait&#160;;
+        la voir sans qu’elle sût qu’il la voyait&#160;; et la voir toute
+        occupée de choses qui avaient du rapport à lui et à la
+        passion qu’elle lui cachait&#160;; c’est ce qui n’a jamais été
+        goûté ni imaginé par nul autre amant.
+      </p>
+      <p>Ce prince était aussi tellement hors de lui-même,
+        qu’il demeurait immobile à regarder madame de Clèves,
+        sans songer que les moments lui étaient précieux.
+        Quand il fut un peu remis, il pensa qu’il devait attendre
+        à lui parler qu’elle allât dans le jardin&#160;; il crut
+        qu’il le pourrait faire avec plus de sûreté, parce qu’elle&#32;serait plus éloignée de ses femmes&#160;; mais,
+        voyant qu’elle
+        demeurait dans le cabinet, il prit la résolution d’y entrer.
+        Quand il voulut l’exécuter, quel trouble n’eut-il
+        point&#160;! Quelle crainte de lui déplaire&#160;! Quelle peur
+        de faire changer ce visage où il y avait tant de douceur,
+        et de le voir devenir plein de sévérité et de
+        colère&#160;!
+      </p>
+      <p>Il trouva qu’il y avait eu de la folie, non pas à venir
+        voir madame de Clèves sans être vu, mais à penser de
+        s’en faire voir&#160;; il vit tout ce qu’il n’avait point encore
+        envisagé. Il lui parut de l’extravagance dans sa hardiesse
+        de venir surprendre, au milieu de la nuit, une
+        personne à qui il n’avait encore jamais parlé de son
+        amour. Il pensa qu’il ne devait pas prétendre qu’elle le
+        voulût écouter, et qu’elle aurait une juste colère du
+        péril où il l’exposait par les accidents qui pouvaient
+        arriver. Tout son courage l’abandonna, et il fut prêt
+        plusieurs fois à prendre la résolution de s’en retourner
+        sans se faire voir. Poussé néanmoins par le desir de
+        lui parler, et rassuré par les espérances que lui donnait
+        tout ce qu’il avait vu, il avança quelques pas&#160;;
+        mais avec tant de trouble, qu’une écharpe qu’il avait
+        s’embarrassa dans la fenêtre, en sorte qu’il fit du bruit.
+        Madame de Clèves tourna la tête, et, soit qu’elle eût
+        l’esprit rempli de ce prince, ou qu’il fût dans un lieu
+        où la lumière donnait assez pour qu’elle le pût distinguer,
+        elle crut le reconnaître&#160;; et, sans balancer ni
+        se retourner du côté où il était, elle entra dans le lieu
+        où étaient ses femmes. Elle y entra avec tant de trouble,
+        qu’elle fut contrainte, pour le cacher, de dire qu’elle
+        se trouvait mal&#160;; et elle le dit aussi pour occuper tous&#32;ses gens, et pour donner le temps à M. de
+        Nemours
+        de se retirer. Quand elle eut fait quelque réflexion,
+        elle pensa qu’elle s’était trompée, et que c’était un effet
+        de son imagination d’avoir cru voir M. de Nemours.
+        Elle savait qu’il était à Chambort&#160;; elle ne trouvait
+        nulle apparence qu’il eût entrepris une chose si hasardeuse&#160;;
+        elle eut envie plusieurs fois de rentrer dans le
+        cabinet, et d’aller voir dans le jardin s’il y avait quelqu’un. Peut-être souhaitait-elle, autant qu’elle le
+        craignait,
+        d’y trouver M. de Nemours&#160;: mais enfin, la raison
+        et la prudence l’emportèrent sur tous ses autres sentiments,
+        et elle trouva qu’il valait mieux demeurer dans
+        le doute où elle était, que de prendre le hasard de
+        s’en éclaircir. Elle fut long-temps à se résoudre à
+        sortir d’un lieu dont elle pensait que ce prince était
+        peut-être si proche, et il était quasi jour quand elle
+        revint au château.
+      </p>
+      <p>M. de Nemours était demeuré dans le jardin tant
+        qu’il avait vu de la lumière&#160;; il n’avait pu perdre l’espérance
+        de revoir madame de Clèves, quoiqu’il fût
+        persuadé qu’elle l’avait reconnu, et qu’elle n’était sortie
+        que pour l’éviter&#160;: mais, voyant qu’on fermait les portes,
+        il jugea bien qu’il n’avait plus rien à espérer. Il vint
+        reprendre son cheval tout proche du lieu où attendait le gentilhomme de M. de Clèves. Ce gentilhomme
+        le suivit jusqu’au même village d’où il était parti le
+        soir. M. de Nemours se résolut d’y passer tout le jour,
+        afin de retourner la nuit à Coulommiers, pour voir
+        si madame de Clèves aurait encore la cruauté de le
+        fuir, ou celle de ne se pas exposer à être vue. Quoiqu’il
+        eût une joie sensible de l’avoir trouvée si remplie de&#32;son idée, il était néanmoins très-affligé de lui
+        avoir vu
+        un mouvement si naturel de le fuir.
+      </p>
+      <p>La passion n’a jamais été si tendre et si violente
+        qu’elle l’était alors en ce prince. Il s’en alla sous des
+        saules, le long d’un petit ruisseau qui coulait derrière
+        la maison où il était caché. Il s’éloigna le plus qu’il lui
+        fut possible, pour n’être vu ni entendu de personne&#160;;
+        il s’abandonna aux transports de son amour, et son
+        cœur en fut tellement pressé qu’il fut contraint de laisser
+        couler quelques larmes&#160;: mais ces larmes n’étaient
+        pas de celles que la douleur seule fait répandre&#160;; elles
+        étaient mêlées de douceur et de ce charme qui ne se
+        trouve que dans l’amour.
+      </p>
+      <p>Il se mit à repasser toutes les actions de madame de
+        Clèves depuis qu’il en était amoureux&#160;: quelle rigueur
+        honnête et modeste elle avait toujours eue pour lui,
+        quoiqu’elle l’aimât&#160;! Car enfin, elle m’aime, disait-il,
+        elle m’aime, je n’en saurais douter&#160;; les plus grands
+        engagements et les plus grandes faveurs ne sont pas
+        des marques si assurées que celles que j’en ai eues&#160;:
+        cependant je suis traité avec la même rigueur que si
+        j’étais haï. J’ai espéré au temps&#160;; je n’en dois plus rien
+        attendre&#160;: je la vois toujours se défendre également
+        contre moi et contre elle-même. Si je n’étais point
+        aimé, je songerais à plaire&#160;; mais je plais, on m’aime,
+        et on me le cache. Que puis-je donc espérer, et quel
+        changement dois-je attendre dans ma destinée&#160;? Quoi&#160;!
+        je serai aimé de la plus aimable personne du monde,
+        et je n’aurai cet excès d’amour que donnent les premières
+        certitudes d’être aimé, que pour mieux sentir
+        la douleur d’être maltraité&#160;! Laissez-moi voir que vous&#32;m’aimez, belle princesse, s’écria-t-il&#160;;
+        laissez-moi voir
+        vos sentiments&#160;: pourvu que je les connaisse par vous
+        une fois en ma vie, je consens que vous repreniez
+        pour toujours ces rigueurs dont vous m’accabliez. Regardez-moi
+        du moins avec ces mêmes yeux dont je
+        vous ai vue cette nuit regarder mon portrait. Pouvez-vous
+        l’avoir regardé avec tant de douceur, et m’avoir
+        fui moi-même si cruellement&#160;? Que craignez-vous&#160;?
+        Pourquoi mon amour vous est-il si redoutable&#160;? Vous
+        m’aimez, vous me le cachez inutilement&#160;; vous-même
+        m’en avez donné des marques involontaires. Je sais
+        mon bonheur&#160;; laissez m’en jouir, et cessez de me
+        rendre malheureux. Est-il possible, reprenait-il, que
+        je sois aimé de madame de Clèves, et que je sois malheureux&#160;?
+        Qu’elle était belle cette nuit&#160;! Comment ai-je
+        pu résister à l’envie de me jeter à ses pieds&#160;? Si je
+        l’avais fait, je l’aurais peut-être empêchée de me fuir&#160;;
+        mon respect l’aurait rassurée&#160;: mais peut-être elle ne
+        m’a pas reconnu&#160;; je m’afflige plus que je ne dois, et
+        la vue d’un homme à une heure si extraordinaire l’a
+        effrayée.
+      </p>
+      <p>Ces mêmes pensées occupèrent tout le jour M.
+        de Nemours. Il attendit la nuit avec impatience&#160;; et
+        quand elle fut venue, il reprit le chemin de Coulommiers.
+        Le gentilhomme de M. de Clèves, qui s’était
+        déguisé afin d’être moins remarqué, le suivit jusqu’au
+        lieu où il l’avait suivi le soir d’auparavant, et le vit
+        entrer dans le même jardin. Ce prince connut bientôt
+        que madame de Clèves n’avait pas voulu hasarder
+        qu’il essayât encore de la voir&#160;: toutes les portes
+        étaient fermées. Il tourna de tous les côtés pour&#32;découvrir s’il ne verrait point de lumières&#160;; mais ce
+        fut
+        inutilement.
+      </p>
+      <p>Madame de Clèves, s’étant douté que M. de Nemours
+        pourrait revenir, était demeurée dans sa chambre&#160;; elle
+        avait appréhendé de n’avoir pas toujours la force de
+        le fuir, et elle n’avait pas voulu se mettre au hasard
+        de lui parler d’une manière si peu conforme à la conduite
+        qu’elle avait eue jusqu’alors.
+      </p>
+      <p>Quoique M. de Nemours n’eût aucune espérance
+        de la voir, il ne put se résoudre à sortir sitôt d’un lieu
+        où elle était si souvent. Il passa la nuit entière dans
+        le jardin, et trouva quelque consolation à voir du moins
+        les mêmes objets qu’elle voyait tous les jours. Le soleil
+        était levé devant qu’il pensât à se retirer&#160;; mais enfin
+        la crainte d’être découvert l’obligea à s’en aller.
+      </p>
+      <p>Il lui fut impossible de s’éloigner sans voir madame
+        de Clèves&#160;; et il alla chez madame de Mercœur, qui
+        était alors dans cette maison qu’elle avait proche de
+        Coulommiers. Elle fut extrêmement surprise de l’arrivée
+        de son frère. Il inventa une cause de son voyage
+        assez vraisemblable pour la tromper&#160;; et enfin il conduisit
+        si habilement son dessein, qu’il l’obligea à lui proposer
+        d’elle-même d’aller chez madame de Clèves. Cette proposition
+        fut exécutée dès le même jour, et M. de Nemours
+        dit à sa sœur qu’il la quitterait à Coulommiers,
+        pour s’en retourner en diligence trouver le roi. Il fit
+        ce dessein de la quitter à Coulommiers, dans la pensée
+        de l’en laisser partir la première&#160;; et il crut avoir
+        trouvé un moyen infaillible de parler à madame de
+        Clèves.
+      </p>
+      <p>Comme ils arrivèrent, elle se promenait dans une&#32;grande allée qui borde le parterre. La vue de M. de
+        Nemours ne lui causa pas un médiocre trouble, et ne
+        lui laissa plus douter que ce ne fût lui qu’elle avait vu
+        la nuit précédente. Cette certitude lui donna quelque
+        mouvement de colère, par la hardiesse et l’imprudence
+        qu’elle trouvait dans ce qu’il avait entrepris. Ce prince
+        remarqua une impression de froideur sur son visage
+        qui lui donna une sensible douleur. La conversation
+        fut de choses indifférentes&#160;; et néanmoins il trouva
+        l’art d’y faire paraître tant d’esprit, tant de complaisance,
+        et tant d’admiration pour madame de Clèves,
+        qu’il dissipa malgré elle une partie de la froideur qu’elle
+        avait eue d’abord.
+      </p>
+      <p>Lorsqu’il se sentit rassuré de sa première crainte, il
+        témoigna une extrême curiosité d’aller voir le pavillon
+        de la forêt&#160;: il en parla comme du plus agréable lieu
+        du monde, et en fit même une description si particulière,
+        que madame de Mercœur lui dit qu’il fallait qu’il
+        y eût été plusieurs fois pour en connaître si bien toutes
+        les beautés. Je ne crois pourtant pas, reprit madame
+        de Clèves, que M. de Nemours y ait jamais entré, c’est
+        un lieu qui n’est achevé que depuis peu. Il n’y a pas
+        long-temps aussi que j’y ai été, reprit M. de Nemours
+        en la regardant, et je ne sais si je ne dois point être
+        bien-aise que vous ayez oublié de m’y avoir vu. Madame
+        de Mercœur, qui regardait la beauté des jardins, n’avait
+        point d’attention à ce que disait son frère. Madame
+        de Clèves rougit&#160;; et, baissant les yeux sans regarder
+        M. de Nemours&#160;: Je ne me souviens point, lui dit-elle,
+        de vous y avoir vu&#160;; et si vous y avez été, c’est sans
+        que je l’aie su. Il est vrai, madame, répliqua M. de&#32;Nemours, que j’y ai été sans vos ordres, et j’y ai
+        passé
+        les plus doux et les plus cruels moments de ma vie.
+      </p>
+      <p>Madame de Clèves entendait trop bien tout ce que
+        disait ce prince&#160;; mais elle n’y répondit point&#160;: elle
+        songea à empêcher madame de Mercœur d’aller dans
+        ce cabinet, parce que le portrait de M. de Nemours y
+        était, et qu’elle ne voulait pas qu’elle l’y vît. Elle fit
+        si bien que le temps se passa insensiblement, et madame
+        de Mercœur parla de s’en retourner&#160;; mais quand
+        madame de Clèves vit que M. de Nemours et sa sœur
+        ne s’en allaient pas ensemble, elle jugea bien à quoi
+        elle allait être exposée&#160;: elle se trouva dans le même
+        embarras où elle s’était trouvée à Paris, et elle prit
+        aussi le même parti. La crainte que cette visite ne fût
+        encore une confirmation des soupçons qu’avait son
+        mari ne contribua pas peu à la déterminer&#160;; et, pour
+        éviter que M. de Nemours ne demeurât seul avec elle,
+        elle dit à madame de Mercœur qu’elle l’allait conduire
+        jusques au bord de la forêt, et elle ordonna que son
+        carrosse la suivît. La douleur qu’eut ce prince de
+        trouver toujours cette même continuation des rigueurs
+        en madame de Clèves fut si violente qu’il en pâlit dans
+        le même moment. Madame de Mercœur lui demanda
+        s’il se trouvait mal&#160;; mais il regarda madame de Clèves,
+        sans que personne s’en aperçût, et il lui fit juger, par
+        ses regards, qu’il n’avait d’autre mal que son désespoir.
+        Cependant il fallut qu’il les laissât partir sans oser les
+        suivre&#160;; et, après ce qu’il avait dit, il ne pouvait plus
+        retourner avec sa sœur&#160;: ainsi, il revint à Paris, et en
+        partit le lendemain.
+      </p>
+      <p>Le gentilhomme de M. de Clèves l’avait toujours&#32;observé&#160;: il revint aussi à Paris&#160;; et, comme il
+        vit M. de
+        Nemours parti pour Chambort, il prit la poste, afin
+        d’y arriver devant lui, et de rendre compte de son
+        voyage. Son maître attendait son retour comme ce
+        qui allait décider du malheur de toute sa vie.
+      </p>
+      <p>Sitôt qu’il le vit, il jugea, par son visage et par son
+        silence, qu’il n’avait que des choses fâcheuses à lui
+        apprendre. Il demeura quelque temps saisi d’affliction,
+        la tête baissée sans pouvoir parler&#160;; enfin, il lui fit
+        signe de la main de se retirer. Allez, lui dit-il, je vois
+        ce que vous avez à me dire&#160;; mais je n’ai pas la force
+        de l’écouter. Je n’ai rien à vous apprendre, lui répondit
+        le gentilhomme, sur quoi on puisse faire de jugement
+        assuré&#160;: il est vrai que M. de Nemours a entré deux
+        nuits de suite dans le jardin de la forêt, et qu’il a été le
+        jour d’après à Coulommiers, avec madame de Mercœur.
+        C’est assez, répliqua M. de Clèves, c’est assez, en lui
+        faisant encore signe de se retirer, et je n’ai pas besoin
+        d’un plus grand éclaircissement. Le gentilhomme fut
+        contraint de laisser son maître abandonné à son désespoir.
+        Il n’y en a peut-être jamais eu un plus violent,
+        et peu d’hommes d’un aussi grand courage et d’un
+        cœur aussi passionné que M. de Clèves ont ressenti
+        en même temps la douleur que cause l’infidélité d’une
+        maîtresse, et la honte d’être trompé par une femme.
+      </p>
+      <p>M. de Clèves ne put résister à l’accablement où il se
+        trouva. La fièvre lui prit dès la nuit même, et avec de
+        si grands accidents, que dès ce moment sa maladie
+        parut très-dangereuse&#160;: on en donna avis à madame
+        de Clèves&#160;; elle vint en diligence. Quand elle arriva,
+        il était encore plus mal, elle lui trouva quelque chose&#32;de si froid et de si glacé pour elle, qu’elle en fut
+        extrêmement
+        surprise et affligée. Il lui parut même qu’il
+        recevait avec peine les services qu’elle lui rendait&#160;;
+        mais enfin elle pensa que c’était peut-être un effet
+        de sa maladie.</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image3.png" alt="Fièvre de M. de Clèves" width="400" height="300">
+        </center>
+      </p>
+      <p>D’abord qu’elle fut à Blois, où la cour était alors,
+        M. de Nemours ne put s’empêcher d’avoir de la joie de
+        savoir qu’elle était dans le même lieu que lui. Il essaya
+        de la voir, et alla tous les jours chez M. de Clèves,
+        sur le prétexte de savoir de ses nouvelles&#160;; mais ce fut
+        inutilement. Elle ne sortait point de la chambre de son
+        mari, et avait une douleur violente de l’état où elle le
+        voyait. M. de Nemours était désespéré qu’elle fût si
+        affligée&#160;; il jugeait aisément combien cette affliction
+        renouvelait l’amitié qu’elle avait pour M. de Clèves,
+        et combien cette amitié faisait une diversion dangereuse
+        à la passion qu’elle avait dans le cœur. Ce sentiment
+        lui donna un chagrin mortel pendant quelque
+        temps&#160;; mais l’extrémité du mal de M. de Clèves lui
+        ouvrit de nouvelles espérances. Il vit que madame de
+        Clèves serait peut-être en liberté de suivre son inclination,
+        et qu’il pourrait trouver dans l’avenir une suite
+        de bonheur et de plaisirs durables. Il ne pouvait soutenir
+        cette pensée, tant elle lui donnait de trouble et
+        de transports, et il en éloignait son esprit par la crainte
+        de se trouver trop malheureux, s’il venait à perdre ses
+        espérances.
+      </p>
+      <p>Cependant M. de Clèves était presque abandonné
+        des médecins. Un des derniers jours de son mal, après
+        avoir passé une nuit très-fâcheuse, il dit, sur le matin,
+        qu’il voulait reposer. Madame de Clèves demeura seule&#32;dans sa chambre. Il lui parut qu’au lieu de reposer,
+        il avait beaucoup d’inquiétude&#160;: elle s’approcha, et se
+        vint mettre à genoux devant son lit, le visage tout
+        couvert de larmes. M. de Clèves avait résolu de ne
+        lui point témoigner le violent chagrin qu’il avait contre
+        elle&#160;; mais les soins qu’elle lui rendait, et son affliction,
+        qui lui paraissait quelquefois véritable, et qu’il
+        regardait aussi quelquefois comme des marques de dissimulation
+        et de perfidie, lui causaient des sentiments
+        si opposés et si douloureux, qu’il ne les put renfermer
+        en lui-même.
+      </p>
+      <p>Vous versez bien des pleurs, madame, lui dit-il,
+        pour une mort que vous causez, et qui ne vous peut
+        donner la douleur que vous faites paraître. Je ne suis
+        plus en état de vous faire des reproches, continua-t-il
+        avec une voix affaiblie par la maladie et par la douleur&#160;;
+        mais je meurs du cruel déplaisir que vous m’avez
+        donné. Fallait-il qu’une action aussi extraordinaire que
+        celle que vous aviez faite de me parler à Coulommiers
+        eût si peu de suite&#160;? Pourquoi m’éclairer sur la passion
+        que vous aviez pour M. de Nemours, si votre vertu
+        n’avait pas plus d’étendue pour y résister&#160;? Je vous
+        aimais jusqu’à être bien aise d’être trompé, je l’avoue
+        à ma honte&#160;; j’ai regretté ce faux repos dont vous
+        m’avez tiré. Que ne me laissiez-vous dans cet aveuglement
+        tranquille dont jouissent tant de maris&#160;? j’eusse,
+        peut-être, ignoré, toute ma vie, que vous aimiez M. de
+        Nemours. Je mourrai, ajouta-t-il&#160;; mais sachez que vous
+        me rendez la mort agréable, et qu’après m’avoir ôté
+        l’estime et la tendresse que j’avais pour vous, la vie
+        me ferait horreur. Que ferais-je de la vie, reprit-il,&#32;pour la passer avec une personne que j’ai tant aimée,
+        et dont j’ai été si cruellement trompé, ou pour vivre
+        séparé de cette même personne, et en venir à un éclat
+        et à des violences si opposées à mon humeur et à la
+        passion que j’avais pour vous&#160;? Elle a été au-delà de
+        ce que vous en avez vu, madame&#160;; je vous en ai caché
+        la plus grande partie, par la crainte de vous importuner,
+        ou de perdre quelque chose de votre estime,
+        par des manières qui ne convenaient pas à un mari&#160;;
+        enfin je méritais votre cœur&#160;: encore une fois, je meurs
+        sans regret, puisque je n’ai pu l’avoir, et que je ne
+        puis plus le desirer. Adieu, madame. Vous regretterez
+        quelque jour un homme qui vous aimait d’une passion
+        véritable et légitime. Vous sentirez le chagrin que
+        trouvent les personnes raisonnables dans ces engagements,
+        et vous connaîtrez la différence d’être aimée
+        comme je vous aimais, à l’être par des gens qui, en
+        vous témoignant de l’amour, ne cherchent que l’honneur
+        de vous séduire&#160;: mais ma mort vous laissera en
+        liberté, ajouta-t-il, et vous pourrez rendre M. de Nemours
+        heureux, sans qu’il vous en coûte des crimes.
+        Qu’importe, reprit-il, ce qui arrivera quand je ne
+        serai plus, et faut-il que j’aie la faiblesse d’y jeter
+        les yeux&#160;!
+      </p>
+      <p>Madame de Clèves était si éloignée de s’imaginer
+        que son mari pût avoir des soupçons contre elle,
+        qu’elle écouta toutes ces paroles sans les comprendre,
+        et sans avoir d’autre idée, sinon qu’il lui reprochait
+        son inclination pour M. de Nemours&#160;: enfin, sortant
+        tout d’un coup de son aveuglement&#160;: Moi, des crimes,
+        s’écria-t-elle&#160;! la pensée même m’en est inconnue. La&#32;vertu la plus austère ne peut inspirer d’autre
+        conduite
+        que celle que j’ai eue&#160;; et je n’ai jamais fait d’action
+        dont je n’eusse souhaité que vous eussiez été témoin.
+        Eussiez-vous souhaité, répliqua M. de Clèves, en la
+        regardant avec dédain, que je l’eusse été des nuits
+        que vous avez passées avec M. de Nemours&#160;? Ah&#160;!
+        madame, est-ce vous dont je parle, quand je parle
+        d’une femme qui a passé des nuits avec un homme&#160;?
+        Non, monsieur, reprit-elle&#160;; non, ce n’est pas de moi dont
+        vous parlez&#160;: je n’ai jamais passé ni de nuits ni de
+        moments avec M. de Nemours&#160;: il ne m’a jamais vue
+        en particulier&#160;; je ne l’ai jamais souffert ni écouté, et
+        j’en ferais tous les serments… N’en dites pas davantage,
+        interrompit M. de Clèves&#160;; de faux serments ou
+        un aveu me feraient peut-être une égale peine. Madame
+        de Clèves ne pouvait répondre&#160;; ses larmes et sa douleur
+        lui ôtaient la parole&#160;; enfin, faisant un effort&#160;: Regardez-moi,
+        du moins&#160;; écoutez-moi, lui dit-elle&#160;; s’il n’y allait
+        que de mon intérêt, je souffrirais ces reproches&#160;; mais
+        il y va de votre vie&#160;: écoutez-moi pour l’amour de
+        vous-même&#160;: il est impossible qu’avec tant de vérité,
+        je ne vous persuade mon innocence. Plût à Dieu que
+        vous me la puissiez persuader, s’écria-t-il&#160;; mais que
+        me pouvez-vous dire&#160;? M. de Nemours n’a-t-il pas
+        été à Coulommiers avec sa sœur&#160;? et n’avait-il pas
+        passé les deux nuits précédentes avec vous dans le
+        jardin de la forêt&#160;? Si c’est là mon crime, répliqua-t-elle,
+        il m’est aisé de me justifier&#160;: je ne vous demande
+        point de me croire&#160;; mais croyez tous vos domestiques,
+        et sachez si j’allai dans le jardin de la forêt la veille
+        que M. de Nemours vint à Coulommiers, et si je n’en&#32;que
+        je n’avais accoutumé. Elle lui conta ensuite comme elle
+        avait cru voir quelqu’un dans ce jardin&#160;: elle lui avoua
+        qu’elle avait cru que c’était M. de Nemours. Elle lui
+        parla avec tant d’assurance, et la vérité se persuade
+        si aisément, lors même qu’elle n’est pas vraisemblable,
+        que M. de Clèves fut presque convaincu de son innocence.
+        Je ne sais, lui dit-il, si je me dois laisser aller
+        à vous croire&#160;? Je me sens si proche de la mort, que
+        je ne veux rien voir de ce qui me pourrait faire regretter
+        la vie. Vous m’avez éclairci trop tard&#160;; mais ce
+        me sera toujours un soulagement d’emporter la pensée
+        que vous êtes digne de l’estime que j’ai eue pour vous.
+        Je vous prie que je puisse encore avoir la consolation
+        de croire que ma mémoire vous sera chère, et que,
+        s’il eût dépendu de vous, vous eussiez eu pour moi les
+        sentiments que vous avez pour un autre. Il voulut
+        continuer&#160;; mais une faiblesse lui ôta la parole. Madame
+        de Clèves fit venir les médecins&#160;; ils le trouvèrent
+        presque sans vie. Il languit néanmoins encore
+        quelques jours, et mourut enfin avec une constance
+        admirable.
+        <p />
+      <p>
+        <center>
+          <img src="images/Partie4_image4.png" alt="Aveu du crime de madame de Clèves" width="420" height="400">
+        </center>
+      </p>
+      <p>Madame de Clèves demeura dans une affliction si
+        violente, qu’elle perdit quasi l’usage de la raison. La
+        reine la vint voir avec soin, et la mena dans un couvent,
+        sans qu’elle sût où on la conduisait. Ses belles-sœurs
+        la ramenèrent à Paris, qu’elle n’était pas encore
+        en état de sentir distinctement sa douleur. Quand elle
+        commença d’avoir la force de l’envisager, et qu’elle
+        vit quel mari elle avait perdu, qu’elle considéra qu’elle
+        était la cause de sa mort, et que c’était par la passion&#32;qu’elle avait eue pour un autre qu’elle en était
+        cause,
+        l’horreur qu’elle eut pour elle-même et pour M. de
+        Nemours ne se peut représenter.
+      </p>
+      <p>Ce prince n’osa, dans ces commencements, lui rendre
+        d’autres soins que ceux que lui ordonnait la bienséance.
+        Il connaissait assez madame de Clèves pour croire qu’un
+        plus grand empressement lui serait désagréable&#160;: mais
+        ce qu’il apprit ensuite lui fit bien voir qu’il devait avoir
+        long-temps la même conduite.
+      </p>
+      <p>Un écuyer qu’il avait lui conta que le gentilhomme
+        de M. de Clèves, qui était son ami intime, lui avait
+        dit, dans sa douleur de la perte de son maître, que
+        le voyage de M. de Nemours à Coulommiers était
+        cause de sa mort. M. de Nemours fut extrêmement
+        surpris de ce discours&#160;; mais, après y avoir fait réflexion,
+        il devina une partie de la vérité, et il jugea
+        bien quels seraient d’abord les sentiments de madame
+        de Clèves, et quel éloignement elle aurait de lui, si
+        elle croyait que le mal de son mari eût été causé par
+        la jalousie. Il crut qu’il ne fallait pas même la faire
+        sitôt souvenir de son nom&#160;; et il suivit cette conduite,
+        quelque pénible qu’elle lui parût.
+      </p>
+      <p>Il fit un voyage à Paris, et ne put s’empêcher néanmoins
+        d’aller à sa porte pour apprendre de ses nouvelles.
+        On lui dit que personne ne la voyait, et qu’elle
+        avait même défendu qu’on lui rendît compte de ceux
+        qui l’iraient chercher. Peut-être que ces ordres si exacts
+        étaient donnés en vue de ce prince, et pour ne point entendre
+        parler de lui. M. de Nemours était trop amoureux
+        pour pouvoir vivre si absolument privé de la vue de madame
+        de Clèves. Il résolut de trouver des moyens, quelque&#32;difficiles qu’ils pussent être, de sortir d’un état qui
+        lui
+        paraissait si insupportable.
+      </p>
+      <p>La douleur de cette princesse passait les bornes de
+        la raison. Ce mari mourant, et mourant à cause d’elle
+        et avec tant de tendresse pour elle, ne lui sortait point
+        de l’esprit. Elle repassait incessamment tout ce qu’elle
+        lui devait&#160;; et elle se faisait un crime de n’avoir pas
+        eu de la passion pour lui, comme si c’eût été une
+        chose qui eût été en son pouvoir. Elle ne trouvait de
+        consolation qu’à penser qu’elle le regrettait autant qu’il
+        méritait d’être regretté, et qu’elle ne ferait, dans le
+        reste de sa vie, que ce qu’il aurait été bien aise qu’elle
+        eût fait, s’il avait vécu.
+      </p>
+      <p>Elle avait pensé plusieurs fois comment il avait su
+        que M. de Nemours était venu à Coulommiers&#160;: elle
+        ne soupçonnait pas ce prince de l’avoir conté, et
+        il lui paraissait même indifférent qu’il l’eût redit,
+        tant elle se croyait guérie et éloignée de la passion
+        qu’elle avait eue pour lui. Elle sentait néanmoins une
+        douleur vive de s’imaginer qu’il était cause de la mort
+        de son mari, et elle se souvenait avec peine de la
+        crainte que M. de Clèves lui avait témoignée en mourant
+        qu’elle ne l’épousât&#160;; mais toutes ces douleurs se
+        confondaient dans celle de la perte de son mari, et
+        elle croyait n’en avoir point d’autre.
+      </p>
+      <p>Après que plusieurs mois furent passés, elle sortit
+        de cette violente affliction où elle était, et passa dans
+        un état de tristesse et de langueur. Madame de Martigues
+        fit un voyage à Paris, et la vit avec soin pendant
+        le séjour qu’elle y fit. Elle l’entretint de la cour
+        et de tout ce qui s’y passait&#160;; et, quoique madame de&#32;Clèves ne parût pas y prendre intérêt, madame de
+        Martigues ne laissait pas de lui en parler pour la
+        divertir.
+      </p>
+      <p>Elle lui conta des nouvelles du vidame, de M. de
+        Guise, et de tous les autres qui étaient distingués par
+        leur personne ou par leur mérite. Pour M. de Nemours,
+        dit-elle, je ne sais si les affaires ont pris dans
+        son cœur la place de la galanterie, mais il a bien
+        moins de joie qu’il n’avait accoutumé d’en avoir&#160;; il
+        paraît fort retiré du commerce des femmes&#160;; il fait
+        souvent des voyages à Paris, et je crois même qu’il y
+        est présentement. Le nom de M. de Nemours surprit
+        madame de Clèves, et la fit rougir&#160;: elle changea de
+        discours, et madame de Martigues ne s’aperçut point
+        de son trouble.
+      </p>
+      <p>Le lendemain, cette princesse, qui cherchait des
+        occupations conformes à l’état où elle était, alla,
+        proche de chez elle, voir un homme qui faisait des
+        ouvrages de soie d’une façon particulière&#160;; et elle y fut
+        dans le dessein d’en faire faire de semblables. Après
+        qu’on les lui eut montrés, elle vit la porte d’une
+        chambre où elle crut qu’il y en avait encore&#160;; elle dit
+        qu’on la lui ouvrît. Le maître répondit qu’il n’en avait
+        pas la clef, et qu’elle était occupée par un homme qui
+        y venait quelquefois, pendant le jour, pour dessiner
+        de belles maisons et des jardins que l’on voyait de ses
+        fenêtres. C’est l’homme du monde le mieux fait, ajouta-t-il,
+        il n’a guères la mine d’être réduit à gagner sa vie.
+        Toutes les fois qu’il vient céans, je le vois toujours
+        regarder les maisons et les jardins, mais je ne le vois
+        jamais travailler.&#32;
+      </p>
+      <p>Madame de Clèves écoutait ce discours avec une
+        grande attention&#160;: ce que lui avait dit madame de
+        Martigues, que M. de Nemours était quelquefois à
+        Paris, se joignit, dans son imagination, à cet homme
+        bien fait qui venait proche de chez elle, et lui fit une
+        idée de M. de Nemours, et de M. de Nemours appliqué
+        à la voir, qui lui donna un trouble confus dont
+        elle ne savait pas même la cause. Elle alla vers les
+        fenêtres pour voir où elles donnaient&#160;: elle trouva
+        qu’elles voyaient tout son jardin et la face de son
+        appartement&#160;; et, lorsqu’elle fut dans sa chambre, elle
+        remarqua aisément cette même fenêtre où l’on lui avait
+        dit que venait cet homme. La pensée que c’était M. de
+        Nemours changea entièrement la situation de son
+        esprit&#160;; elle ne se trouva plus dans un certain triste
+        repos qu’elle commençait à goûter&#160;; elle se sentit inquiète
+        et agitée&#160;; enfin, ne pouvant demeurer avec elle-même,
+        elle sortit, et alla prendre l’air dans un jardin
+        hors des faubourgs, où elle pensait être seule. Elle
+        crut, en y arrivant, qu’elle ne s’était pas trompée&#160;: elle
+        ne vit aucune apparence qu’il y eût quelqu’un, et elle
+        se promena assez longtemps.
+      </p>
+      <p>Après avoir traversé un petit bois, elle aperçut au
+        bout d’une allée, dans l’endroit le plus reculé du
+        jardin, une manière de cabinet ouvert de tous côtés,
+        où elle adressa ses pas. Comme elle en fut proche, elle
+        vit un homme couché sur des bancs, qui paraissait
+        enseveli dans une rêverie profonde, et elle reconnut
+        que c’était M. de Nemours. Cette vue l’arrêta tout
+        court&#160;; mais ses gens, qui la suivaient, firent quelque
+        bruit, qui tira M. de Nemours de sa rêverie. Sans&#32;regarder qui avait causé le bruit qu’il avait entendu, il
+        se leva de sa place pour éviter la compagnie qui venait
+        vers lui, et tourna dans une autre allée, en faisant
+        une révérence fort basse, qui l’empêcha même de voir
+        ceux qu’il saluait.
+      </p>
+      <p>S’il eût su ce qu’il évitait, avec quelle ardeur serait-il
+        retourné sur ses pas&#160;! mais il continua à suivre l’allée,
+        et madame de Clèves le vit sortir par une porte de
+        derrière où l’attendait son carrosse. Quel effet produisit
+        cette vue d’un moment dans le cœur de madame
+        de Clèves&#160;! Quelle passion endormie se ralluma dans
+        son cœur, et avec quelle violence&#160;! Elle s’alla asseoir
+        dans le même endroit d’où venait de sortir M. de Nemours&#160;;
+        elle y demeura comme accablée. Ce prince se
+        présenta à son esprit, aimable au-dessus de tout ce
+        qui était au monde, l’aimant depuis long-temps avec
+        une passion pleine de respect et de fidélité, méprisant
+        tout pour elle, respectant même jusqu’à sa douleur,
+        songeant à la voir sans songer à en être vu, quittant
+        la cour, dont il faisait les délices, pour aller regarder
+        les murailles qui la renfermaient, pour venir rêver
+        dans des lieux où il ne pouvait prétendre de la rencontrer,
+        enfin un homme digne d’être aimé par son
+        seul attachement, et pour qui elle avait une inclination
+        si violente, qu’elle l’aurait aimé quand il ne l’aurait
+        pas aimée&#160;: mais de plus, un homme d’une qualité
+        élevée et convenable à la sienne. Plus de devoir, plus
+        de vertu, qui s’opposassent à ses sentiments&#160;: tous les
+        obstacles étaient levés, et il ne restait de leur état
+        passé que la passion de M. de Nemours pour elle, et
+        que celle qu’elle avait pour lui.&#32;
+      </p>
+      <p>Toutes ces idées furent nouvelles à cette princesse.
+        L’affliction de la mort de M. de Clèves l’avait assez
+        occupée pour avoir empêché qu’elle n’y eût jeté les
+        yeux. La présence de M. de Nemours les amena en
+        foule dans son esprit&#160;; mais, quand il en eut été pleinement
+        rempli, et qu’elle se souvint aussi que ce même
+        homme qu’elle regardait comme pouvant l’épouser,
+        était celui qu’elle avait aimé du vivant de son mari,
+        et qui était la cause de sa mort&#160;; que même, en mourant,
+        il lui avait témoigné de la crainte qu’elle ne
+        l’épousât, son austère vertu était si blessée de cette
+        imagination, qu’elle ne trouvait guère moins de crime
+        à épouser M. de Nemours, qu’elle en avait trouvé à
+        l’aimer pendant la vie de son mari. Elle s’abandonna
+        à ses réflexions si contraires à son bonheur&#160;; elle les
+        fortifia encore de plusieurs raisons qui regardaient son
+        repos et les maux qu’elle prévoyait en épousant ce
+        prince. Enfin, après avoir demeuré deux heures dans
+        le lieu où elle était, elle s’en revint chez elle, persuadée
+        qu’elle devait fuir sa vue comme une chose entièrement
+        opposée à son devoir.
+      </p>
+      <p>Mais cette persuasion, qui était un effet de sa raison
+        et de sa vertu, n’entraînait pas son cœur. Il demeurait
+        attaché à M. de Nemours avec une violence qui la
+        mettait dans un état digne de compassion, et qui ne
+        lui laissa plus de repos. Elle passa une des plus cruelles
+        nuits qu’elle eût jamais passées. Le matin, son premier
+        mouvement fut d’aller voir s’il n’y aurait personne à
+        la fenêtre qui donnait chez elle&#160;; elle y alla, elle y vit
+        M. de Nemours. Cette vue la surprit, et elle se retira
+        avec une promptitude qui fit juger à ce prince qu’il&#32;
+        avait été reconnu. Il avait souvent désiré de l’être,
+        depuis que sa passion lui avait fait trouver ces moyens
+        de voir madame de Clèves&#160;; et, lorsqu’il n’espérait pas
+        d’avoir ce plaisir, il allait rêver dans le même jardin
+        où elle l’avait trouvé.
+      </p>
+      <p>Lassé enfin d’un état si malheureux et si incertain,
+        il résolut de tenter quelque voie d’éclaircir sa destinée.
+        Que veux-je attendre, disait-il&#160;? il y a longtemps que
+        je sais que j’en suis aimé&#160;; elle est libre, elle n’a plus
+        de devoir à m’opposer&#160;; pourquoi me réduire à la voir
+        sans en être vu et sans lui parler&#160;? Est-il possible que
+        l’amour m’ait si absolument ôté la raison et la hardiesse,
+        et qu’il m’ait rendu si différent de ce que j’ai
+        été dans les autres passions de ma vie&#160;? J’ai dû respecter
+        la douleur de madame de Clèves&#160;; mais je la
+        respecte trop long-temps, et je lui donne le loisir
+        d’éteindre l’inclination qu’elle a pour moi.
+      </p>
+      <p>Après ces réflexions, il songea aux moyens dont il
+        devait se servir pour la voir. Il crut qu’il n’y avait plus
+        rien qui l’obligeât à cacher sa passion au vidame de
+        Chartres&#160;: il résolut de lui en parler, et de lui dire
+        le dessein qu’il avait pour sa nièce.
+      </p>
+      <p>Le vidame était alors à Paris&#160;: tout le monde y était
+        venu donner ordre à son équipage et à ses habits, pour
+        suivre le roi, qui devait conduire la reine d’Espagne.
+        M. de Nemours alla donc chez le vidame, et lui fit un
+        aveu sincère de tout ce qu’il lui avait caché jusques
+        alors, à la réserve des sentiments de madame de Clèves,
+        dont il ne voulut pas paraître instruit.
+      </p>
+      <p>Le vidame reçut tout ce qu’il lui dit avec beaucoup
+        de joie, et l’assura que, sans savoir ses sentiments, il&#32;avait souvent pensé, depuis que madame de Clèves
+        était
+        veuve, qu’elle était la seule personne digne de lui.
+        M. de Nemours le pria de lui donner les moyens de
+        lui parler, et de savoir quelles étaient ses dispositions.
+      </p>
+      <p>Le vidame lui proposa de le mener chez elle&#160;; mais
+        M. de Nemours crut qu’elle en serait choquée, parce
+        qu’elle ne voyait encore personne. Ils trouvèrent qu’il
+        fallait que M. le vidame la priât de venir chez lui, sur
+        quelque prétexte, et que M. de Nemours y vînt par
+        un escalier dérobé, afin de n’être vu de personne.
+        Cela s’exécuta comme ils l’avaient résolu&#160;: madame de
+        Clèves vint&#160;; le vidame l’alla recevoir, et la conduisit
+        dans un grand cabinet, au bout de son appartement&#160;;
+        quelque temps après M. de Nemours entra comme si
+        le hasard l’eût conduit. Madame de Clèves fut extrêmement
+        surprise de le voir&#160;: elle rougit, et essaya de
+        cacher sa rougeur. Le vidame parla d’abord de choses
+        différentes, et sortit, supposant qu’il avait quelque
+        ordre à donner. Il dit à madame de Clèves qu’il la
+        priait de faire les honneurs de chez lui, et qu’il allait
+        rentrer dans un moment.
+      </p>
+      <p>L’on ne peut exprimer ce que sentirent M. de Nemours
+        et madame de Clèves, de se trouver seuls et en
+        état de se parler pour la première fois. Ils demeurèrent
+        quelque temps sans rien dire&#160;; enfin, M. de Nemours
+        rompant le silence&#160;: Pardonnerez-vous à M. de Chartres,
+        madame, lui dit-il, de m’avoir donné l’occasion de
+        vous voir, et de vous entretenir, que vous m’avez
+        toujours si cruellement ôtée&#160;? Je ne lui dois pas pardonner,
+        répondit-elle, d’avoir oublié l’état où je suis
+        et à quoi il expose ma réputation. En prononçant ces&#32;paroles elle voulut s’en aller&#160;; et M. de Nemours
+        la
+        retenant&#160;: Ne craignez rien, madame, répliqua-t-il,
+        personne ne sait que je suis ici, et aucun hasard n’est
+        à craindre. Écoutez-moi, madame, écoutez-moi&#160;; si ce
+        n’est par bonté, que ce soit du moins pour l’amour de
+        vous-même, et pour vous délivrer des extravagances
+        où m’emporterait infailliblement une passion dont je
+        ne suis plus le maître.
+      </p>
+      <p>Madame de Clèves céda pour la première fois au
+        penchant qu’elle avait pour M. de Nemours, et le regardant
+        avec des yeux pleins de douceur et de charmes&#160;:
+        Mais qu’espérez-vous, lui dit-elle, de la complaisance
+        que vous me demandez&#160;? Vous vous repentirez peut-être,
+        de l’avoir obtenue, et je me repentirai infailliblement
+        de vous l’avoir accordée. Vous méritez une destinée
+        plus heureuse que celle que vous avez eue jusques ici,
+        et que celle que vous pouvez trouver à l’avenir, à
+        moins que vous ne la cherchiez ailleurs. Moi, madame,
+        lui dit-il, chercher du bonheur ailleurs&#160;! et y en a-t-il
+        d’autre que d’être aimé de vous&#160;! Quoique je ne vous
+        aie jamais parlé, je ne saurais croire, madame, que
+        vous ignoriez ma passion, et que vous ne la connaissiez
+        pour la plus véritable et la plus violente qui sera
+        jamais. À quelle épreuve a-t-elle été par des choses
+        qui vous sont inconnues&#160;? Et à quelle épreuve l’avez-vous
+        mise par vos rigueurs&#160;?
+      </p>
+      <p>Puisque vous voulez que je vous parle, et que je
+        m’y résous, répondit madame de Clèves, en s’asseyant,
+        je le ferai avec une sincérité que vous trouverez malaisément
+        dans les personnes de mon sexe. Je ne vous
+        dirai point que je n’aie pas vu l’attachement que vous&#32;avez eu pour moi&#160;; peut-être ne me croiriez-vous
+        pas
+        quand je vous le dirais&#160;: je vous avoue donc, non-seulement
+        que je l’ai vu, mais que je l’ai vu tel que
+        vous pouvez souhaiter qu’il m’ait paru. Et si vous l’avez
+        vu, madame, interrompit-il, est-il possible que vous
+        n’en ayez point été touchée&#160;? Et oserais-je vous demander
+        s’il n’a fait aucune impression dans votre cœur&#160;?
+        Vous en avez dû juger par ma conduite, lui répliqua-t-elle&#160;;
+        mais je voudrais bien savoir ce que vous en avez
+        pensé. Il faudrait que je fusse dans un état plus heureux
+        pour vous l’oser dire, répondit-il&#160;; et ma destinée
+        a trop peu de rapport à ce que je vous dirais. Tout ce
+        que je puis vous apprendre, madame, c’est que j’ai
+        souhaité ardemment que vous n’eussiez pas avoué à
+        M. de Clèves ce que vous me cachiez, et que vous lui
+        eussiez caché ce que vous m’eussiez laissé voir. Comment
+        avez-vous pu découvrir, reprit-elle en rougissant,
+        que j’aie avoué quelque chose à M. de Clèves&#160;? Je l’ai
+        su par vous-même, madame, répondit-il&#160;; mais, pour
+        me pardonner la hardiesse que j’ai eue de vous écouter,
+        souvenez-vous si j’ai abusé de ce que j’ai entendu, si
+        mes espérances en ont augmenté, et si j’ai eu plus de
+        hardiesse à vous parler.
+      </p>
+      <p>Il commença à lui conter comme il avait entendu
+        sa conversation avec M. de Clèves&#160;; mais elle l’interrompit
+        avant qu’il eût achevé. Ne m’en dites pas davantage,
+        lui dit-elle&#160;; je vois présentement par où vous
+        avez été si bien instruit&#160;; vous ne me le parûtes déjà
+        que trop chez madame la dauphine, qui avait su cette
+        aventure par ceux à qui vous l’aviez confiée.
+      </p>
+      <p>M. de Nemours lui apprit alors de quelle sorte la&#32;chose était arrivée. Ne vous excusez point,
+        reprit-elle&#160;;
+        il y a long-temps que je vous ai pardonné, sans que
+        vous m’ayez dit de raison&#160;; mais, puisque vous avez
+        appris par moi-même ce que j’avais eu dessein de vous
+        cacher toute ma vie, je vous avoue que vous m’avez
+        inspiré des sentiments qui m’étaient inconnus devant
+        que de vous avoir vu, et dont j’avais même si peu d’idée
+        qu’ils me donnèrent d’abord une surprise qui augmentait
+        encore le trouble qui les suit toujours. Je vous
+        fais cet aveu avec moins de honte, parce que je le
+        fais dans un temps où je le puis faire sans crime, et
+        que vous avez vu que ma conduite n’a pas été réglée
+        par mes sentiments.</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image5.png" alt="M. Nemours à genoux" width="400" height="300">
+        </center>
+      </p>
+      <p>Croyez-vous, madame, lui dit M. de Nemours, en
+        se jetant à ses genoux, que je n’expire pas à vos pieds de
+        joie et de transport. Je ne vous apprends, lui répondit-elle
+        en souriant, que ce que vous ne saviez déjà que trop.
+        Ah&#160;! madame, répliqua-t-il, quelle différence de le
+        savoir par un effet du hasard, ou de l’apprendre par vous-même,
+        et de voir que vous voulez bien que je le sache&#160;!
+        Il est vrai, lui dit-elle, que je veux bien que vous le
+        sachiez, et que je trouve de la douceur à vous le dire&#160;:
+        je ne sais même si je ne vous le dis point plus pour
+        l’amour de moi que pour l’amour de vous. Car, enfin,
+        cet aveu n’aura point de suite, et je suivrai les règles
+        austères que mon devoir m’impose. Vous n’y songez
+        pas, madame, répondit M. de Nemours&#160;; il n’y a plus
+        de devoir qui vous lie, vous êtes en liberté&#160;; et si j’osais,
+        je vous dirais même qu’il dépend de vous de faire en
+        sorte que votre devoir vous oblige un jour à conserver
+        les sentiments que vous avez pour moi. Mon devoir,&#32;répliqua-t-elle, me défend de penser jamais à personne,
+        et moins à vous qu’à qui que ce soit au monde, par
+        des raisons qui vous sont inconnues. Elles ne me le
+        sont peut-être pas, madame, reprit-il&#160;; mais ce ne sont
+        point de véritables raisons. Je crois savoir que M. de
+        Clèves m’a cru plus heureux que je n’étais, et qu’il
+        s’est imaginé que vous aviez approuvé des extravagances
+        que la passion m’a fait entreprendre sans votre
+        aveu. Ne parlons point de cette aventure, lui dit-elle,
+        je n’en saurais soutenir la pensée&#160;; elle me fait honte,
+        et elle m’est aussi trop douloureuse par les suites qu’elle
+        a eues. Il n’est que trop véritable que vous êtes cause de
+        la mort de M. de Clèves&#160;: les soupçons que lui a donnés
+        votre conduite inconsidérée lui ont coûté la vie, comme
+        si vous la lui aviez ôtée de vos propres mains. Voyez ce
+        que je devrais faire, si vous en étiez venus ensemble
+        à ces extrémités, et que le même malheur en fût arrivé.
+        Je sais bien que ce n’est pas la même chose à l’égard
+        du monde&#160;; mais, au mien, il n’y a aucune différence,
+        puisque je sais que c’est par vous qu’il est mort, et que
+        c’est à cause de moi. Ah&#160;! madame, lui dit M. de Nemours,
+        quel fantôme de devoir opposez-vous à mon
+        bonheur&#160;! Quoi, madame, une pensée vaine et sans
+        fondement vous empêchera de rendre heureux un
+        homme que vous ne haïssez pas&#160;? Quoi&#160;! j’aurais pu
+        concevoir l’espérance de passer ma vie avec vous&#160;; ma
+        destinée m’aurait conduit à aimer la plus estimable
+        personne du monde&#160;; j’aurais vu en elle tout ce qui
+        peut faire une adorable maîtresse&#160;; elle ne m’aurait pas
+        haï, et je n’aurais trouvé dans sa conduite que tout ce
+        qui peut être à désirer dans une femme&#160;! Car enfin,&#32;madame, vous êtes peut-être la seule personne en
+        qui
+        ces deux choses se soient jamais trouvées au degré
+        qu’elles sont en vous&#160;: tous ceux qui épousent des
+        maîtresses dont ils sont aimés, tremblent en les épousant,
+        et regardent avec crainte, par rapport aux autres,
+        la conduite qu’elles ont eue avec eux&#160;; mais en vous,
+        madame, rien n’est à craindre, et on ne trouve que
+        des sujets d’admiration. N’aurais-je envisagé, dis-je,
+        une si grande félicité, que pour vous y voir apporter
+        vous-même des obstacles&#160;? Ah&#160;! madame, vous oubliez
+        que vous m’avez distingué du reste des hommes, ou
+        plutôt vous ne m’en avez jamais distingué&#160;: vous vous
+        êtes trompée, et je me suis flatté.
+      </p>
+      <p>Vous ne vous êtes point flatté, lui répondit-elle&#160;;
+        les raisons de mon devoir ne me paraîtraient peut-être
+        pas si fortes sans cette distinction dont vous vous
+        doutez, et c’est elle qui me fait envisager des malheurs
+        à m’attacher à vous. Je n’ai rien à répondre,
+        madame, reprit-il, quand vous me faites voir que vous
+        craignez des malheurs&#160;; mais je vous avoue qu’après
+        tout ce que vous avez bien voulu me dire, je ne
+        m’attendais pas à trouver une si cruelle raison. Elle
+        est si peu offensante pour vous, reprit madame de
+        Clèves, que j’ai même beaucoup de peine à vous l’apprendre.
+        Hélas&#160;! madame, répliqua-t-il, que pouvez-vous
+        craindre qui me flatte trop, après ce que vous
+        venez de me dire&#160;? Je veux vous parler encore avec la
+        même sincérité que j’ai déjà commencé, reprit-elle,
+        et je vais passer par-dessus toute la retenue et toutes
+        les délicatesses que je devrais avoir dans une première
+        conversation&#160;; mais je vous conjure de m’écouter sans
+        m’interrompre.&#32;
+      </p>
+      <p>Je crois devoir à votre attachement la faible récompense
+        de ne vous cacher aucun de mes sentiments, et
+        de vous les laisser voir tels qu’ils sont. Ce sera apparemment
+        la seule fois de ma vie que je me donnerai
+        la liberté de vous les faire paraître&#160;; néanmoins, je ne
+        saurais vous avouer sans honte que la certitude de
+        n’être plus aimée de vous comme je le suis me paraît
+        un si horrible malheur, que, quand je n’aurais point
+        des raisons de devoir insurmontables, je doute si je
+        pourrais me résoudre à m’exposer à ce malheur. Je
+        sais que vous êtes libre, que je le suis, et que les
+        choses sont d’une sorte que le public n’aurait peut-être
+        pas sujet de vous blâmer, ni moi non plus, quand
+        nous nous engagerions ensemble pour jamais&#160;; mais les
+        hommes conservent-ils de la passion dans ces engagements
+        éternels&#160;? Dois-je espérer un miracle en ma
+        faveur&#160;? et puis-je me mettre en état de voir certainement
+        finir cette passion dont je ferais toute ma félicité&#160;?
+        M. de Clèves était peut-être l’unique homme du
+        monde capable de conserver de l’amour dans le mariage.
+        Ma destinée n’a pas voulu que j’aie pu profiter
+        de ce bonheur&#160;; peut-être aussi que sa passion n’avait
+        subsisté que parce qu’il n’en aurait pas trouvé en moi&#160;;
+        mais je n’aurais pas le même moyen de conserver la
+        vôtre&#160;: je crois même que les obstacles ont fait votre
+        constance&#160;; vous en avez assez trouvé pour vous animer
+        à vaincre&#160;; et mes actions involontaires, ou les choses
+        que le hasard vous a apprises, vous ont donné assez
+        d’espérance pour ne vous pas rebuter. Ah&#160;! madame,
+        reprit M. de Nemours, je ne saurais garder le silence
+        que vous m’imposez&#160;: vous me faites trop d’injustice,&#32;et vous me faites trop voir combien vous êtes
+        éloignée
+        d’être prévenue en ma faveur. J’avoue, répondit-elle,
+        que les passions peuvent me conduire, mais elles ne
+        sauraient m’aveugler&#160;; rien ne me peut empêcher de
+        connaître que vous êtes né avec toutes les dispositions
+        pour la galanterie et toutes les qualités qui sont propres
+        à y donner des succès heureux&#160;: vous avez déjà eu
+        plusieurs passions&#160;; vous en auriez encore&#160;; je ne ferais
+        plus votre bonheur&#160;; je vous verrais pour une autre
+        comme vous auriez été pour moi&#160;: j’en aurais une douleur
+        mortelle, et je ne serais pas même assurée de
+        n’avoir point le malheur de la jalousie. Je vous en ai
+        trop dit pour vous cacher que vous me l’avez fait
+        connaître, et que je souffris de si cruelles peines le
+        soir que la reine me donna cette lettre de madame de
+        Thémines, que l’on disait qui s’adressait à vous, qu’il
+        m’en est demeuré une idée qui me fait croire que c’est
+        le plus grand de tous les maux.</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image6.png" alt="Plaintes M. de Nemours" width="420" height=300">
+        </center>
+      </p>
+      <p>Par vanité ou par goût, toutes les femmes souhaitent
+        de vous attacher&#160;; il y en a peu à qui vous ne plaisiez&#160;:
+        mon expérience me ferait croire qu’il n’y en a point
+        à qui vous ne puissiez plaire. Je vous croirais toujours
+        amoureux et aimé, et je ne me tromperais pas souvent.
+        Dans cet état, néanmoins, je n’aurais d’autre
+        parti à prendre que celui de la souffrance&#160;; je ne sais
+        même si j’oserais me plaindre. On fait des reproches
+        à un amant&#160;; mais en fait-on à un mari quand on n’a
+        qu’à lui reprocher que de n’avoir plus d’amour&#160;? Quand je
+        pourrais m’accoutumer à cette sorte de malheur, pourrais-je m’accoutumer à celui de croire voir toujours
+        M. de Clèves vous accuser de sa mort, me reprocher&#32;de vous avoir aimé, de vous avoir épousé, et me faire
+        sentir la différence de son attachement au vôtre&#160;? Il
+        est impossible, continua-t-elle, de passer par-dessus
+        des raisons si fortes&#160;: il faut que je demeure dans l’état
+        où je suis, et dans les résolution que j’ai prises de
+        n’en sortir jamais. Hé&#160;! croyez-vous le pouvoir, madame,
+        s’écria M. de Nemours&#160;? Pensez-vous que vos résolutions
+        tiennent contre un homme qui vous adore, et qui est
+        assez heureux pour vous plaire&#160;? Il est plus difficile que
+        vous ne pensez, madame, de résister à ce qui nous plaît,
+        et à ce qui nous aime. Vous l’avez fait par une vertu
+        austère, qui n’a presque point d’exemple&#160;; mais cette
+        vertu ne s’oppose plus à vos sentiments, et j’espère que
+        vous les suivrez malgré vous. Je sais bien qu’il n’y a
+        rien de plus difficile que ce que j’entreprends, répliqua
+        madame de Clèves&#160;; je me défie de mes forces, au milieu
+        de mes raisons&#160;; ce que je crois devoir à la mémoire
+        de M. de Clèves serait faible, s’il n’était soutenu par
+        l’intérêt de mon repos&#160;; et les raisons de mon repos
+        ont besoin d’être soutenues de celles de mon devoir&#160;;
+        mais, quoique je me défie de moi-même, je crois que
+        je ne vaincrai jamais mes scrupules, et je n’espère pas
+        aussi de surmonter l’inclination que j’ai pour vous.
+        Elle me rendra malheureuse, et je me priverai de votre
+        vue, quelque violence qu’il m’en coûte. Je vous conjure,
+        par tout le pouvoir que j’ai sur vous, de ne chercher
+        aucune occasion de me voir. Je suis dans un état
+        qui me fait des crimes de tout ce qui pourrait être
+        permis dans un autre temps, et la seule bienséance
+        interdit tout commerce entre nous. M. de Nemours se
+        jeta à ses pieds, et s’abandonna à tous les divers &#32;mouvements dont il était agité. Il lui fit voir, et par
+        ses
+        paroles et par ses pleurs, la plus vive et la plus tendre
+        passion dont un cœur ait jamais été touché. Celui de
+        madame de Clèves n’était pas insensible&#160;; et, regardant
+        ce prince avec des yeux un peu grossis par les larmes&#160;:
+        Pourquoi faut-il, s’écria-t-elle, que je vous puisse
+        accuser de la mort de M. de Clèves&#160;? Que n’ai-je
+        commencé à vous connaître depuis que je suis libre,
+        ou pourquoi ne vous ai-je pas connu devant que d’être
+        engagée&#160;? Pourquoi la destinée nous sépare-t-elle par
+        un obstacle si invincible&#160;? Il n’y a point d’obstacle,
+        madame, reprit M. de Nemours&#160;: vous seule vous opposez
+        à mon bonheur&#160;; vous seule vous imposez une
+        loi que la vertu et la raison ne vous sauraient imposer.
+        Il est vrai, répliqua-t-elle, que je sacrifie beaucoup
+        à un devoir qui ne subsiste que dans mon imagination.
+        Attendez ce que le temps pourra faire&#160;: M. de
+        Clèves ne fait encore que d’expirer, et cet objet funeste
+        est trop proche pour me laisser des vues claires
+        et distinctes. Ayez cependant le plaisir de vous être
+        fait aimer d’une personne qui n’aurait rien aimé, si
+        elle ne vous avait jamais vu&#160;: croyez que les sentiments
+        que j’ai pour vous seront éternels, et qu’ils
+        subsisteront également, quoi que je fasse. Adieu, lui
+        dit-elle&#160;; voici une conversation qui me fait honte&#160;:
+        rendez-en compte à M. le vidame&#160;; j’y consens, et je
+        vous en prie.
+      </p>
+      <p>Elle sortit, en disant ces paroles, sans que M. de
+        Nemours pût la retenir. Elle trouva M. le vidame dans
+        la chambre la plus proche. Il la vit si troublée qu’il
+        n’osa lui parler, et il la remit en son carrosse sans&#32;lui rien dire. Il revint trouver M. de Nemours, qui
+        était si plein de joie, de tristesse, d’étonnement et
+        d’admiration, enfin, de tous les sentiments que peut
+        donner une passion pleine de crainte et d’espérance,
+        qu’il n’avait pas l’usage de la raison. Le vidame fut
+        long-temps à obtenir qu’il lui rendît compte de sa
+        conversation. Il le fit enfin&#160;; et M. de Chartres, sans
+        être amoureux, n’eut pas moins d’admiration pour la
+        vertu, l’esprit et le mérite de madame de Clèves, que
+        M. de Nemours en avait lui-même. Ils examinèrent ce
+        que ce prince devait espérer de sa destinée&#160;; et, quelques
+        craintes que son amour lui pût donner, il demeura
+        d’accord avec M. le vidame qu’il était impossible
+        que madame de Clèves demeurât dans les résolutions
+        où elle était. Ils convinrent néanmoins qu’il
+        fallait suivre ses ordres, de crainte que, si le public
+        s’apercevait de l’attachement qu’il avait pour elle, elle
+        ne fît des déclarations et ne prît des engagements
+        vers le monde, qu’elle soutiendrait dans la suite, par
+        la peur qu’on ne crût qu’elle l’eût aimé du vivant de
+        son mari.
+      </p>
+      <p>M. de Nemours se détermina à suivre le roi. C’était
+        un voyage dont il ne pouvait aussi bien se dispenser,
+        et il résolut à s’en aller, sans tenter même de revoir
+        madame de Clèves du lieu où il l’avait vue quelquefois.
+        Il pria M. le vidame de lui parler. Que ne lui
+        dit-il point pour lui redire&#160;! quel nombre infini de raisons
+        pour la persuader de vaincre ses scrupules&#160;! Enfin,
+        une partie de la nuit était passée devant que M. de
+        Nemours songeât à le laisser en repos.
+      </p>
+      <p>Madame de Clèves n’était pas en état d’en trouver&#160;:&#32;ce lui était une chose si nouvelle d’être sortie
+        de cette
+        contrainte qu’elle s’était imposée, d’avoir souffert, pour
+        la première fois de sa vie, qu’on lui dît qu’on était
+        amoureux d’elle, et d’avoir dit elle-même qu’elle aimait,
+        qu’elle ne se connaissait plus. Elle fut étonnée de ce
+        qu’elle avait fait&#160;; elle s’en repentit&#160;; elle en eut de la
+        joie&#160;: tous ses sentiments étaient pleins de trouble et
+        de passion. Elle examina encore les raisons de son
+        devoir, qui s’opposaient à son bonheur&#160;: elle sentit de
+        la douleur de les trouver si fortes, et elle se repentit
+        de les avoir si bien montrées à M. de Nemours. Quoique
+        la pensée de l’épouser lui fût venue dans l’esprit
+        sitôt qu’elle l’avait revu dans ce jardin, elle ne lui
+        avait pas fait la même impression que venait de faire
+        la conversation qu’elle avait eue avec lui, et il y avait
+        des moments où elle avait de la peine à comprendre
+        qu’elle pût être malheureuse en l’épousant. Elle eût
+        bien voulu se pouvoir dire qu’elle était mal fondée,
+        et dans ses scrupules du passé, et dans ses craintes de
+        l’avenir. La raison et son devoir lui montraient, dans
+        d’autres moments, des choses toutes opposées, qui
+        l’emportaient rapidement à la résolution de ne se
+        point remarier, et de ne voir jamais M. de Nemours&#160;;
+        mais c’était une résolution bien violente à établir dans
+        un cœur aussi touché que le sien, et aussi nouvellement
+        abandonné aux charmes de l’amour. Enfin, pour
+        se donner quelque calme, elle pensa qu’il n’était point
+        encore nécessaire qu’elle se fît la violence de prendre
+        des résolutions&#160;; la bienséance lui donnait un temps
+        considérable à se déterminer&#160;; mais elle résolut de demeurer
+        ferme à n’avoir aucun commerce avec M. de&#32;Nemours. Le vidame la vint voir, et servit ce prince
+        avec tout l’esprit et l’application imaginables. Il ne la
+        put faire changer sur sa conduite, ni sur celle qu’elle
+        avait imposée à M. de Nemours. Elle lui dit que son
+        dessein était de demeurer dans l’état où elle se trouvait&#160;;
+        qu’elle connaissait que ce dessein était difficile à
+        exécuter, mais qu’elle espérait d’en avoir la force. Elle
+        lui fit si bien voir à quel point elle était touchée de
+        l’opinion que M. de Nemours avait causé la mort à
+        son mari, et combien elle était persuadée qu’elle ferait
+        une action contre son devoir en l’épousant, que le vidame
+        craignit qu’il ne fût mal-aisé de lui ôter cette
+        impression. Il ne dit pas à ce prince ce qu’il pensait&#160;;
+        et, en lui rendant compte de sa conversation, il lui
+        laissa toute l’espérance que la raison doit donner
+        à un homme qui est aimé.</p>
+      <p>
+        <center>
+          <img src="images/Partie4_image7.png" alt="La retraite de madame de Clèves" width="400" height="400">
+        </center>
+      </p>
+      <p>Ils partirent le lendemain, et allèrent joindre le
+        roi. M. le vidame écrivit à madame de Clèves, à la
+        prière de M. de Nemours, pour lui parler de ce prince&#160;;
+        et, dans une seconde lettre qui suivit bientôt la première,
+        M. de Nemours y mit quelques lignes de sa
+        main. Mais madame de Clèves, qui ne voulait pas
+        sortir des règles qu’elle s’était imposées, et qui craignait
+        les accidents qui peuvent arriver par les lettres,
+        manda au vidame qu’elle ne recevrait plus les siennes,
+        s’il continuait à lui parler de M. de Nemours&#160;; et elle
+        lui manda si fortement, que ce prince le pria même
+        de ne le plus nommer.
+      </p>
+      <p>La cour alla conduire la reine d’Espagne jusqu’en
+        Poitou. Pendant cette absence, madame de Clèves demeura
+        à elle-même&#160;; et, à mesure qu’elle était éloignée&#32;de M. de Nemours, et de tout ce qui l’en pouvait
+        faire
+        souvenir, elle rappelait la mémoire de M. de Clèves,
+        qu’elle se faisait un honneur de conserver. Les raisons
+        qu’elle avait de ne point épouser M. de Nemours lui
+        paraissaient fortes du côté de son devoir, et insurmontables
+        du côté de son repos. La fin de l’amour de
+        ce prince, et les maux de la jalousie, qu’elle croyait
+        infaillibles dans un mariage, lui montraient un malheur
+        certain où elle s’allait jeter&#160;; mais elle voyait aussi
+        qu’elle entreprenait une chose impossible, que de résister
+        en présence au plus aimable homme du monde,
+        qu’elle aimait, et dont elle était aimée, et de lui résister
+        sur une chose qui ne choquait ni la vertu ni la
+        bienséance. Elle jugea que l’absence seule et l’éloignement
+        pouvaient lui donner quelque force&#160;; elle trouva
+        qu’elle en avait besoin, non-seulement pour soutenir
+        la résolution de ne se pas engager, mais même pour
+        se défendre de voir M. de Nemours&#160;; et elle résolut
+        de faire un assez long voyage, pour passer tout le
+        temps que la bienséance l’obligeait à vivre dans la
+        retraite. De grandes terres qu’elle avait vers les Pyrénées
+        lui parurent le lieu le plus propre qu’elle pût
+        choisir. Elle partit peu de jours avant que la cour
+        revînt&#160;; et, en partant, elle écrivit à M. le vidame,
+        pour le conjurer que l’on ne songeât point à avoir de
+        ses nouvelles, ni à lui écrire.
+      </p>
+      <p>M. de Nemours fut affligé de ce voyage, comme un
+        autre l’aurait été de la mort de sa maîtresse. La pensée
+        d’être privé pour long-temps de la vue de madame de
+        Clèves lui était une douleur sensible, et sur-tout dans
+        un temps où il avait senti le plaisir de la voir, et de&#32;la voir touchée de sa passion. Cependant il ne
+        pouvait
+        faire autre chose que s’affliger&#160;; mais son affliction
+        augmenta considérablement. Madame de Clèves, dont
+        l’esprit avait été si agité, tomba dans une maladie
+        violente sitôt qu’elle fut arrivée chez elle&#160;: cette nouvelle
+        vint à la cour. M. de Nemours était inconsolable&#160;;
+        sa douleur allait au désespoir et à l’extravagance. Le
+        vidame eut beaucoup de peine à l’empêcher de faire
+        voir sa passion au public&#160;; il en eut beaucoup aussi
+        à le retenir, et à lui ôter le dessein d’aller lui-même
+        apprendre de ses nouvelles. La parenté et l’amitié de
+        M. le vidame fut un prétexte à y envoyer plusieurs
+        courriers&#160;: on sut enfin qu’elle était hors de cet extrême
+        péril où elle avait été, mais elle demeura dans une
+        maladie de langueur, qui ne laissait guère d’espérance
+        de sa vie.
+      </p>
+      <p>Cette vue si longue et si prochaine de la mort fit
+        paraître à madame de Clèves les choses de cette vie
+        de cet œil si différent dont on les voit dans la santé.
+        La nécessité de mourir, dont elle se voyait si proche,
+        l’accoutuma à se détacher de toutes choses&#160;; et la longueur
+        de sa maladie lui en fit une habitude. Lorsqu’elle
+        revint de cet état, elle trouva néanmoins que M. de
+        Nemours n’était pas effacé de son cœur&#160;; mais elle
+        appela à son secours, pour se défendre contre lui,
+        toutes les raisons qu’elle croyait avoir pour ne l’épouser
+        jamais. Il se passa un assez grand combat en elle-même&#160;;
+        enfin elle surmonta les restes de cette passion,
+        qui était affaiblie par les sentiments que sa maladie
+        lui avait donnés&#160;: les pensées de la mort lui avaient
+        reproché la mémoire de M. de Clèves. Ce souvenir,&#32;qui s’accordait à son devoir, s’imprima fortement dans
+        son cœur. Les passions et les engagements du monde
+        lui parurent tels qu’ils paraissent aux personnes qui
+        ont des vues plus grandes et plus éloignées. Sa santé,
+        qui demeura considérablement affaiblie, lui aida à
+        conserver ces sentiments&#160;; mais comme elle connaissait
+        ce que peuvent les occasions sur les résolutions les
+        plus sages, elle ne voulut pas s’exposer à détruire les
+        siennes, ni revenir dans les lieux où était ce qu’elle
+        avait aimé. Elle se retira, sur le prétexte de changer
+        d’air, dans une maison religieuse, sans faire paraître
+        un dessein arrêté de renoncer à la cour.
+      </p>
+      <p>À la première nouvelle qu’en eut M. de Nemours,
+        il sentit le poids de cette retraite, et il en vit l’importance.
+        Il crut, dans ce moment, qu’il n’avait plus rien
+        à espérer. La perte de ses espérances ne l’empêcha
+        pas de mettre tout en usage pour faire revenir madame
+        de Clèves&#160;: il fit écrire la reine, il fit écrire le vidame,
+        il l’y fit aller&#160;; mais tout fut inutile. Le vidame la vit&#160;:
+        elle ne lui dit point qu’elle eût pris de résolution&#160;; il
+        jugea néanmoins qu’elle ne reviendrait jamais. Enfin,
+        M. de Nemours y alla lui-même, sur le prétexte d’aller
+        à des bains. Elle fut extrêmement troublée et surprise
+        d’apprendre sa venue. Elle lui fit dire par une personne
+        de mérite qu’elle aimait, et qu’elle avait alors
+        auprès d’elle, qu’elle le priait de ne pas trouver étrange
+        si elle ne s’exposait point au péril de le voir, et de détruire
+        par sa présence, des sentiments qu’elle devait
+        conserver&#160;; qu’elle voulait bien qu’il sût, qu’ayant trouvé
+        que son devoir et son repos s’opposaient au penchant
+        qu’elle avait d’être à lui, les autres choses du monde&#32;lui avaient paru si indifférentes qu’elle y avait
+        renoncé
+        pour jamais&#160;; qu’elle ne pensait plus qu’à celles de
+        l’autre vie, et qu’il ne lui restait aucun sentiment que
+        le désir de le voir dans les mêmes dispositions
+        où elle était.
+      </p>
+      <p>M. de Nemours pensa expirer de douleur en présence
+        de celle qui lui parlait. Il la pria vingt fois de
+        retourner à madame de Clèves, afin de faire en sorte
+        qu’il la vît&#160;; mais cette personne lui dit que madame
+        de Clèves lui avait non seulement défendu de lui aller
+        redire aucune chose de sa part, mais même de lui
+        rendre compte de leur conversation. Il fallut enfin que
+        ce prince repartît, aussi accablé de douleur que le
+        pouvait être un homme qui perdait toutes sortes d’espérances de revoir jamais une personne qu’il aimait
+        d’une passion la plus violente, la plus naturelle et la
+        mieux fondée qui ait jamais été. Néanmoins il ne se
+        rebuta point encore, et il fit tout ce qu’il put imaginer
+        de capable de la faire changer de dessein. Enfin, des
+        années entières s’étant passées, le temps et l’absence
+        ralentirent sa douleur et éteignirent sa passion. Madame
+        de Clèves vécut d’une sorte qui ne laissa pas d’apparence
+        qu’elle pût jamais revenir. Elle passait une partie de
+        l’année dans cette maison religieuse, et l’autre chez
+        elle&#160;; mais dans une retraite et dans des occupations
+        plus saintes que celles des couvents les plus austères&#160;;
+        et sa vie, qui fut assez courte, laissa des exemples de
+        vertu inimitables.
+      </p>
+      <p>
+        <center>
+        <img src="images/bordure.png" alt="Bordure" width="500" height="300"> 
+        </center>
+        </p>
+    </div>
+    <br>
+  </section>
+</body>
+
+</html>

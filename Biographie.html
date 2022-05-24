@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Princesse de Clève Madame de Lafayette</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta name="author" content="Cynthia Wielgosz">
+  <style>
+    @font-face {
+      font-family: 'Aston Script'
+        src: url ('Police\Aston Script.ttf')
+    }
+
+    @font-face {
+      font-family: 'CapitalisTypOasis'
+        src: url ('Polices\CapitalisTypOasis.ttf')
+    }
+
+    @font-face {
+      font-family: 'Nesans Semi Bold'
+        src: url ('Polices\Nesans Semi Bold.ttf')
+    }
+
+    body {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: Aston Script;
+      font-size: 45px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 25px;
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 15px;
+    }
+
+    h4 {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 28px;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    .rectangle {
+      position: relative;
+      height: 50px;
+      width: 300px;
+      background-color: #AB1149;
+      margin: auto;
+    }
+
+    nav {
+      color: white;
+      font-family: 'CapitalisTypOasis';
+      width: 725px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0px 0px 32px;
+      padding: 10px 24px;
+    }
+
+    nav ul li {
+      padding: 0px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav ul::after {
+      content: normal;
+      display: none;
+      clear: both;
+    }
+
+    nav a {
+      font-size: 11.2px;
+      color: white;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+      border-bottom: 1px solid black;
+    }
+
+    .sous li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .sous a {
+      padding: 0px;
+      border-bottom: none;
+    }
+
+    .sous a:hover {
+      border-bottom: none;
+      background-color: black
+    }
+
+    .deroulant>a::after {
+      content: '▼';
+      font-size: 10px;
+    }
+
+    .sous {
+      display: none;
+      box-shadow: 0px 1px 2px black;
+      background-color: #D31B5E;
+      position: absolute;
+      width: 180px;
+      z-index: 1000;
+
+    }
+
+    nav>ul li:hover .sous {
+      display: block;
+    }
+
+    p {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <section class="haut" style="background-color:#AB1149">
+      <br>
+      <nav>
+        <ul>
+          <li class='deroulant'><a
+              href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+              #ACCEUIL>ACCEUIL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+                  #A propos>A propos</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Mentionslegales.html"
+                  #Mentions legales>Mentions legales</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#TEXTE INTEGRAL'>TEXTE INTEGRAL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Site.html"
+                  #PREMIERE PARTIE>PREMIERE PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Deuxi%C3%A8me%20partie.html"
+                  #DEUXIEME PARTIE>DEUXIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Troisi%C3%A8me%20partie.html"
+                  #TROSIEME PARTIE>TROISIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Quatri%C3%A8me%20partie.html"
+                  #QUATRIEME PARTIE>QUATRIEME PARTIE</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#PRESENTATION'>PRESENTATION</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Roman.html"
+                  #Le roman>Le roman</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Biographie.html"
+                  #Biographie>Biographie</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#CHRONOLOGIE'>CHRONOLOGIE</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Repereshistoriques.html"
+                  #Reperes historiques>Reperes historiques</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Vieautrice.html"
+                  #Vie de l&rsquo;autrice>Vie de l&rsquo;autrice</a></li>
+            </ul>
+          </li>
+      </nav>
+      <div>
+        <br>
+        <h1>La Princesse de Clèves</h1>
+        <p>
+        <h2>Madame de Lafayette</h2>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </header>
+  </section>
+  <section class="bas" style="background-color:#FFF6CD">
+    <h3 class="rectangle">BIOGRAPHIE</h3>
+    <div>
+      <br>
+      <br>
+      <h4>Madame de Lafayette, une femme secrète</h4>
+      <p>Marie-Madeleine Pioche de La Vergne est née dans une famille aisée et de petite noblesse, qui gravite dans
+        l’entourage du cardinal de Richelieu. Sa mère, fille d’un médecin du roi, est au service de la duchesse
+        Rose-Madeleine d'Aiguillon. Son père, Marc Pioche, qui espère faire oublier ses origines bourgeoises en se
+        faisant appeler « de La Vergne », écuyer du roi, meurt alors qu’elle n’a que quinze ans. C'est en 1650, à l'âge
+        de 16 ans, qu'elle devient demoiselle d'honneur de la reine Anne d'Autriche et commence à acquérir une éducation
+        littéraire auprès du grammairien Ménage qui lui enseigne l’italien et le latin. Ce dernier l’introduit alors
+        dans les salons littéraires en vogue de Catherine de Rambouillet, de la Marquise du Plessis-Bellière et de
+        Madeleine de Scudéry (où elle est présentée sous le pseudonyme de Féliciane dans Le grand Dictionnaire des
+        Précieuses)</p>
+      <p>En 1650, sa mère se remarie avec Renaud de Sévigné, un oncle du mari de la marquise de Sévigné ; les deux
+        femmes, qui ont huit ans de différence, deviendront pour toujours « les plus chères amies du monde ».</p>
+      <p>
+        <center>
+          <img src="images/Portrait_Lafayette.png" alt="Portrait de Madame de Lafayette" width="300" height="300">
+        </center>
+      </p>
+      <p>En 1655, Marie-Madeleine épouse, à l’âge de 21 ans, un Auvergnat de trente-huit ans,
+        François Motier, comte de La Fayette, dont elle aura deux fils. Ce veuf désargenté, frère de la célèbre Louise
+        de La Fayette, qui mène une existence retirée dans son château, lui apporte un nom. Elle l’accompagne dans ses
+        domaines familiaux en Auvergne et dans le Bourbonnais. Elle retourne fréquemment à Paris où elle commence à
+        s’introduire dans la haute société de la Cour. Elle ouvre avec succès son propre salon littéraire dans son
+        somptueux hôtel particulier rue de Vaugirard. Leur bonheur conjugal semble avoir sombré après quelques années de
+        mariage, après la naissance de leurs fils, date à partir de laquelle François de La Fayette se fait tellement
+        discret qu'il semble avoir littéralement disparu (ce n'est qu'à la fin du XIX<sup>e</sup></abbr>&nbsp;siècle
+        qu'un document trouvé dans les archives de la Trémoille indique que ce mari silencieux avait vécu jusqu'au 26
+        juin 1683).</p>
+      <p>On compte, parmi les connaissances de Marie-Madeleine de La Fayette, Henriette d'Angleterre, future duchesse
+        d’Orléans, qui lui a demandé d’être sa biographe et dont elle devient une intime ; le Grand Arnauld et Huet dont
+        le <i>Traité de l'origine</i> des romans sera publié en préface de son <i>Zaïde</i>. Au tout début de la Fronde,
+        elle est également proche du cardinal de Retz. Il y a également Jean Regnault de Segrais qui est un poète et
+        auteur d'un roman, mais aussi de Gilles Ménage, un auteur mondain, ces deux personnes côtoient régulièrement le
+        salon de Madame de La Fayette, ils deviennent alors de très bons conseillers littéraires.</p>
+      <p>Sur les encouragements de Segrais et de Ménage, qui lui tiennent lieu de véritables conseillers littéraires,
+        Madame de la Fayette décide de prendre la plume. Établie de façon définitive à Paris en 1659, la seule œuvre
+        dont elle signera de son nom : un court portrait de Madame de Sévigné figurant dans un ouvrage collectif
+        intitulé <i>Divers portraits</i>.</p>
+      <p>Elle fait paraître anonymement <i>La Princesse de Montpensier</i> en 1662. La nouvelle historique paraît sous
+        le nom de Segrais. De 1655 à 1680, elle est étroitement liée avec La Rochefoucauld (l’auteur des <i>Réflexions
+          ou sentences et maximes morales</i>), dont elle dit : « M. de La Rochefoucauld m’a donné de l’esprit, mais
+        j’ai réformé son cœur. » Leur fidèle et constante amitié fait écrire à Madame de Sévigné, leur amie à tous deux,
+        au moment de la mort du duc de La Rochefoucauld : « ... rien ne pouvait être comparé à la confiance et aux
+        charmes de leur amitié. » La Rochefoucauld présente Marie-Madeleine de La Fayette à beaucoup de grands esprits
+        littéraires du temps, y compris Racine et Boileau. En 1669 apparaît le premier tome de <i>Zaïde</i>, un roman
+        hispano-mauresque édité sous la signature de Segrais mais presque certainement dû à Madame de La Fayette. Le
+        deuxième volume paraît en 1671. <i>Zaïde</i> est l’objet de rééditions et de traductions, notamment grâce à la
+        préface de Huet.</p>
+      <p>L'œuvre la plus célèbre de Marie-Madeleine de La Fayette est <i>La Princesse de Clèves</i>, d’abord éditée par
+        un de ses amis en mars 1678. Cette œuvre, dont le succès est immense, passe souvent pour être un prototype du
+        roman d'analyse psychologique, et c'est dans une lettre adressée à Ménage en 1691 que l'on apprend l'identité de
+        l'écrivaine. Cependant, Madame de La Fayette n'a jamais avoué publiquement qu'elle en est l'autrice.</p>
+      <p>La mort de La Rochefoucauld en 1680 puis du comte de La Fayette en 1683 la conduit à mener une vie sociale
+        moins active dans ses dernières années. Elle se retire de la vie mondaine, et se prépare à la mort.</p>
+      <p>Trois de ses ouvrages sont édités à titre posthume : <i>La Comtesse de Tende</i> (1724) sans signature,
+        <i>Histoire d’Henriette d’Angleterre</i> (1720) et <i>Mémoires de la Cour de France pour les années 1688 et 1689
+        </i> (1731) parut en 1689.</p>
+      <h4>Famille</h4>
+      <p>Marie-Madeleine Pioche de La Vergne est la fille aînée de Marc Pioche (-1649), écuyer, seigneur de La Vergne et
+        gouverneur du neveu de Richelieu, Jean-Armand de Maillé-Brézé, et d’Isabelle Pena (-1656), fille de François
+        Pena, médecin ordinaire du Roi, et de son épouse, Michelle Coupe.</p>
+      <p>Son baptême eut lieu le 18 mars 1634 en l’église Saint-Sulpice. Furent désignés pour parrain Urbain de
+        Maillé-Brézé, maréchal de France, et pour marraine Marie-Madeleine de Vignerot, dame de Combalet, plus tard
+        duchesse d’Aiguillon, nièce de Richelieu.</p>
+      <p>Marie-Madeleine eut deux sœurs cadettes :
+      <ul style="margin-left: 150px;margin-right:150px">
+        <li>Éléonore-Armande, baptisée le 10 avril 1635</li>
+        <li>Isabelle-Louise, née en 1636</li>
+      </ul>
+      </p>
+      <p>Sa mère, Isabelle Pena, se remaria le 21 décembre 1650 avec Renaud-René de Sévigné (-1656), oncle du mari de la
+        marquise de Sévigné.</p>
+      <p>Mlle de La Vergne épousa le 15 février 1655 François Motier, comte de La Fayette (frère de Louise de La
+        Fayette) (1616-1683). Celui-ci détenait plusieurs terres en Auvergne dont les terres de La Fayette, de
+        Goutenoutouse, de Médat et de Forest.</p>
+      <p>Elle eut de lui deux fils :
+      <ul style="margin-left: 150px;margin-right:150px">
+        <li>Louis de La Fayette (1658-1729), baptisé le 7 mars 1658, abbé</li>
+        <li>Armand-Renaud de La Fayette (17 septembre 1659-1694), militaire.</li>
+      </ul>
+      </p>
+      <h4>Œuvres</h4>
+      <p>
+      <ul style="margin-left: 150px;margin-right:150px">
+        <li><i>Portrait de la marquise de Sévigné, par madame la comtesse de la Fayette, sous le nom d’un inconnu</i>,
+          (dans le recueil de madame de Montpensier "<i>Divers portraits</i>" (1659).</li>
+        <li><i>La Princesse de Montpensier</i>, 1662, puis 1674 et 1675</li>
+        <li><i>Zaïde, histoire espagnole</i>, tome 1, tome 2, Paris, Claude Barbin, 1671</li>
+        <li><i>La Princesse de Clèves</i>, À Paris, chez Claude Barbin, 16 mai 1678</li>
+        <li><i>Romans et Nouvelles</i>, Paris, Classiques Garnier, 1989</li>
+        <li><i>La Comtesse de Tende </i>(1724), posthume</li>
+        <li><i>Histoire de madame Henriette d'Angleterre, première femme de Philippe de France, Duc d'Orléans</i>,
+          Amsterdam, M.-C. Le Cène, 1720</li>
+        <li><i>Mémoires de la cour de France pour les années 1688 et 1689</i>, Paris, Foucault, 1828</li>
+        <li>Lettres de Madame de La Fayette à Madame de Sablé, vers 1663–65</li>
+      </ul>
+      </p>
+      <h4>Pour en savoir plus</h4>
+      <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uJmI7jhCvDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+    </div>
+    <br>
+    <br>
+  </section>
+</body>
+
+</html>

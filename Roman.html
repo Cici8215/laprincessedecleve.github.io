@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>La Princesse de Clève Madame de Lafayette</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta name="author" content="Cynthia Wielgosz">
+  <style>
+    @font-face {
+      font-family: 'Aston Script'
+        src: url ('Police\Aston Script.ttf')
+    }
+
+    @font-face {
+      font-family: 'CapitalisTypOasis'
+        src: url ('Polices\CapitalisTypOasis.ttf')
+    }
+
+    @font-face {
+      font-family: 'Nesans Semi Bold'
+        src: url ('Polices\Nesans Semi Bold.ttf')
+    }
+
+    body {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: Aston Script;
+      font-size: 45px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 25px;
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: CapitalisTypOasis;
+      font-size: 15px;
+    }
+
+    h4 {
+      color: black;
+      font-family: Nesans Semi Bold;
+      font-size: 28px;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    .rectangle {
+      position: relative;
+      height: 50px;
+      width: 300px;
+      background-color: #AB1149;
+      margin: auto;
+    }
+
+    nav {
+      color: white;
+      font-family: 'CapitalisTypOasis';
+      width: 725px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0px 0px 32px;
+      padding: 10px 24px;
+    }
+
+    nav ul li {
+      padding: 0px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav ul::after {
+      content: normal;
+      display: none;
+      clear: both;
+    }
+
+    nav a {
+      font-size: 11.2px;
+      color: white;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+      border-bottom: 1px solid black;
+    }
+
+    .sous li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .sous a {
+      padding: 0px;
+      border-bottom: none;
+    }
+
+    .sous a:hover {
+      border-bottom: none;
+      background-color: black
+    }
+
+    .deroulant>a::after {
+      content: '▼';
+      font-size: 10px;
+    }
+
+    .sous {
+      display: none;
+      box-shadow: 0px 1px 2px black;
+      background-color: #D31B5E;
+      position: absolute;
+      width: 180px;
+      z-index: 1000;
+
+    }
+
+    nav>ul li:hover .sous {
+      display: block;
+    }
+
+    p {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <section class="haut" style="background-color:#AB1149">
+      <br>
+      <nav>
+        <ul>
+          <li class='deroulant'><a
+              href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+              #ACCEUIL>ACCEUIL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Apropos.html"
+                  #A propos>A propos</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Mentionslegales.html"
+                  #Mentions legales>Mentions legales</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#TEXTE INTEGRAL'>TEXTE INTEGRAL</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Site.html"
+                  #PREMIERE PARTIE>PREMIERE PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Deuxi%C3%A8me%20partie.html"
+                  #DEUXIEME PARTIE>DEUXIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Troisi%C3%A8me%20partie.html"
+                  #TROSIEME PARTIE>TROISIEME PARTIE</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Quatri%C3%A8me%20partie.html"
+                  #QUATRIEME PARTIE>QUATRIEME PARTIE</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#PRESENTATION'>PRESENTATION</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Roman.html"
+                  #Le roman>Le roman</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Biographie.html"
+                  #Biographie>Biographie</a></li>
+            </ul>
+          </li>
+          <li class='deroulant'><a href='#CHRONOLOGIE'>CHRONOLOGIE</a>&emsp;
+            <ul class='sous'>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Repereshistoriques.html"
+                  #Reperes historiques>Reperes historiques</a></li>
+              <li><a
+                  href="file:///D:/fichiers%20cynth/Documents/MASTER%20-%20Gustave%20Eiffel/Semestre%202/Philippe%20Gambette%20Outils%20et%20technologies%20web%20pour%20l'%C3%A9dition/Projet/Vieautrice.html"
+                  #Vie de l&rsquo;autrice>Vie de l&rsquo;autrice</a></li>
+            </ul>
+          </li>
+      </nav>
+      <div>
+        <br>
+        <h1>La Princesse de Clèves</h1>
+        <p>
+        <h2>Madame de Lafayette</h2>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </header>
+  </section>
+  <section class="bas" style="background-color:#FFF6CD">
+    <h3 class="rectangle">LE ROMAN</h3>
+    <div>
+      <br>
+      <br>
+      <p><i>La Princesse de Clèves </i> est un roman de Madame de Lafayette, publié anonymement en 1678. L'action du
+        roman se situe à la cour des Valois « dans les dernières années du règne de Henri Second », comme l'indique le
+        narrateur dans les premières lignes du récit. Il s'agit donc d'un roman historique, même si l'œuvre inaugure,
+        par de nombreux aspects (souci de vraisemblance, construction rigoureuse, introspection des personnages) la
+        tradition du roman d'analyse. C'est en effet l'un des premiers romans psychologiques, ce qui explique sa
+        modernité.</p>
+      <p><i>La Princesse de Clèves </i> témoigne également du rôle important joué par les femmes en littérature et dans
+        la vie culturelle du XVII <sup>e</sup> siècle, marquée par le courant de la préciosité. Madame de Lafayette
+        fréquentait avant son mariage le salon de la marquise de Rambouillet et, comme son amie Madame de Sévigné,
+        faisait partie du cercle littéraire de Madeleine de Scudéry, dont elle admirait les œuvres.</p>
+      <p>Roman fondateur, <i>La Princesse de Clèves</i> est l’un des modèles littéraires de Balzac, Raymond Radiguet ou
+        même Jean Cocteau.</p>
+      <br>
+      <h4>Résumé</h4>
+      <p>L’histoire se déroule dans un cadre historique, entre les mois d'octobre 1558 et de novembre 1559, à la cour du
+        roi Henri II, puis à celle de son successeur François II.</p>
+      <p>Mademoiselle de Chartres est une jeune fille de 15 ans qui arrive à la cour du roi Henri II. Le prince de
+        Clèves tombe amoureux d'elle, mais ce sentiment n'est pas partagé. Ils se marient. Elle tombe amoureuse du duc
+        de Nemours, mais leur amour est illégitime puisqu'elle est mariée. Afin d'éviter de le revoir, elle se retire de
+        la cour et avoue sa passion à son mari. Celui-ci meurt de chagrin. Elle décide alors de se retirer dans un
+        couvent.</p>
+      <br>
+      <h4>Influence littéraire : le théâtre classique</h4>
+      <p>Certes, <i>La Princesse de Clèves</i> est influencée par son prédécesseur le roman baroque, ce qui apparaît
+        nettement à la lecture. Néanmoins, d’un point de vue formel, l’impact de la dramaturgie classique sur l’écriture
+        de Mme de La Fayette est flagrant. En effet, le mariage de M. et Mme de Clèves constitue le « nœud » de
+        l’intrigue, au sens aristotélicien. Sans leur rencontre chez le bijoutier, qui intervient avant celle de M. de
+        Nemours et de la jeune fille au bal, cette dernière n’aurait sûrement pas achevé sa vie aussi pieusement. Dans
+        cette perspective, l’on peut se porter à rêver d’une idylle entre les deux amants. Le dénouement et sa morale en
+        auraient été bouleversés. Par ailleurs, l’aveu de la princesse constitue le « renversement » précipitant la «
+        catastrophe ». Cette dernière, développée par Aristote dans sa Poétique, correspond au rapport du gentilhomme à
+        son maître, M. de Clèves. À partir de cette trame, qui se retrouve dans le théâtre du XVI<sup>e</sup> et du
+        XVII<sup>e</sup> siècle, il semble que le dénouement soit, non pas la mort de la princesse, ni même sa décision
+        lors de l’entretien avec M. de Nemours, mais la mort de son époux, qui scelle la fin de l'histoire. Le «
+        dénouement » prend alors tout son sens puisque le « nœud » est enfin dénoué : celui de l’intrigue et celui du
+        mariage, car la princesse n’est plus liée à M. de Clèves. On peut également considérer que <i>La Princesse de
+          Clèves</i> observe à sa manière les règles du théâtre classique : l'unité de temps (le roman se déroule sur
+        une année), l'unité d'action et le souci de vraisemblance lié à l'ancrage historique et au soin porté à
+        l'analyse psychologique des personnages.</p>
+      <br>
+      <h4>Adaptations au cinéma</h4>
+      <ul style="margin-left: 150px;margin-right:150px">
+        <li>1961 : <i>La Princesse de Clèves</i> de Jean Delannoy avec Jean Marais et Marina Vlady ; </li>
+        <li>1999 : <i>La Lettre de Manoel</i> de Oliveira ;</li>
+        <li>2000 : <i>La Fidélité</i> de Andrzej Zulawski ;</li>
+        <li>2008 : <i>La Belle Personne</i> de Christophe Honoré ; </li>
+        <li>2011 : <i>Nous, princesses de Clèves</i> de Régis Sauder.</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+  </section>
+</body>
+
+</html>
